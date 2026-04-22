@@ -2,8 +2,8 @@ const admin = require('firebase-admin');
 const fs = require('fs');
 
 // 1. INITIALIZE FIREBASE
-// You must download your Service Account Key from Firebase Console -> Project Settings -> Service Accounts
-const serviceAccount = require('./kedicares.json');
+// Service Account Key is in the scripts/ folder
+const serviceAccount = require('./scripts/serviceaccountkey.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
@@ -12,7 +12,7 @@ admin.initializeApp({
 const db = admin.firestore();
 
 // 2. LOAD YOUR DATA
-const rawData = fs.readFileSync('../app.json');
+const rawData = fs.readFileSync('./app.json');
 const data = JSON.parse(rawData);
 const faqs = data.visibility_metadata.faq_structured_data;
 
