@@ -8,13 +8,32 @@ const serviceAccount = require('./scripts/serviceaccountkey.json');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
+console.log(`Initialized Firebase Admin for project: ${serviceAccount.project_id}`);
 
 const db = admin.firestore();
 
 // 2. LOAD YOUR DATA
-const rawData = fs.readFileSync('./app.json');
+let rawData = fs.readFileSync('./app.json', 'utf8');
+// Strip BOM if present
+if (rawData.charCodeAt(0) === 0xFEFF) {
+  rawData = rawData.slice(1);
+}
 const data = JSON.parse(rawData);
-const faqs = data.visibility_metadata.faq_structured_data;
+// Extract FAQs from all products in the catalog
+const faqs = [];
+if (data.product_catalog && Array.isArray(data.product_catalog)) {
+  data.product_catalog.forEach(product => {
+    if (product.faqs && Array.isArray(product.faqs)) {
+      product.faqs.forEach(faq => {
+        faqs.push({
+          ...faq,
+          productId: product.id,
+          productName: product.name
+        });
+      });
+    }
+  });
+}
 
 /**
  * UPLOADS DATA IN BATCHES 
@@ -35,7 +54,7 @@ async function uploadFaqs() {
     batch.set(docRef, {
       ...faq,
       timestamp: admin.firestore.FieldValue.serverTimestamp(),
-      searchQuery: faq.question.toLowerCase() // Optimized for "what can i use for" queries
+      searchQuery: (faq.q || "").toLowerCase() // Optimized for "what can i use for" queries
     });
 
     count++;
