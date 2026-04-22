@@ -10,7 +10,7 @@
     "clinical_standard": "NAFDAC & ISO 9001 Certified"
   },
   "firebase_config": {
-    "apiKey": "AIzaSyBVfMQ5gw7qHJGbB_AmmKOL3VqLlfNfDrE",
+    "apiKey": "",
     "authDomain": "kedi-pharmacy.firebaseapp.com",
     "projectId": "kedi-pharmacy",
     "storageBucket": "kedi-pharmacy.firebasestorage.app",
