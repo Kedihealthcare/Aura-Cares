@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Aura Insights | Clinical Medical Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --aura-gold: #d4a017;
+            --aura-brown: #4d231c;
+        }
+        .serif-heading { font-family: 'Playfair Display', serif; }
+        .img-transition { transition: transform 0.8s cubic-bezier(0.2, 0, 0.2, 1); }
+        .group:hover .img-transition { transform: scale(1.08); }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee { display: inline-flex; animation: marquee 40s linear infinite; }
+        .animate-marquee:hover { animation-play-state: paused; }
+
+        /* ===== BUZZ GRID — Self-contained for blog ===== */
+        @keyframes buzzIn {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .buzz-grid-blog {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        @media (max-width: 900px) {
+            .buzz-grid-blog { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 560px) {
+            .buzz-grid-blog { grid-template-columns: 1fr; }
+        }
+        .buzz-card-blog {
+            background: #fff;
+            border: 1px solid #f0ece8;
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(77,35,28,0.05);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(16px);
+            animation: buzzIn 0.45s ease forwards;
+            transition: box-shadow 0.25s, transform 0.25s;
+        }
+        .buzz-card-blog:hover {
+            box-shadow: 0 16px 40px rgba(77,35,28,0.1);
+            transform: translateY(-3px);
+        }
+        .buzz-card-blog::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #d4a017, #4d231c);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .buzz-card-blog:hover::before { opacity: 1; }
+        .buzz-stars { color: #ff9d00; font-size: 0.7rem; margin-bottom: 12px; letter-spacing: 2px; }
+        .buzz-avatar { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; border: 2px solid #d4a01755; }
+        .buzz-name { font-size: 0.85rem; font-weight: 800; color: #4d231c; }
+        .buzz-badge { color: #1d9bf0; font-size: 0.85rem; }
+        .buzz-sub { font-size: 0.7rem; color: #aaa; display: flex; align-items: center; gap: 4px; }
+        .buzz-text { font-size: 0.88rem; color: #555; line-height: 1.65; font-style: italic; margin: 14px 0 18px; }
+        .buzz-actions { display: flex; gap: 10px; padding-top: 14px; border-top: 1px solid #faf7f5; }
+        .buzz-btn-love {
+            padding: 7px 14px; border-radius: 30px; border: none;
+            background: #fff2f4; color: #f43f5e; font-size: 0.78rem;
+            font-weight: 700; cursor: pointer; display: flex; align-items: center;
+            gap: 5px; transition: 0.2s;
+        }
+        .buzz-btn-love:hover { background: #f43f5e; color: #fff; }
+        .buzz-btn-like {
+            padding: 7px 14px; border-radius: 30px; border: none;
+            background: #f0f9ff; color: #0ea5e9; font-size: 0.78rem;
+            font-weight: 700; cursor: pointer; display: flex; align-items: center;
+            gap: 5px; transition: 0.2s;
+        }
+        .buzz-btn-like:hover { background: #0ea5e9; color: #fff; }
+        .buzz-btn-share {
+            width: 34px; height: 34px; border-radius: 50%; border: none;
+            background: #f0fdf4; color: #10b981; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            margin-left: auto; transition: 0.2s;
+        }
+        .buzz-btn-share:hover { background: #10b981; color: #fff; }
+        .buzz-label {
+            background: #fdf8f6; color: #ff9d00; padding: 4px 12px;
+            border-radius: 8px; font-size: 0.65rem; font-weight: 800;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        /* Pagination */
+        #buzz-pagination { padding: 0 max(5vw, 20px); }
+        #buzz-pagination button { transition: all 0.2s; }
+        #buzz-pagination button:not([disabled]):hover { background: #4d231c !important; color: #fff !important; }
+        /* Community header tag */
+        .blog-tag {
+            display: inline-block;
+            background: #fdf3e0;
+            color: #d4a017;
+            font-size: 0.7rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 30px;
+            border: 1px solid #d4a01733;
+        }
+        /* Comment section polish */
+        .blog-comment-block {
+            background: #fff;
+            border: 1px solid #f0ece8;
+            border-radius: 18px;
+            padding: 22px 26px;
+            margin-bottom: 16px;
+            transition: box-shadow 0.2s;
+        }
+        .blog-comment-block:hover { box-shadow: 0 8px 24px rgba(77,35,28,0.06); }
+        .blog-comment-input {
+            width: 100%; padding: 14px 18px; border: 1px solid #eee;
+            border-radius: 14px; font-size: 0.9rem; font-family: inherit;
+            outline: none; transition: border 0.2s;
+        }
+        .blog-comment-input:focus { border-color: #d4a017; }
+        .blog-comment-btn {
+            background: #4d231c; color: #fff; border: none;
+            padding: 14px 28px; border-radius: 14px; font-weight: 700;
+            cursor: pointer; font-size: 0.85rem; display: flex;
+            align-items: center; gap: 8px; transition: 0.2s;
+        }
+        .blog-comment-btn:hover { background: #d4a017; }
+    </style>
+</head>
+<body class="selection:bg-yellow-100 antialiased bg-white">
+
+    <!-- Section 1: Global Health Pulse -->
+    <div class="bg-[#4d231c] text-white py-2 px-4 overflow-hidden whitespace-nowrap border-b border-white/10">
+        <div class="max-w-[1600px] mx-auto flex items-center">
+            <span class="bg-[#d4a017] text-[9px] font-black px-2 py-0.5 rounded mr-4 uppercase tracking-tighter shrink-0 text-[#4d231c]">Clinic Pulse</span>
+            <div class="text-[10px] font-medium tracking-wide flex space-x-12 animate-marquee">
+                <span>• REPRODUCTIVE: NEW FIBROID REDUCTION SUCCESS RATE HITS 94% WITH GOLDEN HYPHA PROTOCOL</span>
+                <span>• METABOLIC: DIAWELL SHOWS SIGNIFICANT GLYCEMIC STABILITY IN PHASE 2 CLINICAL TRIALS</span>
+                <span>• CARDIO: REISHI EXTRACT DEMONSTRATED TO LOWER VASCULAR INFLAMMATION BY 30%</span>
+                <span>• GENERAL: NAFDAC RENEWS GLOBAL CERTIFICATION FOR Aura Cares MASTER BUNDLES</span>
+                <span>• MEN'S HEALTH: PROSTATE STABILIZATION PACK NOW AVAILABLE FOR DIRECT CLINICAL PROCUREMENT</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200">
+        <div class="max-w-[1600px] mx-auto px-4 md:px-8">
+            <div class="flex items-center justify-between py-4 lg:py-6">
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 -ml-2 text-slate-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+
+                <div class="flex-1 lg:flex-none text-center lg:text-left">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-[900] tracking-tighter text-[#4d231c] cursor-pointer" onclick="window.location.href='index.html'">
+                        AURA<span class="text-[#d4a017]">INSIGHTS.</span>
+                    </h1>
+                </div>
+
+                <nav class="hidden lg:flex items-center space-x-8 text-[11px] font-black uppercase tracking-widest text-slate-500">
+                    <a href="index.html" class="hover:text-[#d4a017] transition">Clinic Home</a>
+                    <a href="collection.html" class="hover:text-[#d4a017] transition">Ecosystem</a>
+                    <a href="#" class="text-[#4d231c] border-b-2 border-[#d4a017] pb-1">Medical Insights</a>
+                    <a href="quiz.html" class="hover:text-[#d4a017] transition">Health Assessment</a>
+                    <a href="franchise.html" class="hover:text-[#d4a017] transition">Partnership</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <button class="hidden md:block bg-[#4d231c] text-white px-5 py-2 text-[10px] font-black uppercase tracking-widest rounded hover:bg-[#d4a017] transition" onclick="window.location.href='collection.html'">Procure Bundles</button>
+                    <button class="p-2 text-slate-900">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Section 3: Clinical Quick-Jump Bar -->
+            <div class="flex items-center space-x-2 pb-4 overflow-x-auto scrollbar-hide border-t border-slate-50 pt-4">
+                <button onclick="filterCategory('All')" class="category-btn active px-4 py-1.5 rounded-full bg-[#4d231c] text-white text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">All Research</button>
+                <button onclick="filterCategory('Metabolic')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Metabolic</button>
+                <button onclick="filterCategory('Reproductive')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Reproductive</button>
+                <button onclick="filterCategory('Cardio')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Cardiovascular</button>
+                <button onclick="filterCategory('Digestive')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Digestive</button>
+                <button onclick="filterCategory('Skeletal')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Skeletal</button>
+                <button onclick="filterCategory('Men')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Men's Health</button>
+                <button onclick="filterCategory('Women')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Women's Health</button>
+                <button onclick="filterCategory('Immunity')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Immunity</button>
+                <button onclick="filterCategory('Hepatic')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Liver Health</button>
+                <button onclick="filterCategory('Renal')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Kidney Health</button>
+                <button onclick="filterCategory('Vision')" class="category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all">Vision</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-[60] hidden" onclick="toggleMobileMenu()"></div>
+    <div id="mobile-nav" class="fixed inset-y-0 left-0 w-80 bg-white z-[70] hidden p-8 flex flex-col">
+        <h2 class="text-3xl font-black mb-12 text-[#4d231c]">AURA<span class="text-[#d4a017]">INSIGHTS.</span></h2>
+        <nav class="flex flex-col space-y-6 text-sm font-bold uppercase tracking-widest text-slate-500">
+            <a href="index.html" class="text-slate-900 border-l-4 border-[#d4a017] pl-4">Clinic Home</a>
+            <a href="collection.html" class="pl-4 hover:text-[#d4a017]">Product Collection</a>
+            <a href="blog.html" class="pl-4 text-[#d4a017]">Medical Library</a>
+            <a href="franchise.html" class="pl-4 hover:text-[#d4a017]">Business Insight</a>
+            <a href="quiz.html" class="pl-4 hover:text-[#d4a017]">Health Assessment</a>
+        </nav>
+        <div class="mt-auto pt-12 border-t border-slate-100">
+            <button class="w-full bg-[#4d231c] text-white py-4 rounded font-bold uppercase tracking-widest text-xs" onclick="window.location.href='https://wa.me/2348114270136'">Private Consultation</button>
+        </div>
+    </div>
+
+    <main class="max-w-[1600px] mx-auto px-4 md:px-8 py-8 lg:py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+            <!-- Left Side: Main Blog Content -->
+            <div class="lg:col-span-8">
+                <!-- Section 4: The Anchor Story (Hero) -->
+                <section id="hero-block" class="mb-16 lg:mb-24">
+                    <div class="group cursor-pointer" onclick="window.location.href='fibroids-guide.html'">
+                        <div class="relative aspect-video lg:aspect-[16/9] bg-[#4d231c] rounded-3xl overflow-hidden mb-6 lg:mb-10 shadow-2xl transition-all duration-500">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1440" 
+                                 alt="Fibroids Research" 
+                                 class="absolute inset-0 w-full h-full object-cover img-transition opacity-60 group-hover:scale-105 transition-transform duration-700">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#4d231c] via-[#4d231c]/20 to-transparent z-10"></div>
+                            
+                            <div class="absolute bottom-6 left-6 right-6 lg:bottom-12 lg:left-12 lg:right-12 z-20">
+                                <span class="inline-block bg-[#d4a017] text-[#4d231c] text-[10px] lg:text-xs font-black px-3 py-1 rounded-sm mb-4 tracking-widest uppercase">Reproductive Breakthrough</span>
+                                <h2 class="serif-heading text-3xl md:text-5xl lg:text-6xl text-white leading-[1.05] group-hover:text-[#d4a017] transition-colors">The non-surgical path to permanent Fibroid reduction using cellular alkalization</h2>
+                                <p class="hidden md:block text-slate-300 text-lg mt-6 max-w-2xl line-clamp-2">Exploring how the Synergy of Golden Hypha and Gynapharm creates a biological environment inhospitable to fibroid growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Secondary Featured -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                        <div class="group cursor-pointer" onclick="window.location.href='diabetes-guide.html'">
+                            <div class="flex gap-6 items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-green-200 transition-all">
+                                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=300" class="w-24 h-24 rounded-xl object-cover shrink-0">
+                                <div>
+                                    <span class="text-[9px] font-black text-[#d4a017] uppercase tracking-widest">Metabolic</span>
+                                    <h3 class="serif-heading text-lg text-[#4d231c] group-hover:text-green-600 transition-colors leading-tight mt-1">Diawell Phase 2: Pancreatic Regeneration</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group cursor-pointer" onclick="window.location.href='hypertension-guide.html'">
+                            <div class="flex gap-6 items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-red-200 transition-all">
+                                <img src="https://images.unsplash.com/photo-1628348068343-c6a848d2b634?q=80&w=300" class="w-24 h-24 rounded-xl object-cover shrink-0">
+                                <div>
+                                    <span class="text-[9px] font-black text-[#d4a017] uppercase tracking-widest">Cardio</span>
+                                    <h3 class="serif-heading text-lg text-[#4d231c] group-hover:text-red-600 transition-colors leading-tight mt-1">Stabilizing Hypertension Naturally</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Intelligence Cards Feed -->
+                <section id="news-feed" class="border-t border-slate-100 pt-16">
+                    <div class="flex items-center justify-between mb-12">
+                        <h3 id="category-title" class="text-3xl font-black tracking-tighter serif-heading italic">Latest Clinical Intelligence</h3>
+                    </div>
+                    <div id="news-container" class="space-y-16 lg:space-y-24">
+                        <!-- Dynamic Articles Injected by JS -->
+                    </div>
+                    <div class="mt-20 py-10 border-t border-slate-100 flex justify-center">
+                        <button class="bg-[#4d231c] text-white px-10 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-[#d4a017] transition shadow-xl">Explore More Insights</button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Side: Trending & Context -->
+            <aside class="lg:col-span-4 space-y-12 sticky top-32 self-start hidden lg:block">
+                <!-- Trending Block -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-xl shadow-slate-200/40">
+                    <h4 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8 flex items-center gap-2">
+                        <i class="ri-fire-fill text-orange-500"></i> Trending Intelligence
+                    </h4>
+                    <div class="space-y-10">
+                        <a href="blog-gut-health.html" class="flex gap-4 group">
+                            <div class="w-16 h-16 rounded-xl overflow-hidden shrink-0">
+                                <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=200" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <span class="text-[8px] font-black text-[#d4a017] uppercase">Digestive</span>
+                                <h5 class="text-sm font-bold text-[#4d231c] leading-tight mt-0.5 group-hover:text-red-900 transition-colors">The 21-Day Microbiome Reset Protocol</h5>
+                            </div>
+                        </a>
+                        <a href="blog-kidney-health.html" class="flex gap-4 group">
+                            <div class="w-16 h-16 rounded-xl overflow-hidden shrink-0">
+                                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=200" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <span class="text-[8px] font-black text-[#d4a017] uppercase">Renal</span>
+                                <h5 class="text-sm font-bold text-[#4d231c] leading-tight mt-0.5 group-hover:text-red-900 transition-colors">Kidney Restoration & Filtration Protocol</h5>
+                            </div>
+                        </a>
+                        <a href="blog-eye-vision.html" class="flex gap-4 group">
+                            <div class="w-16 h-16 rounded-xl overflow-hidden shrink-0">
+                                <img src="https://images.unsplash.com/photo-1580758806085-2f0feba64d1e?q=80&w=200" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <span class="text-[8px] font-black text-[#d4a017] uppercase">Vision</span>
+                                <h5 class="text-sm font-bold text-[#4d231c] leading-tight mt-0.5 group-hover:text-red-900 transition-colors">Macula Protection & Night Vision Recovery</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Specialized Guidance -->
+                <div class="bg-gradient-to-br from-[#4d231c] to-[#2a130f] rounded-3xl p-8 text-white">
+                    <span class="text-[10px] font-black uppercase tracking-widest text-[#d4a017]">Aura Assistant</span>
+                    <h4 class="serif-heading text-2xl mt-4 mb-3">Personalized Case Review</h4>
+                    <p class="text-xs text-slate-400 mb-8 leading-relaxed">Our clinical intelligence team is available for private case review and protocol personalization for chronic conditions.</p>
+                    <a href="https://wa.me/2348114270136" class="block text-center bg-[#d4a017] text-[#4d231c] font-black py-4 rounded-xl text-[10px] uppercase tracking-widest hover:bg-white transition-all">Start Private Consult</a>
+                </div>
+
+                <!-- Reach Stats -->
+                <div class="p-8 bg-slate-50 border border-slate-100 rounded-3xl">
+                    <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-6">Real-Time Impact</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-slate-600">Active Consultations</span>
+                            <span class="text-sm font-black text-[#4d231c]">1,240+</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-slate-600">Protocols Shipped</span>
+                            <span class="text-sm font-black text-[#4d231c]">840+</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-slate-600">Verified Successes</span>
+                            <span class="text-sm font-black text-[#d4a017]">250+</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ======= COMMUNITY SECTION ======= -->
+    <section id="community" style="padding:12vh 0 10vh; background:#fdf8f6;">
+        <!-- Header -->
+        <div style="text-align:center; max-width:700px; margin:0 auto 8vh; padding:0 20px;">
+            <span class="blog-tag">#AuraVerified</span>
+            <h2 class="serif-heading" style="font-size:clamp(2rem,5vw,3.5rem); color:#4d231c; margin:18px 0 14px; font-weight:900; line-height:1.1;">
+                Patient <em style="color:#d4a017; font-style:italic;">Success Network</em>
+            </h2>
+            <p style="color:#888; font-size:1rem; max-width:500px; margin:0 auto 18px;">Real recovery stories from verified Aura Cares patients across Nigeria and beyond.</p>
+            <div style="color:#ff9d00; font-size:1.1rem;">
+                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                <strong style="color:#4d231c; font-size:0.95rem; margin-left:10px;">4.9/5 · 250+ Verified Successes</strong>
+            </div>
+        </div>
+
+        <!-- Buzz Grid -->
+        <div style="max-width:1400px; margin:0 auto; padding:0 max(4vw,20px);">
+            <div id="social-gallery" class="buzz-grid-blog"></div>
+        </div>
+
+        <!-- Pagination -->
+        <div id="buzz-pagination" style="max-width:1400px; margin:0 auto;"></div>
+
+        <!-- ======= REAL-TIME COMMENT SECTION ======= -->
+        <div style="max-width:900px; margin:10vh auto 0; padding:0 max(4vw,20px);">
+            <div style="border-top:1px solid #e8e2dc; padding-top:8vh; margin-bottom:6vh;">
+                <span class="blog-tag">Community Discussion</span>
+                <h2 class="serif-heading" style="font-size:clamp(1.8rem,4vw,2.8rem); color:#4d231c; margin:16px 0 8px; font-weight:900;">
+                    Patient <em style="color:#d4a017;">Perspective</em>
+                </h2>
+                <p style="color:#888; font-size:0.9rem;">Share your experience — every story helps another patient find hope.</p>
+            </div>
+
+            <!-- Input Box -->
+            <div style="background:#fff; padding:28px 30px; border-radius:24px; border:1px solid #f0ece8; margin-bottom:6vh; box-shadow:0 12px 32px rgba(77,35,28,0.05);">
+                <div style="display:flex; gap:12px; margin-bottom:16px; flex-wrap:wrap;">
+                    <input id="comment-name" type="text" class="blog-comment-input" placeholder="Your name (optional)" style="max-width:220px; flex-shrink:0;">
+                    <input id="comment-input" type="text" class="blog-comment-input" placeholder="Share your recovery experience..." style="flex:1; min-width:200px;">
+                </div>
+                <div style="display:flex; justify-content:flex-end;">
+                    <button onclick="submitComment()" class="blog-comment-btn">
+                        Post Experience <i class="ri-send-plane-fill"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Thread — JS-rendered with blog classes -->
+            <div id="comments-thread"></div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#4d231c] text-white pt-24 pb-12 border-t border-white/5 mt-24">
+
+        <div class="max-w-[1600px] mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-24">
+                <div class="lg:col-span-6">
+                    <h2 class="text-4xl font-black italic serif text-[#d4a017] dynamic-site-name">Aura Cares</h2>
+                    <p class="text-slate-500 text-lg max-w-md mt-6">High-fidelity medical intelligence for patients and clinical partners. Natural cellular reconstruction through standardized botanical synthesis.</p>
+                    <div class="flex gap-4 mt-10">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a017] transition-all"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a017] transition-all"><i class="ri-facebook-line"></i></a>
+                        <a href="https://wa.me/2348114270136" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a017] transition-all"><i class="ri-whatsapp-line"></i></a>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-8">Clinical</h4>
+                    <ul class="space-y-4 text-xs font-bold text-slate-500 hover:text-[#d4a017]">
+                        <li><a href="collection.html">Protocol Tracker</a></li>
+                        <li><a href="quiz.html">Assessment</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-8">Ecosystem</h4>
+                    <ul class="space-y-4 text-xs font-bold text-slate-500 hover:text-[#d4a017]">
+                        <li><a href="index.html">Clinic Hub</a></li>
+                        <li><a href="franchise.html">Partnership</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-8">Governance</h4>
+                    <ul class="space-y-4 text-xs font-bold text-slate-500 hover:text-[#d4a017]">
+                        <li><a href="robots.txt">Discovery Protocol</a></li>
+                        <li><a href="sitemap.xml">Clinical Index</a></li>
+                        <li><a href="blog.html">Intelligence</a></li>
+                        <li><a href="app.json">Master Hub</a></li>
+                        <li><a href="admin.html">Admin Gate</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-white/5 text-[10px] text-slate-500 font-bold uppercase tracking-widest">
+                &copy; 2026 Aura Cares Global Healthcare • All Rights Reserved
+            </div>
+        </div>
+
+</footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+    <link rel="stylesheet" href="chatbot.css">
+
+    <script>
+        const newsData = [
+            {
+                category: 'Reproductive',
+                title: "Fibroid Disintegration: The Cellular Pathway to Non-Surgical Recovery",
+                summary: "Reviewing the synergistic effects of medicinal mushroom extracts in creating an environment that naturally starves fibroid tissue while nourishing healthy uterine cells.",
+                meta: 'INSIGHT • 2H AGO',
+                location: 'AURACLINIC',
+                url: 'fibroids-guide.html',
+                img: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=600',
+            },
+            {
+                category: 'Metabolic',
+                title: "Type 2 Diabetes: Rebuilding Pancreatic Beta-Cell Function",
+                summary: "The Diawell protocol demonstrates significant progress in restoring natural insulin production triggers by clearing intracellular metabolic debris.",
+                meta: 'CLINICAL • 5H AGO',
+                location: 'DIANETICS',
+                url: 'diabetes-guide.html',
+                img: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=600',
+            },
+            {
+                category: 'Cardio',
+                title: "Arterial Resilience: Reishi's Role in Reversing Hypertension",
+                summary: "New clinical data suggests that concentrated ganoderma lucidum extracts actively repair endothelial lining, reducing chronic vascular resistance.",
+                meta: 'RESEARCH • 8H AGO',
+                location: 'HEART WATCH',
+                url: 'hypertension-guide.html',
+                img: 'https://images.unsplash.com/photo-1628348068343-c6a848d2b634?q=80&w=600',
+            },
+            {
+                category: 'Digestive',
+                title: "Chronic Piles & Gut Wall Permeability: The Healing Protocol",
+                summary: "Addressing hemorrhoids by reducing localized inflammation and restoring the vascular integrity of the digestive tract through Aloe and Zinc bundles.",
+                meta: 'DIGESTIVE • 1D AGO',
+                location: 'GASTROINSIGHT',
+                url: 'piles-guide.html',
+                img: 'https://images.unsplash.com/photo-1559839734-2b71f1e3c770?q=80&w=600',
+            },
+            {
+                category: 'Women',
+                title: "Hormonal Harmony: Restoring the Progesterone/Estrogen Balance",
+                summary: "How Eve Comfort targets the underlying biological triggers of PMDD and menstrual irregularities without synthetic hormone replacement.",
+                meta: 'WOMEN CARE • 12H AGO',
+                location: 'FEMME VITAL',
+                url: '#',
+                img: 'https://images.unsplash.com/photo-1599447421416-3414500d18a5?q=80&w=600',
+            },
+            {
+                category: 'Men',
+                title: "Prostate Vitality and BPH: The Phytochemical Defense",
+                summary: "Lycovite and Vigor Essential clinical trials show promising results in maintaining small prostate volume and healthy urinary flow.",
+                meta: 'MEN HEALTH • 1D AGO',
+                location: 'VITAMAN',
+                url: 'prostate-guide.html',
+                img: 'https://images.unsplash.com/photo-1576091160550-217359f4ecf8?q=80&w=600',
+            },
+            {
+                category: 'Skeletal',
+                title: "Bone Density & Cartilage Repair: The Mineral Bundle Strategy",
+                summary: "Revitalizing synovial fluid production and strengthening bone matrix using high-bioavailable calcium and botanical mineral carriers.",
+                meta: 'ORTHO • 2D AGO',
+                location: 'BONE LAB',
+                url: 'arthritis-guide.html',
+                img: 'https://images.unsplash.com/photo-1576671081837-49000212a370?q=80&w=600',
+            },
+            {
+                category: 'Immunity',
+                title: "Reishi & Immunity: The King of Herbs Protocol",
+                summary: "How Ganoderma Lucidum's beta-glucans trigger deep immune system restoration — activating NK cells by 40% and modulating the HPA stress axis for sustained immune excellence.",
+                meta: 'IMMUNOLOGY • 3H AGO',
+                location: 'AURACLINIC',
+                url: 'blog-reishi-immunity.html',
+                img: 'https://images.unsplash.com/photo-1578496480157-697fc14d2e55?q=80&w=600',
+            },
+            {
+                category: 'Digestive',
+                title: "The Microbiome Reset Protocol: 21-Day Gut Restoration",
+                summary: "How Gastrifort and Fibre Plus systematically eliminate H. pylori, seed beneficial flora, and restore the gut-brain axis — achieving 87% H. pylori eradication without antibiotics.",
+                meta: 'GASTROENTEROLOGY • 6H AGO',
+                location: 'GASTROINSIGHT',
+                url: 'blog-gut-health.html',
+                img: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=600',
+            },
+            {
+                category: 'Reproductive',
+                title: "Fertility Restoration: The Hormonal Harmony Protocol",
+                summary: "How the Conception Prime pack corrects PCOS-driven anovulation, restores hormonal balance through myo-inositol, and creates the optimal biological environment for conception in 90 days.",
+                meta: 'REPRODUCTIVE • 9H AGO',
+                location: 'FEMME VITAL',
+                url: 'fertility-guide.html',
+                img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600',
+            },
+            {
+                category: 'Metabolic',
+                title: "Metabolic Reset: Beyond Calorie Counting",
+                summary: "The Aura Metabolic Resync protocol corrects insulin resistance at the receptor level, restoring leptin sensitivity and achieving an average 8kg sustained loss in 60 days — without exercise mandates.",
+                meta: 'METABOLIC • 4H AGO',
+                location: 'DIANETICS',
+                url: 'blog-weight-management.html',
+                img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=600',
+            },
+            {
+                category: 'Hepatic',
+                title: "Liver Detox & Hepatic Regeneration: The 45-Day Restore Protocol",
+                summary: "How Lirich and the Liver Restore Pack rebuild hepatocytes, reverse fatty liver disease, and restore ALT liver enzymes to clinical norms — a complete 45-day hepatic regeneration protocol.",
+                meta: 'HEPATOLOGY • 2H AGO',
+                location: 'AURACLINIC',
+                url: 'liver-guide.html',
+                img: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=600',
+            },
+            {
+                category: 'Renal',
+                title: "Kidney Restoration: The Renal Cleanse Protocol",
+                summary: "How Haemocare and the Renal Restore Pack dissolve kidney stones, reduce creatinine levels by 35%, eliminate recurrent UTI, and rebuild nephron filtration capacity in 45 days.",
+                meta: 'NEPHROLOGY • 5H AGO',
+                location: 'AURACLINIC',
+                url: 'kidney-guide.html',
+                img: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=600',
+            },
+            {
+                category: 'Vision',
+                title: "Vision Restoration: Macula Protection & Diabetic Retinopathy Protocol",
+                summary: "How Eye Beta's lutein-zeaxanthin complex and the Aura Vision Pack protect the macula from oxidative degeneration, halt retinopathy progression, and restore night vision in 60 days.",
+                meta: 'OPHTHALMOLOGY • 8H AGO',
+                location: 'AURACLINIC',
+                url: 'eye-guide.html',
+                img: 'https://images.unsplash.com/photo-1580758806085-2f0feba64d1e?q=80&w=600',
+            },
+            {
+                category: 'Skeletal',
+                title: "Bone Density & Cartilage Repair: The Mineral Bundle Strategy",
+                summary: "Revitalizing synovial fluid production and strengthening bone matrix using high-bioavailable calcium and botanical mineral carriers.",
+                meta: 'ORTHO • 2D AGO',
+                location: 'BONE LAB',
+                url: 'arthritis-guide.html',
+                img: 'https://images.unsplash.com/photo-1576671081837-49000212a370?q=80&w=600',
+            }
+        ];
+
+
+        function renderNews(data) {
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+
+            data.forEach((item, index) => {
+                const card = `
+                <div class="flex flex-col md:flex-row gap-8 lg:gap-12 group cursor-pointer" onclick="window.location.href='${item.url}'">
+                    <div class="w-full md:w-1/3 aspect-[16/10] bg-slate-100 rounded-2xl overflow-hidden relative shadow-sm border border-slate-100">
+                        <img src="${item.img}" 
+                             alt="${item.title}" 
+                             class="absolute inset-0 w-full h-full object-cover img-transition">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="text-[10px] font-black text-[#d4a017] uppercase tracking-widest">${item.category}</span>
+                            <span class="text-slate-300">/</span>
+                            <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">${item.location}</span>
+                        </div>
+                        <h3 class="serif-heading text-2xl lg:text-3xl font-bold mb-4 group-hover:text-[#d4a017] transition-colors leading-tight italic text-[#4d231c]">
+                            ${item.title}
+                        </h3>
+                        <p class="text-slate-500 text-base leading-relaxed mb-6 line-clamp-3">
+                            ${item.summary}
+                        </p>
+                        <div class="flex items-center text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                            <span>${item.meta}</span>
+                            <span class="mx-4 text-slate-100">|</span>
+                            <span class="group-hover:text-slate-900 transition flex items-center">
+                                Read Full Guide 
+                                <svg class="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                ${index < data.length - 1 ? '<div class="h-px bg-slate-100 my-10"></div>' : ''}
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        function filterCategory(cat) {
+            const btns = document.querySelectorAll('.category-btn');
+            btns.forEach((btn) => {
+                if (btn.innerText.toLowerCase() === cat.toLowerCase() || (cat === 'All' && btn.innerText.toLowerCase() === 'all research')) {
+                    btn.className = 'category-btn px-4 py-1.5 rounded-full bg-[#4d231c] text-white text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all';
+                } else {
+                    btn.className = 'category-btn px-4 py-1.5 rounded-full bg-slate-100 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-all';
+                }
+            });
+
+            if (cat === 'All') {
+                renderNews(newsData);
+                document.getElementById('hero-block').style.display = 'grid';
+            } else {
+                const filtered = newsData.filter((item) =>
+                    item.category.toLowerCase().includes(cat.toLowerCase())
+                );
+                renderNews(filtered);
+                document.getElementById('hero-block').style.display = 'none';
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleMobileMenu() {
+            const nav = document.getElementById('mobile-nav');
+            const overlay = document.getElementById('mobile-overlay');
+            nav.classList.toggle('hidden');
+            overlay.classList.toggle('hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderNews(newsData);
+        });
+    </script>
+</body>
+</html>
+

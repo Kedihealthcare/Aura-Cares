@@ -1,0 +1,4653 @@
+﻿{
+  "app_config": {
+    "name": "Aura Cares Global Ecosystem",
+    "version": "2.2.0",
+    "description": "Standardized Clinical Protocol & Natural Supplement Platform featuring Aura Cares Premium.",
+    "theme_color": "#d4a017",
+    "background_color": "#ffffff",
+    "brand_color": "#ff9d00",
+    "secondary_color": "#4d231c",
+    "clinical_standard": "NAFDAC & ISO 9001 Certified"
+  },
+  "firebase_config": {
+    "apiKey": "AIzaSyBVfMQ5gw7qHJGbB_AmmKOL3VqLlfNfDrE",
+    "authDomain": "aura-cares.firebaseapp.com",
+    "projectId": "aura-cares",
+    "storageBucket": "aura-cares.firebasestorage.app",
+    "messagingSenderId": "113444919872",
+    "appId": "1:113444919872:web:ac71879c9694e8450ddda5",
+    "measurementId": "G-ZKBEC3EM8X",
+    "firestore": {
+      "collection": "orders",
+      "region": "us-central1",
+      "persistence": true
+    }
+  },
+  "website_structure": {
+    "base_url": "https://auracares.vercel.app/",
+    "support_contact": "+2348114270136",
+    "catalog_title": "Solution Ecosystem",
+    "success_header": "User Success Stories"
+  },
+  "product_catalog": [
+    {
+      "id": "reishi",
+      "name": "Reishi",
+      "price": 20000,
+      "img": "Reishi.png",
+      "use": "Immune System & BP",
+      "clinical_name": "Ganoderma Lucidum",
+      "keywords": [
+        "Aura Cares Reishi",
+        "Ganoderma Lucidum",
+        "Immune System Booster",
+        "Blood Pressure Regulator",
+        "Stress Relief",
+        "King of Herbs",
+        "Longevity Supplement",
+        "Natural Adaptogen",
+        "Detoxification",
+        "Antioxidant"
+      ],
+      "indications": [
+        {
+          "icon": "ri-shield-flash-fill",
+          "title": "Immunity",
+          "desc": "Activates natural killer cells for defense."
+        },
+        {
+          "icon": "ri-pulse-line",
+          "title": "BP Balance",
+          "desc": "Naturally regulates blood pressure flow."
+        },
+        {
+          "icon": "ri-rest-time-line",
+          "title": "Stress Relief",
+          "desc": "Calms the nervous system for deep sleep."
+        },
+        {
+          "icon": "ri-drop-line",
+          "title": "Detox",
+          "desc": "Supports liver enzyme filtration."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Chief Obi",
+          "loc": "EN",
+          "quote": "My blood pressure is finally stable after years of medication."
+        },
+        {
+          "n": "Sarah J.",
+          "loc": "Lagos",
+          "quote": "No more recurring colds every rainy season. Reishi works."
+        }
+      ],
+      "trivia": [
+        "Reishi is often called the 'Mushroom of Immortality' in ancient clinical texts.",
+        "It acts as a smart modulator, down-regulating overactive immune responses like allergies."
+      ],
+      "faqs": [
+        {
+          "q": "How does Reishi support heart health and blood pressure?",
+          "a": "Aura Cares Reishi contains specific triterpenes that help widen coronary arteries and improve blood flow, while naturally balancing blood viscosity to support healthy pressure levels."
+        },
+        {
+          "q": "Is Reishi safe for daily long-term use?",
+          "a": "Yes. As a 'Superior Adaptogen,' Reishi is non-toxic and helps the body adapt to stressors without overstimulating any specific organ, making it ideal for continuous immune support."
+        },
+        {
+          "q": "Can Reishi help with chronic fatigue or insomnia?",
+          "a": "Absolutely. Reishi modulates the nervous system, helping to reduce stress hormones and promote deeper, more restorative sleep over time."
+        },
+        {
+          "q": "How does Reishi bolster the immune system?",
+          "a": "It actively stimulates the production of macrophages and natural killer cells, establishing a strong defense protocol against recurring infections."
+        },
+        {
+          "q": "Is it beneficial for liver detoxification?",
+          "a": "Yes, Reishi supports liver enzyme production, aiding the body in efficiently filtering out environmental toxins and metabolic waste."
+        },
+        {
+          "q": "What is the recommended daily dosage for general wellness?",
+          "a": "For maintenance and overall immune support, we recommend taking 3 capsules twice daily. For specific chronic issues, consult our detailed clinical protocol."
+        }
+      ]
+    },
+    {
+      "id": "gastrifort",
+      "name": "Gastrifort",
+      "price": 20000,
+      "img": "Gastrifort.png",
+      "use": "Stomach Ulcer & Bloating",
+      "clinical_name": "Royal Jelly & Herbal Synthesis",
+      "keywords": [
+        "Aura Cares Gastrifort",
+        "Stomach Ulcer Remedy",
+        "Acid Reflux Treatment",
+        "Bloating Relief",
+        "Digestive Health",
+        "Gastric Repair",
+        "Royal Jelly",
+        "Herbal Ulcer Cure",
+        "Gut Shield",
+        "Dyspepsia Relief"
+      ],
+      "indications": [
+        {
+          "icon": "ri-fire-line",
+          "title": "Ulcer Relief",
+          "desc": "Soothes chronic gastric ulcers."
+        },
+        {
+          "icon": "ri-drop-line",
+          "title": "Digestion",
+          "desc": "Helps chronic dyspepsia."
+        },
+        {
+          "icon": "ri-windy-fill",
+          "title": "Acid Reflux",
+          "desc": "Balances stomach acidity safely."
+        },
+        {
+          "icon": "ri-service-line",
+          "title": "Appetite",
+          "desc": "Restores healthy eating drives."
+        },
+        {
+          "icon": "ri-shield-flash-line",
+          "title": "Gut Shield",
+          "desc": "Coats stomach lining actively."
+        },
+        {
+          "icon": "ri-mental-health-line",
+          "title": "Bloating",
+          "desc": "Calms post-meal distention."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Obi O.",
+          "loc": "NG",
+          "quote": "\"Cured my severe ulcer pains.\""
+        },
+        {
+          "n": "Anna M.",
+          "loc": "CA",
+          "quote": "\"No more heartburn after dinner.\""
+        }
+      ],
+      "trivia": [
+        "The stomach lining regenerates rapidly, but needs alkaline herbs to heal.",
+        "H. pylori infections are often aggravated by over-the-counter antacids."
+      ],
+      "faqs": [
+        {
+          "q": "How long does it take to see results for chronic ulcers?",
+          "a": "While initial relief often occurs within 7-14 days, complete systemic healing of the stomach lining typically requires a consistent 40-day protocol (Intensive Cycle) to prevent recurrence."
+        },
+        {
+          "q": "Is Gastrifort safe to take alongside other medications?",
+          "a": "Yes, Gastrifort is a natural herbal synthesis. However, we recommend a 2-hour window between taking herbal supplements and synthetic drugs to ensure optimal absorption of both."
+        },
+        {
+          "q": "Can it help with chronic acid reflux (GERD)?",
+          "a": "Absolutely. Gastrifort works by balancing stomach pH levels and strengthening the esophageal sphincter naturally, addressing the root cause of reflux rather than just masking symptoms."
+        },
+        {
+          "q": "What is the recommended dosage for severe bloating?",
+          "a": "For acute bloating, we recommend 3 capsules twice daily after meals. For maintenance of digestive health, 2 capsules twice daily is sufficient."
+        },
+        {
+          "q": "Are there any dietary restrictions while using Gastrifort?",
+          "a": "For maximum efficacy, we recommend avoiding extremely spicy foods and caffeinated beverages during the first 14 days of the protocol to allow the herbal shield to coat the stomach lining effectively."
+        },
+        {
+          "q": "Does Gastrifort contain any artificial preservatives?",
+          "a": "No. Aura Cares Gastrifort is formulated with 100% natural herbal extracts and Royal Jelly, processed using cold-synthesis technology to preserve medicinal enzymes without chemical additives."
+        },
+        {
+          "q": "Can I use Gastrifort if I have H. pylori?",
+          "a": "Yes, Gastrifort's herbal synthesis actively helps neutralize an environment that fosters H. pylori by restoring the stomach's natural mucosal defense."
+        }
+      ]
+    },
+    {
+      "id": "eye-beta",
+      "name": "Eye Beta",
+      "price": 25000,
+      "img": "Eye Beta.png",
+      "use": "Glaucoma & Vision",
+      "clinical_name": "Ocular Carotenoids",
+      "keywords": [
+        "Aura Cares Eye Beta",
+        "Glaucoma Treatment",
+        "Vision Support",
+        "Ocular Carotenoids",
+        "Cataract Prevention",
+        "Night Vision Improvement",
+        "Blue Light Protection",
+        "Eye Strain Relief",
+        "Lutein Supplement",
+        "Retinal Health"
+      ],
+      "indications": [
+        {
+          "icon": "ri-eye-2-fill",
+          "title": "Vision Clarity",
+          "desc": "Lutein matrix for high-definition sight."
+        },
+        {
+          "icon": "ri-computer-line",
+          "title": "Blue Light",
+          "desc": "Blocks screen radiation damage."
+        },
+        {
+          "icon": "ri-moon-cloudy-line",
+          "title": "Night Vision",
+          "desc": "Sharpens vision in low-light environments."
+        },
+        {
+          "icon": "ri-shield-flash-line",
+          "title": "Glaucoma",
+          "desc": "Supports healthy intra-ocular pressure."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Mr. David",
+          "loc": "UK",
+          "quote": "Night driving is much safer now; the glare doesn't bother me."
+        },
+        {
+          "n": "Linda W.",
+          "loc": "Port Harcourt",
+          "quote": "My eye strain from using a computer all day has vanished."
+        }
+      ],
+      "trivia": [
+        "The macula of the eye requires a high density of carotenoids to filter harmful UV light.",
+        "Eye Beta uses blueberry extracts to strengthen fragile retinal capillaries."
+      ],
+      "faqs": [
+        {
+          "q": "Can Eye Beta help with blurred vision caused by blue light?",
+          "a": "Yes. Eye Beta is rich in Lutein and Zeaxanthin, which act as natural internal filters against high-energy blue light from screens, reducing oxidative stress on the retina."
+        },
+        {
+          "q": "How does it support Glaucoma management?",
+          "a": "Eye Beta improves ocular micro-circulation and supports healthy intraocular pressure levels by nourishing the optic nerve with essential carotenoids."
+        },
+        {
+          "q": "Is it helpful for night blindness?",
+          "a": "Absolutely. It enhances the production of rhodopsin in the eyes, which significantly improves visual acuity in low-light conditions."
+        },
+        {
+          "q": "Can it prevent cataracts from worsening?",
+          "a": "While it is not a replacement for surgery, the powerful antioxidants in Eye Beta slow down the oxidative degradation of the eye lens associated with cataracts."
+        },
+        {
+          "q": "How long should I use Eye Beta for noticeable results?",
+          "a": "Consistent use for 30 to 60 days is recommended for measurable improvements in visual strain and clarity."
+        },
+        {
+          "q": "Are there any side effects?",
+          "a": "Eye Beta is a purely natural carotenoid blend and has no known adverse side effects when taken at the recommended daily dosage."
+        }
+      ]
+    },
+    {
+      "id": "constilease",
+      "name": "Constilease",
+      "price": 22000,
+      "img": "Constilease.png",
+      "use": "Constipation & Pile",
+      "clinical_name": "Radix Astragali Compound",
+      "keywords": [
+        "Aura Cares Constilease",
+        "Constipation Relief",
+        "Pile Treatment",
+        "Digestive Cleanser",
+        "Radix Astragali",
+        "Bowel Movement",
+        "Toxin Flush",
+        "Acne Control",
+        "Weight Loss Support",
+        "Natural Laxative"
+      ],
+      "indications": [
+        {
+          "icon": "ri-rest-time-line",
+          "title": "Morning Relief",
+          "desc": "Ensures effortless, daily bowel movements."
+        },
+        {
+          "icon": "ri-fire-line",
+          "title": "Pile Relief",
+          "desc": "Soothes and shrinks hemorrhoid discomfort."
+        },
+        {
+          "icon": "ri-sun-cloudy-line",
+          "title": "Skin Clarity",
+          "desc": "Flushes toxins that cause facial acne."
+        },
+        {
+          "icon": "ri-shield-flash-line",
+          "title": "Gut Cleanse",
+          "desc": "Resets the intestinal microbiome of waste."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Mrs. Ngozi",
+          "loc": "Lagos",
+          "quote": "I had chronic pile for months; Constilease provided real, gentle relief."
+        },
+        {
+          "n": "Samuel O.",
+          "loc": "IB",
+          "quote": "No more bloating or pain. I feel light and my skin is clearer."
+        }
+      ],
+      "trivia": [
+        "Constipation causes metabolic toxins to be re-absorbed into your bloodstream.",
+        "Radix Astragali in Constilease provides 'Qi' energy to the colon for natural movement."
+      ],
+      "faqs": [
+        {
+          "q": "How quickly does Constilease relieve constipation?",
+          "a": "Most users experience gentle, cramp-free bowel movements within 12 to 24 hours of taking Constilease."
+        },
+        {
+          "q": "Is Constilease safe for chronic piles?",
+          "a": "Yes, by softening the stool and reducing bowel transit time, it removes the strain that exacerbates hemorrhoids and piles."
+        },
+        {
+          "q": "Will it cause dependency like chemical laxatives?",
+          "a": "No. Constilease works by naturally stimulating the peristalsis (muscle contractions) of your colon rather than irritating it, preventing dependency."
+        },
+        {
+          "q": "Can it help clear skin acne?",
+          "a": "Yes! By efficiently flushing metabolic toxins out of the gastrointestinal tract, it prevents them from being excreted through the skin as acne."
+        },
+        {
+          "q": "Should I take it before or after meals?",
+          "a": "We recommend taking Constilease with warm water immediately after your final meal of the day for an effective morning cleanse."
+        },
+        {
+          "q": "Does it cause severe stomach cramps?",
+          "a": "Unlike harsh stimulant laxatives, Constilease is formulated with Radix Astragali to soothe the digestive tract, resulting in a painless flush."
+        }
+      ]
+    },
+    {
+      "id": "magilim",
+      "name": "Magilim",
+      "price": 25000,
+      "img": "Magilim.png",
+      "use": "Weight Loss & Sugar",
+      "clinical_name": "Konjac Glucomannan Extract",
+      "keywords": [
+        "Aura Cares Magilim",
+        "Weight Loss Supplement",
+        "Sugar Level Control",
+        "Konjac Glucomannan",
+        "Appetite Suppressant",
+        "Fat Burner",
+        "Cholesterol Management",
+        "Fiber Supplement",
+        "Satiety",
+        "Metabolic Boost"
+      ],
+      "indications": [
+        {
+          "icon": "ri-flashlight-line",
+          "title": "Weight Loss",
+          "desc": "Natural satiety fiber stops overeating."
+        },
+        {
+          "icon": "ri-fire-line",
+          "title": "Sugar Buffer",
+          "desc": "Slows carbohydrate absorption into blood."
+        },
+        {
+          "icon": "ri-drop-fill",
+          "title": "Fat Burner",
+          "desc": "Encourages the metabolism to use stored fat."
+        },
+        {
+          "icon": "ri-shield-user-line",
+          "title": "Satiety",
+          "desc": "Creates a 'full' feeling to stop snack cravings."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Blessing J.",
+          "loc": "PH",
+          "quote": "I lost 4kg in my first month without starving myself."
+        },
+        {
+          "n": "Mr. Kola",
+          "loc": "Abuja",
+          "quote": "My sugar levels stay stable even when I eat moderate carbs."
+        }
+      ],
+      "trivia": [
+        "Konjac Glucomannan can expand up to 50 times its weight in water.",
+        "Clinical satiety prevents 'yo-yo' dieting by teaching the body portion control."
+      ],
+      "faqs": [
+        {
+          "q": "How does Magilim aid in weight loss?",
+          "a": "Magilim contains Konjac Glucomannan, which expands naturally in the stomach to create a sense of fullness (satiety) and slows down the absorption of fats and sugars from your diet."
+        },
+        {
+          "q": "Can I take Magilim if I have high blood sugar?",
+          "a": "Yes. Magilim is excellent for glucose management as it buffers the absorption of carbohydrates, preventing sharp spikes in blood sugar levels after meals."
+        },
+        {
+          "q": "Do I need to follow a strict diet while taking Magilim?",
+          "a": "While Magilim is a powerful appetite suppressant, combining it with a balanced, low-carb diet ensures the fastest and most sustainable weight management results."
+        },
+        {
+          "q": "How much water should I drink with Magilim?",
+          "a": "It is critical to drink at least one full glass of water with each dose, as the Konjac Glucomannan needs hydration to expand and function properly in the digestive tract."
+        },
+        {
+          "q": "Can Magilim help with cholesterol levels?",
+          "a": "Yes. The soluble fiber in Magilim binds to cholesterol in the digestive system, safely expelling it before it can enter the bloodstream."
+        },
+        {
+          "q": "How soon will I notice changes in my appetite?",
+          "a": "Most users report a significant reduction in cravings and overall appetite within the first 3 to 5 days of starting the protocol."
+        }
+      ]
+    },
+    {
+      "id": "diawell",
+      "name": "Diawell",
+      "price": 25000,
+      "img": "DIAWELL.png",
+      "use": "Diabetes & Glucose",
+      "clinical_name": "Momordica Charantia Synthesis",
+      "keywords": [
+        "Aura Cares Diawell",
+        "Diabetes Treatment",
+        "Blood Sugar Regulator",
+        "Momordica Charantia",
+        "Pancreas Health",
+        "Insulin Sensitivity",
+        "Diabetic Neuropathy Relief",
+        "Glucose Buffer",
+        "Metabolic Solution",
+        "Natural Diabetes Care"
+      ],
+      "indications": [
+        {
+          "icon": "ri-pulse-line",
+          "title": "Sugar Control",
+          "desc": "Stabilizes insulin and glucose levels."
+        },
+        {
+          "icon": "ri-shield-plus-line",
+          "title": "Pancreas",
+          "desc": "Nourishes the beta cells for insulin production."
+        },
+        {
+          "icon": "ri-flashlight-line",
+          "title": "Neuropathy",
+          "desc": "Relieves diabetic tingling and numbness."
+        },
+        {
+          "icon": "ri-drop-fill",
+          "title": "Energy Recovery",
+          "desc": "Ensures cells get the sugar they need for fuel."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Samuel K.",
+          "loc": "UK",
+          "quote": "The constant prickling in my feet from neuropathy is gone."
+        },
+        {
+          "n": "Maji Y.",
+          "loc": "KD",
+          "quote": "My fasting sugar dropped from 9.8 to 5.4 in three weeks."
+        }
+      ],
+      "trivia": [
+        "Momordica Charantia (Bitter Melon) contains a peptide called p-insulin.",
+        "Diawell assists in the regeneration of dormant insulin receptors."
+      ],
+      "faqs": [
+        {
+          "q": "How does Diawell support pancreatic health?",
+          "a": "Diawell is formulated with Momordica Charantia to naturally stimulate pancreatic beta cells and improve insulin sensitivity at the cellular level."
+        },
+        {
+          "q": "Can Diawell be used to manage diabetic neuropathy?",
+          "a": "Yes. By stabilizing blood glucose levels, Diawell helps reduce the oxidative stress on nerves, which is the primary cause of diabetic numbness and tingling."
+        },
+        {
+          "q": "Is Diawell suitable for Type 2 Diabetes management?",
+          "a": "Absolutely. It is specifically designed to assist with metabolizing glucose more efficiently, making it an excellent protocol for Type 2 management."
+        },
+        {
+          "q": "Can I safely combine Diawell with synthetic insulin?",
+          "a": "Since Diawell naturally lowers blood sugar, we advise monitoring your glucose levels closely and leaving a 2-hour gap between botanical and synthetic medications."
+        },
+        {
+          "q": "Does Diawell help with chronic fatigue associated with diabetes?",
+          "a": "Yes. By ensuring glucose is successfully transported into the cells for energy instead of lingering in the bloodstream, Diawell restores systemic vitality."
+        },
+        {
+          "q": "Are there any side effects like sudden sugar crashes?",
+          "a": "No, because Diawell acts as a natural buffer, it stabilizes rather than aggressively spiking or dropping blood sugar levels, preventing typical crashes."
+        }
+      ]
+    },
+    {
+      "id": "gynapharm",
+      "name": "Gynapharm",
+      "price": 25000,
+      "img": "GYNAPHARM.png",
+      "use": "Pelvic Inflammatory & UTI",
+      "clinical_name": "Uterine Botanical Guard",
+      "keywords": [
+        "Aura Cares Gynapharm",
+        "Uterine Health",
+        "Fibroid Shrinking",
+        "Pelvic Inflammatory Disease",
+        "UTI Remedy",
+        "Infection Treatment",
+        "Vaginitis Care",
+        "Hormonal Balance",
+        "Female Vitality",
+        "Botanical Reproductive Guard"
+      ],
+      "indications": [
+        {
+          "icon": "ri-women-line",
+          "title": "Uterine Health",
+          "desc": "Supports the shrinking of fibroids and cysts."
+        },
+        {
+          "icon": "ri-shield-flash-line",
+          "title": "Infection Stop",
+          "desc": "Strong defense against recurring UTIs and PID."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Pelvic Flow",
+          "desc": "Clears blood stasis and inflammatory waste."
+        },
+        {
+          "icon": "ri-magic-line",
+          "title": "Hormones",
+          "desc": "Balances the endocrine system for fertility."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Fatima S.",
+          "loc": "Kano",
+          "quote": "My scan showed my fibroids shrunk significantly after Gynapharm."
+        },
+        {
+          "n": "Alice V.",
+          "loc": "US",
+          "quote": "No more recurring infections or pelvic discomfort."
+        }
+      ],
+      "trivia": [
+        "Gynapharm uses target-specific herbs that only activate in the pelvic region.",
+        "Pelvic inflammatory issues are often caused by 'internal dampness' in clinical terms."
+      ],
+      "faqs": [
+        {
+          "q": "Can Gynapharm help with uterine fibroids?",
+          "a": "Yes. Gynapharm is designed to improve pelvic circulation and hormonal balance, which can help in naturally inhibiting the growth of fibroids and supporting their reduction over time."
+        },
+        {
+          "q": "Is Gynapharm effective for recurring UTIs?",
+          "a": "Absolutely. It acts as a botanical guard, clearing inflammatory toxins from the reproductive tract and strengthening the local immune response against infections."
+        },
+        {
+          "q": "Will Gynapharm help regulate my menstrual cycle?",
+          "a": "Yes, its botanical synthesis is specifically tailored to balance female hormones, assisting in resolving irregular cycles and severe dysmenorrhea."
+        },
+        {
+          "q": "Can I use Gynapharm to alleviate Pelvic Inflammatory Disease (PID)?",
+          "a": "Gynapharm is an excellent herbal protocol for managing PID by naturally reducing deep pelvic inflammation and clearing out persistent residual infections."
+        },
+        {
+          "q": "Is it safe to take Gynapharm while pregnant?",
+          "a": "As an advanced botanical protocol specifically formulated to shift hormonal and circulatory balances, it is generally NOT recommended during pregnancy."
+        },
+        {
+          "q": "How long is the recommended protocol for severe infections?",
+          "a": "For chronic or recurring pelvic infections, a full Intensive Cycle lasting 30 to 40 days is recommended to ensure the complete clearance of toxins."
+        }
+      ]
+    },
+    {
+      "id": "golden-hypha",
+      "name": "Golden Hypha",
+      "price": 25000,
+      "img": "Golden-Hypha.png",
+      "use": "Advanced Immune / Tumors",
+      "clinical_name": "Flammulina Velutipes Synthesis",
+      "keywords": [
+        "Aura Cares Golden Hypha",
+        "Immune System Support",
+        "Tumor Prevention",
+        "Flammulina Velutipes",
+        "Hepatitis Remedy",
+        "Cancer Support Supplement",
+        "Organ Detox",
+        "Advanced Biological Shield",
+        "White Blood Cell Boost",
+        "Polysaccharide Supplement"
+      ],
+      "indications": [
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "Immune Shield",
+          "desc": "Boosts CD4+ T-cell count for systemic defense."
+        },
+        {
+          "icon": "ri-flask-line",
+          "title": "Tumor Guard",
+          "desc": "Inhibits abnormal biological cell growth."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Hepatitis Support",
+          "desc": "Regenerates hepatic cells and reduces inflammation."
+        },
+        {
+          "icon": "ri-bubble-chart-fill",
+          "title": "Detox",
+          "desc": "Targets heavy metals and environmental toxins."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Mrs. Theresa",
+          "loc": "PH",
+          "quote": "My Hepatitis viral load dropped to undetectable levels after Golden Hypha."
+        },
+        {
+          "n": "Ayo D.",
+          "loc": "NG",
+          "quote": "The tumor in my wrist has visibly reduced in size."
+        }
+      ],
+      "trivia": [
+        "Golden Hypha uses the Flammulina Velutipes mushroom, prized in clinical oncology support.",
+        "It assists the body in naturally inducing apoptosis in damaged or harmful cells."
+      ],
+      "faqs": [
+        {
+          "q": "How does Golden Hypha boost the immune system?",
+          "a": "Golden Hypha significantly increases the body's production of CD4+ T-cells and white blood cells, strengthening the biological shield against pathogens."
+        },
+        {
+          "q": "Can it be used alongside chemotherapy?",
+          "a": "Yes, it is often utilized to protect healthy cells, support liver function, and minimize the severe fatigue associated with harsh radiation/chemotherapy treatments."
+        },
+        {
+          "q": "Is it beneficial for Hepatitis recovery?",
+          "a": "Absolutely. Flammulina Velutipes actively regenerates damaged hepatic cells and reduces liver inflammation, aiding in comprehensive liver recovery."
+        },
+        {
+          "q": "Does it target benign tumors?",
+          "a": "Its potent polysaccharides induce apoptosis (programmed cell death) in abnormal cells, assisting the body in naturally shrinking benign growths."
+        },
+        {
+          "q": "How long is a standard immune-boosting protocol?",
+          "a": "For chronic immune suppression, a continuous 3-month Intensive Protocol is highly recommended."
+        },
+        {
+          "q": "Is it safe for daily prophylactic use?",
+          "a": "Yes, taking half the therapeutic dose daily is an excellent preventative measure for maintaining peak cellular defense."
+        }
+      ]
+    },
+    {
+      "id": "lycovite",
+      "name": "Lycovite",
+      "price": 25000,
+      "img": "LYCOVITE.jpg",
+      "use": "Prostate Health & Vitality",
+      "clinical_name": "Lycopersicon Esculentum Extract",
+      "keywords": [
+        "Aura Cares Lycovite",
+        "Prostate Health",
+        "Vitality Supplement",
+        "Lycopersicon Esculentum",
+        "Lycopene",
+        "Male Health",
+        "Antioxidant Protection",
+        "Cardiac Care",
+        "Urine Flow Support",
+        "PSA Level Management"
+      ],
+      "indications": [
+        {
+          "icon": "ri-shield-flash-fill",
+          "title": "Prostate Guard",
+          "desc": "Targets prostate tissue to neutralize oxidation."
+        },
+        {
+          "icon": "ri-water-flash-fill",
+          "title": "Urinary Flow",
+          "desc": "Relieves pressure for effortless night sleeping."
+        },
+        {
+          "icon": "ri-dashboard-fill",
+          "title": "PSA Regulation",
+          "desc": "Helps normalize Prostate-Specific Antigen markers."
+        },
+        {
+          "icon": "ri-heart-line",
+          "title": "Cardiac Care",
+          "desc": "Lycopene protects the arteries and heart muscle."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Elder Paul",
+          "loc": "UK",
+          "quote": "No more waking up 4 times a night. My flow is back to normal."
+        },
+        {
+          "n": "Dr. Chima",
+          "loc": "Lagos",
+          "quote": "Highly recommended for all men over 40 as a preventative shield."
+        }
+      ],
+      "trivia": [
+        "Lycopene is the specific carotenoid that gives tomatoes their red color and medicinal power.",
+        "Clinical studies show Lycovite reduces the risk of age-related BPH significantly."
+      ],
+      "faqs": [
+        {
+          "q": "How does Lycovite protect the prostate?",
+          "a": "Lycovite provides a high concentration of Lycopene, a powerful antioxidant that specifically targets prostate tissue to neutralize free radicals and inhibit abnormal cell growth."
+        },
+        {
+          "q": "Can Lycovite help with frequent nighttime urination?",
+          "a": "Yes. By supporting healthy prostate size and reducing inflammatory pressure on the urethra, Lycovite helps improve urine flow and reduces the urge to urinate overnight."
+        },
+        {
+          "q": "Is Lycovite useful for managing elevated PSA levels?",
+          "a": "Yes, the Lycopersicon Esculentum Extract actively supports the normalization of Prostate-Specific Antigen (PSA) markers through sustained antioxidant action."
+        },
+        {
+          "q": "Does Lycovite offer benefits beyond prostate health?",
+          "a": "Absolutely. Lycopene is universally excellent for cardiovascular health, protecting the heart and maintaining healthy blood vessels alongside prostate care."
+        },
+        {
+          "q": "Is it safe to use preventatively before prostate issues arise?",
+          "a": "Yes! We highly recommend starting Lycovite proactively in your 40s to provide protective cellular shielding before the onset of age-related benign prostatic hyperplasia (BPH)."
+        },
+        {
+          "q": "What is the recommended protocol for treating enlarged prostate symptoms?",
+          "a": "For symptomatic relief, the protocol requires taking 2 capsules twice daily until PSA levels and urinary flow naturally normalize."
+        }
+      ]
+    },
+    {
+      "id": "cordy-royal-jelly",
+      "name": "Cordy Royal Jelly",
+      "price": 25000,
+      "img": "Cordy Royal Jelly.png",
+      "use": "Nervous System & Memory",
+      "clinical_name": "Cordyceps & Royal Jelly",
+      "keywords": [
+        "Aura Cares Cordy Royal Jelly",
+        "Nervous System Health",
+        "Memory Boost",
+        "Cordyceps",
+        "Royal Jelly",
+        "Anti-Aging",
+        "Fatigue Relief",
+        "Hormonal Balance",
+        "Energy Vitality",
+        "Cellular Rejuvenation"
+      ],
+      "indications": [
+        {
+          "icon": "ri-mental-health-fill",
+          "title": "Memory Boost",
+          "desc": "Sharpens focus and long-term recall synaptic speed."
+        },
+        {
+          "icon": "ri-flashlight-line",
+          "title": "Fatigue Flush",
+          "desc": "Eliminates deep cellular lethargy and brain fog."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Neural Health",
+          "desc": "Protects and nourishes the central nervous system."
+        },
+        {
+          "icon": "ri-magic-line",
+          "title": "Anti-Aging",
+          "desc": "10-HDA lipids promote glowing skin and organ youth."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Sarah V.",
+          "loc": "US",
+          "quote": "My focus at work has doubled, and I no longer feel drained by 2pm."
+        },
+        {
+          "n": "Obi M.",
+          "loc": "NG",
+          "quote": "My skin looks younger and my memory is much sharper now."
+        }
+      ],
+      "trivia": [
+        "Royal Jelly is the exclusive diet of the Queen Bee, responsible for her exceptional longevity.",
+        "Cordyceps increases the body's ATP production, the core molecule of energy."
+      ],
+      "faqs": [
+        {
+          "q": "How does Cordy Royal Jelly improve memory?",
+          "a": "By increasing cerebral blood flow and delivering oxygen directly to brain tissues, it enhances synaptic connectivity and overall cognitive focus."
+        },
+        {
+          "q": "Is it effective for chronic fatigue syndrome?",
+          "a": "Yes, the combination of Cordyceps and Royal Jelly naturally elevates ATP production in cells, eliminating deep-seated lethargy without caffeine crashes."
+        },
+        {
+          "q": "Can it help reduce cholesterol levels?",
+          "a": "Cordy Royal Jelly actively lowers triglycerides while boosting HDL (good cholesterol), ensuring cleaner arteries and cardiovascular health."
+        },
+        {
+          "q": "How does it affect the aging process?",
+          "a": "Royal Jelly is rich in 10-HDA, a unique anti-aging lipid that promotes cellular regeneration and delays the visible and internal markers of aging."
+        },
+        {
+          "q": "Is it safe for individuals with high blood pressure?",
+          "a": "Absolutely. It regulates blood pressure gently by dilating blood vessels and calming the central nervous system."
+        },
+        {
+          "q": "When is the best time to take Cordy Royal Jelly?",
+          "a": "For maximum energy and cognitive benefits, we recommend taking it early in the morning before breakfast."
+        }
+      ]
+    },
+    {
+      "id": "seven-layer-sanitary",
+      "name": "7 Layer Sanitary",
+      "price": 6500,
+      "img": "7 layer-sanitary-pad.png",
+      "use": "Menstrual Cramps & Hygiene",
+      "clinical_name": "Anion Technology Strip",
+      "keywords": [
+        "Aura Cares 7 Layer Sanitary",
+        "Sanitary Pads",
+        "Anion Technology",
+        "Menstrual Cramp Relief",
+        "Odor Control",
+        "Antibacterial Pads",
+        "Magnetic Energy",
+        "Hygienic Menstrual Care",
+        "High Absorption",
+        "Female Wellness"
+      ],
+      "indications": [
+        {
+          "icon": "ri-user-heart-line",
+          "title": "Anions",
+          "desc": "Emits negative ions for health."
+        },
+        {
+          "icon": "ri-water-flash-fill",
+          "title": "Absorption",
+          "desc": "Locks in liquid completely."
+        },
+        {
+          "icon": "ri-shield-star-fill",
+          "title": "Anti-Odor",
+          "desc": "Neutralizes molecular smells."
+        },
+        {
+          "icon": "ri-virus-line",
+          "title": "Anti-bacterial",
+          "desc": "Stops yeast proliferation."
+        },
+        {
+          "icon": "ri-women-line",
+          "title": "Comfort",
+          "desc": "Breathable, non-irritating base."
+        },
+        {
+          "icon": "ri-fire-line",
+          "title": "Cramps",
+          "desc": "Far-infrared heat reduces pain."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Zara N.",
+          "loc": "UAE",
+          "quote": "\"It completely removed my severe cycle cramps.\""
+        },
+        {
+          "n": "Joy E.",
+          "loc": "NG",
+          "quote": "\"Dryness and comfort all day long. Unmatched.\""
+        }
+      ],
+      "trivia": [
+        "The anion strip generates up to 6,000 negative ions per cubic cm to suppress flora.",
+        "It physically draws out inflammatory toxins during standard menstrual flow.",
+        "Poor quality pads are a leading cause of recurring secondary pelvic infections."
+      ],
+      "faqs": [
+        {
+          "q": "Does it help with severe menstrual pain?",
+          "a": "Yes, the embedded magnetic core and anion strip generate far-infrared heat that gently diffuses uterine contractions and radically reduces cramp intensity."
+        },
+        {
+          "q": "How does the Anion technology eliminate odors?",
+          "a": "The strip emits up to 6,000 negative ions per cubic cm, physically neutralizing the bacteria responsible for foul menstrual odors."
+        },
+        {
+          "q": "Is it suitable for sensitive skin?",
+          "a": "The 7-Layer pad utilizes a premium, breathable organic cotton surface that prevents chafing, rashes, and the 'wet' discomfort of synthetic pads."
+        },
+        {
+          "q": "Can it prevent secondary pelvic infections?",
+          "a": "By maintaining excessive dryness and suppressing yeast proliferation dynamically, it removes the damp environment where UTIs and PID thrive."
+        },
+        {
+          "q": "How long can a single pad be worn safely?",
+          "a": "Thanks to the super-absorbent polymer layer that locks in moisture completely, a single pad provides secure protection for up to 8 hours."
+        },
+        {
+          "q": "Is this pad recommended for postpartum bleeding?",
+          "a": "Yes, its ultra-hygienic anti-bacterial properties make it extremely safe and comfortable for postpartum recovery."
+        }
+      ]
+    },
+    {
+      "id": "revive",
+      "name": "Revive",
+      "price": 24000,
+      "img": "Revive.png",
+      "use": "Male Impotence & Stamina",
+      "clinical_name": "Radix Ginseng Synthesis",
+      "keywords": [
+        "Aura Cares Revive",
+        "Male Intimacy",
+        "Stamina Boost",
+        "Radix Ginseng",
+        "Sexual Performance",
+        "Blood Flow Enhancer",
+        "Kidney Vitality",
+        "Male Energy",
+        "Testosterone Support",
+        "Natural Virility"
+      ],
+      "indications": [
+        {
+          "icon": "ri-flashlight-line",
+          "title": "Male Stamina",
+          "desc": "Boosts endurance and prevents premature finish."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Blood Flow",
+          "desc": "Optimizes circulation to reproductive tissues."
+        },
+        {
+          "icon": "ri-shield-plus-fill",
+          "title": "Kidney Power",
+          "desc": "Nourishes the 'Essence' for sustained vitality."
+        },
+        {
+          "icon": "ri-men-line",
+          "title": "Virility",
+          "desc": "Supports healthy testosterone and male confidence."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Mr. Ibrahim",
+          "loc": "KD",
+          "quote": "The best natural performance optimizer I have ever used. No headaches."
+        },
+        {
+          "n": "John K.",
+          "loc": "UK",
+          "quote": "I feel like I'm in my 20s again. Consistent energy and stamina."
+        }
+      ],
+      "trivia": [
+        "Revive is 100% herbal and does not cause the 'blue vision' side effect of synthetic pills.",
+        "It works by repairing the vascular system rather than just providing a temporary spike."
+      ],
+      "faqs": [
+        {
+          "q": "Is Revive an instant stimulant or a long-term cure?",
+          "a": "Revive provides both rapid vitality and long-term systemic healing by permanently optimizing blood flow to the reproductive organs."
+        },
+        {
+          "q": "Are there any side effects like headaches?",
+          "a": "Unlike synthetic stimulants, Aura Cares Revive is 100% herbal. It works synergistically with your cardiovascular system, averting harsh side effects and 'crashes'."
+        },
+        {
+          "q": "How does it resolve premature ejaculation?",
+          "a": "By significantly strengthening kidney vitality and controlling the nervous system's response to arousal, Revive greatly extends stamina."
+        },
+        {
+          "q": "Can older men with prostate issues use Revive?",
+          "a": "It is safe, but we highly recommend pairing it with Lycovite for maximum prostate protection while boosting libido."
+        },
+        {
+          "q": "Does Revive interact negatively with alcohol?",
+          "a": "While herbal, alcohol is a central nervous depressant. We recommend avoiding alcohol to experience Revive's maximum vasodilating power."
+        },
+        {
+          "q": "What is the recommended dosage for the best outcome?",
+          "a": "Take 1 to 2 capsules with warm water exactly 45 minutes before intimacy, or 1 capsule daily for gradual reproductive rejuvenation."
+        }
+      ]
+    },
+    {
+      "id": "eve-comfort",
+      "name": "Eve Comfort",
+      "price": 15000,
+      "img": "EVE-COMFORT.png",
+      "use": "Hormonal Balance & PCOS",
+      "clinical_name": "Angelica Sinensis Extract",
+      "keywords": [
+        "Aura Cares Eve Comfort",
+        "Hormonal Balance",
+        "PCOS Treatment",
+        "Angelica Sinensis",
+        "Menstrual Cycle Regulation",
+        "Cramp Relief",
+        "Uterine Warmth",
+        "Fertility Support",
+        "Moon Cycle Harmony",
+        "Dysmenorrhea Relief"
+      ],
+      "indications": [
+        {
+          "icon": "ri-women-line",
+          "title": "Symptom Relief",
+          "desc": "Stops heavy cramps and pelvic discomfort fast."
+        },
+        {
+          "icon": "ri-magic-line",
+          "title": "Cycle Harmony",
+          "desc": "Regulates irregular periods caused by PCOS."
+        },
+        {
+          "icon": "ri-fire-line",
+          "title": "Uterine Warmth",
+          "desc": "Creates a favorable environment for fertility."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Hormone Level",
+          "desc": "Naturally adjusts estrogen and progesterone balance."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Sarah E.",
+          "loc": "Lagos",
+          "quote": "My cycle is finally regular after 2 years of PCOS struggle."
+        },
+        {
+          "n": "Blessing J.",
+          "loc": "UK",
+          "quote": "I can actually go to work during my period now thanks to the relief."
+        }
+      ],
+      "trivia": [
+        "Angelica Sinensis (Dong Quai) is often called 'Female Ginseng' for its restorative power.",
+        "Uterine 'coldness' is a primary clinical cause of infertility in herbal medicine."
+      ],
+      "faqs": [
+        {
+          "q": "How does Eve Comfort address irregular menstruation?",
+          "a": "Formulated with Angelica Sinensis, it naturally stimulates pelvic blood circulation and regulates hormone levels to stabilize the menstrual cycle."
+        },
+        {
+          "q": "Can it help manage Polycystic Ovary Syndrome (PCOS)?",
+          "a": "Eve Comfort restores hormonal equilibrium, which is clinically crucial for softening ovarian cysts and encouraging regular ovulation in PCOS patients."
+        },
+        {
+          "q": "Is it effective for severe cramping (dysmenorrhea)?",
+          "a": "Yes. It acts as a botanical antispasmodic, radically warming the uterus and preventing intense muscular contractions during your cycle."
+        },
+        {
+          "q": "Can it clear dark, clotted menstrual blood?",
+          "a": "Eve Comfort removes 'blood stasis' by purifying the uterine environment, resulting in a cleaner, noticeably healthier, brighter red flow."
+        },
+        {
+          "q": "Is it safe to use while trying to conceive?",
+          "a": "Absolutely. It prepares the uterine lining for healthy implantation by making it warmer and more nutrient-rich."
+        },
+        {
+          "q": "Should I take it during my active period?",
+          "a": "We recommend pausing the capsules during heavy flow days to prevent excessive bleeding, resuming immediately after your cycle ends."
+        }
+      ]
+    },
+    {
+      "id": "cordy-active",
+      "name": "Cordy Active",
+      "price": 21000,
+      "img": "Cordy Active.png",
+      "use": "Stamina & Respiratory Health",
+      "clinical_name": "Cordyceps Sinensis Mycelium",
+      "keywords": [
+        "Aura Cares Cordy Active",
+        "Stamina Supplement",
+        "Respiratory Health",
+        "Cordyceps Sinensis",
+        "Asthma Relief",
+        "Lung Support",
+        "Physical Endurance",
+        "Immune Modulation",
+        "Chronic Fatigue Recovery",
+        "Oxygenation Boost"
+      ],
+      "indications": [
+        {
+          "icon": "ri-windy-line",
+          "title": "Asthma Relief",
+          "desc": "Widens bronchial tubes for effortless breathing."
+        },
+        {
+          "icon": "ri-flashlight-line",
+          "title": "Peak Stamina",
+          "desc": "Maximizes VO2 oxygen capacity for athletes."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Immune Boost",
+          "desc": "High-level protection against seasonal pathogens."
+        },
+        {
+          "icon": "ri-shield-flash-line",
+          "title": "Lung Guard",
+          "desc": "Aggressively targets chronic respiratory inflammation."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Janet O.",
+          "loc": "EN",
+          "quote": "My inhaler use has dropped by 80% since I started Cordy Active."
+        },
+        {
+          "n": "Samuel B.",
+          "loc": "London",
+          "quote": "My endurance during my morning runs has seen a massive increase."
+        }
+      ],
+      "trivia": [
+        "Cordyceps was famously used by Olympic athletes to break world records naturally.",
+        "It physically enhances the body's ability to produce energy at the cellular level (ATP)."
+      ],
+      "faqs": [
+        {
+          "q": "Can Cordy Active help with Asthma?",
+          "a": "Yes! Cordy Active significantly widens bronchial airways, allowing more oxygen into the lungs and reducing the frequency of severe asthmatic spasms."
+        },
+        {
+          "q": "How does it combat chronic fatigue?",
+          "a": "The Cordyceps Sinensis Mycelium optimizes cellular oxygen absorption, giving you profound, jitter-free physical endurance that lasts all day."
+        },
+        {
+          "q": "Is the supplement safe for active athletes?",
+          "a": "Cordy Active is a favorite among professional athletes because it naturally spikes VO2 Max (oxygen capacity) without violating anti-doping laws."
+        },
+        {
+          "q": "Can it slow down signs of aging?",
+          "a": "By efficiently scavenging free radicals and reversing deep cellular oxidation, it powerfully preserves both skin elasticity and organ youthfulness."
+        },
+        {
+          "q": "Does it improve male or female libido?",
+          "a": "Yes, enhanced kidney function and increased blood oxygenation naturally result in a stronger, healthier sex drive for both genders."
+        },
+        {
+          "q": "What is the daily recommended dosage?",
+          "a": "For general stamina and lung health, we recommend 4 capsules twice daily with plenty of water."
+        }
+      ]
+    },
+    {
+      "id": "jointeez",
+      "name": "Jointeez",
+      "price": 19500,
+      "img": "JOINTEEZ.png",
+      "use": "Arthritis & Bone Pain",
+      "clinical_name": "Arthro-Botanical Complex",
+      "keywords": [
+        "Aura Cares Jointeez",
+        "Arthritis Relief",
+        "Bone Pain Treatment",
+        "Joint Lubrication",
+        "Synovial Fluid",
+        "Cartilage Repair",
+        "Rheumatism Cure",
+        "Back Pain Relief",
+        "Mobility Support",
+        "Arthro-Botanical Complex"
+      ],
+      "indications": [
+        {
+          "icon": "ri-rest-time-line",
+          "title": "Arthritis",
+          "desc": "Aggressively reduces joint inflammation and swelling."
+        },
+        {
+          "icon": "ri-drop-fill",
+          "title": "Lubrication",
+          "desc": "Restores synaptic synovial fluid for smooth motion."
+        },
+        {
+          "icon": "ri-shield-flash-line",
+          "title": "Bone Pain",
+          "desc": "Soothes the deep ache of rheumatism and sciatica."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Mobility",
+          "desc": "Permits painless movement and stair climbing."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Sarah T.",
+          "loc": "Abuja",
+          "quote": "The stiffness in my knees is gone; I can walk effortlessly again."
+        },
+        {
+          "n": "Elder Chidi",
+          "loc": "PH",
+          "quote": "No more dependence on harsh painkillers. Jointeez is a miracle."
+        }
+      ],
+      "trivia": [
+        "By age 60, most people have lost 30% of their joint synovial 'grease'.",
+        "Jointeez utilizes rare mountain herbs that specifically target joint cartilage repair."
+      ],
+      "faqs": [
+        {
+          "q": "How fast will Jointeez relieve severe knee pain?",
+          "a": "While noticeable pain reduction occurs within 7 days, replacing depleted synovial fluid (joint lubrication) typically requires a 30-day protocol."
+        },
+        {
+          "q": "Can Jointeez reverse Rheumatoid Arthritis?",
+          "a": "It specifically targets the autoimmune inflammation attacking your joints, pausing deterioration while botanical compounds assist in cartilage repair."
+        },
+        {
+          "q": "Does it help with lower back pain and sciatica?",
+          "a": "Yes. Jointeez improves the micro-circulation around the spinal discs, aggressively reducing the localized swelling that pinches the sciatic nerve."
+        },
+        {
+          "q": "Is it safe for individuals with stomach ulcers?",
+          "a": "Unlike NSAIDs (like Ibuprofen) that aggressively destroy the stomach lining, Jointeez tackles pain through purely herbal pathways, ensuring your stomach remains completely safe."
+        },
+        {
+          "q": "Can I stop my prescribed painkillers instantly?",
+          "a": "We recommend a gradual phase-out. Use Jointeez alongside them initially, and taper off the painkillers as the herbal synthesis takes effect."
+        },
+        {
+          "q": "What is the best way to take Jointeez?",
+          "a": "Take 2 capsules twice daily after meals. For comprehensive arthritis reversal, pair it with Aura Cares Calmazine for deep bone structural repair."
+        }
+      ]
+    },
+    {
+      "id": "ultramega",
+      "name": "Ultramega",
+      "price": 25000,
+      "img": "ULTRAMEGA.jpg",
+      "use": "Omega-3 Heart & Brain",
+      "clinical_name": "High-Potency Fish Oil",
+      "keywords": [
+        "Aura Cares Ultramega",
+        "Omega-3 Fish Oil",
+        "Heart Health",
+        "Brain Function",
+        "Vision Support",
+        "Cholesterol Balance",
+        "Joint Lubrication",
+        "Cardiovascular Shield",
+        "DHA EPA Supplement",
+        "Vascular Clearing"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-line",
+          "title": "Heart Health",
+          "desc": "Maintains healthy cardiovascular rhythms."
+        },
+        {
+          "icon": "ri-eye-line",
+          "title": "Vision",
+          "desc": "Soothes macular degeneration systems."
+        },
+        {
+          "icon": "ri-brain-line",
+          "title": "Brain Function",
+          "desc": "Optimizes lipid profiles for focus."
+        },
+        {
+          "icon": "ri-drop-line",
+          "title": "Joint Support",
+          "desc": "Lubricates creaky joints deeply."
+        },
+        {
+          "icon": "ri-medal-fill",
+          "title": "Immunity",
+          "desc": "Omega-3s fight systemic inflammation."
+        },
+        {
+          "icon": "ri-shield-check-line",
+          "title": "Cholesterol",
+          "desc": "Balances HDL and LDL naturally."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "James T.",
+          "loc": "US",
+          "quote": "\"My joints feel 10 years younger!\""
+        },
+        {
+          "n": "Sarah L.",
+          "loc": "UK",
+          "quote": "\"Cholesterol is finally in check.\""
+        }
+      ],
+      "trivia": [
+        "Omega-3 fatty acids are essential but cannot be generated by your own body.",
+        "Deep-sea fish oil profoundly supports synaptic transmission in the brain."
+      ],
+      "faqs": [
+        {
+          "q": "Is this fish oil purified of mercury and heavy metals?",
+          "a": "Yes, Aura Cares Ultramega uses deep-sea high-potency fish oil that undergoes molecular distillation to guarantee zero heavy metal contamination."
+        },
+        {
+          "q": "How does it benefit cardiovascular health?",
+          "a": "It is ultra-rich in EPA and DHA, which actively dissolve plaque buildup in arteries, radically lowering bad cholesterol (LDL) and triglycerides."
+        },
+        {
+          "q": "Can Ultramega improve memory and brain function?",
+          "a": "Absolutely. The brain is 60% fat, and DHA is the exact specialized lipid required to improve synaptic transmission, focus, and memory retention."
+        },
+        {
+          "q": "Does it have a bad fishy aftertaste?",
+          "a": "No, our premium softgels are formulated to dissolve lower in the digestive tract, preventing 'fish burps' and maximizing lipid absorption."
+        },
+        {
+          "q": "Is it effective for joint lubrication?",
+          "a": "Yes, Omega-3 fatty acids are natural anti-inflammatories that aggressively reduce joint stiffness and physically lubricate creaky arthritic joints."
+        },
+        {
+          "q": "How many softgels should I take daily?",
+          "a": "We highly recommend 1 softgel daily for general health, or 2 softgels daily if targeting high cholesterol or severe joint inflammation."
+        }
+      ]
+    },
+    {
+      "id": "calmazine",
+      "name": "Calmazine",
+      "price": 14000,
+      "img": "CALMAZINE.png",
+      "use": "Bone Density & Sleep",
+      "clinical_name": "Calcium Magnesium Zinc Matrix",
+      "keywords": [
+        "Aura Cares Calmazine",
+        "Calcium Magnesium Zinc",
+        "Bone Density",
+        "Sleep Aid",
+        "Skeletal Health",
+        "Testosterone Boost",
+        "Immune Support",
+        "Electrolyte Balance",
+        "Heart Rhythm",
+        "Teeth Strengthening"
+      ],
+      "indications": [
+        {
+          "icon": "ri-rest-time-line",
+          "title": "Sleep Aid",
+          "desc": "Natural relaxant for deep, restorative rest."
+        },
+        {
+          "icon": "ri-shield-cross-line",
+          "title": "Bone Density",
+          "desc": "Prevents osteoporosis and strengthens joints."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Heart Health",
+          "desc": "Maintains biological cardiovascular rhythm."
+        },
+        {
+          "icon": "ri-flask-line",
+          "title": "Testosterone",
+          "desc": "Zinc matrix supports male hormonal balance."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Mrs. Ngozi",
+          "loc": "Lagos",
+          "quote": "My hip pain vanished after 2 weeks on Calmazine!"
+        },
+        {
+          "n": "Olamide S.",
+          "loc": "IB",
+          "quote": "Best sleep I have had in years. No more tossing and turning."
+        }
+      ],
+      "trivia": [
+        "Calcium requires the exact ratio of Magnesium to be absorbed into bone rather than soft tissue.",
+        "Magnesium deficiency is a primary cause of chronic insomnia and restless leg syndrome."
+      ],
+      "faqs": [
+        {
+          "q": "What makes Calmazine better than regular calcium supplements?",
+          "a": "Calcium alone cannot be absorbed properly. Calmazine combines Calcium, Magnesium, and Zinc in the exact biological ratio required for near 100% bone absorption."
+        },
+        {
+          "q": "Does it help with insomnia?",
+          "a": "Yes! Magnesium acts as a powerful natural relaxant for the central nervous system, ensuring you fall asleep faster and enjoy deep, unbroken rest."
+        },
+        {
+          "q": "Can Calmazine prevent Osteoporosis?",
+          "a": "By physically increasing resting bone mass density and halting calcium extraction from your skeleton, it is a definitive defense against Osteoporosis."
+        },
+        {
+          "q": "Is it beneficial for pregnant mothers?",
+          "a": "Absolutely. It ensures the baby's skeletal structure develops flawlessly without depleting the mother's own calcium reserves or causing tooth decay."
+        },
+        {
+          "q": "Does it cause kidney stones?",
+          "a": "Because our specific Calcium/Magnesium matrix prevents ectopic calcification (calcium settling in soft tissues), it is entirely safe for the kidneys."
+        },
+        {
+          "q": "What is the recommended daily intake?",
+          "a": "Take 1 tablet daily. Do not exceed the recommended dose without direct guidance from a consulting physician."
+        }
+      ]
+    },
+    {
+      "id": "haemocare",
+      "name": "Haemocare",
+      "price": 17500,
+      "img": "Hemocare.png",
+      "use": "Blood Builder & Anemia",
+      "clinical_name": "Organic Iron Synthesis",
+      "keywords": [
+        "Aura Cares Haemocare",
+        "Blood Builder",
+        "Anemia Treatment",
+        "Iron Supplement",
+        "Red Blood Cell Boost",
+        "Post-Natal Recovery",
+        "Oxygen Level Increase",
+        "Oxygen Energy",
+        "Organic Iron",
+        "Vitality Boost"
+      ],
+      "indications": [
+        {
+          "icon": "ri-drop-line",
+          "title": "Blood Builder",
+          "desc": "Rapidly increases hemoglobin levels."
+        },
+        {
+          "icon": "ri-heart-pulse-line",
+          "title": "Maternal Care",
+          "desc": "Premier choice for post-natal recovery."
+        },
+        {
+          "icon": "ri-flashlight-line",
+          "title": "Energy Boost",
+          "desc": "Oxygenates cells to destroy chronic fatigue."
+        },
+        {
+          "icon": "ri-shield-user-line",
+          "title": "Anemia",
+          "desc": "Definitive defense against iron deficiency."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Amina Y.",
+          "loc": "KD",
+          "quote": "My blood count returned to normal fast after delivery."
+        },
+        {
+          "n": "Chief Okafor",
+          "loc": "EN",
+          "quote": "No more dizziness or paleness. I feel incredibly strong."
+        }
+      ],
+      "trivia": [
+        "Haemocare uses organic iron, which has a 3x higher absorption rate than synthetic pills.",
+        "Red blood cells require 120 days to fully cycle; Haemocare speeds up the rebuilding phase."
+      ],
+      "faqs": [
+        {
+          "q": "How fast can Haemocare correct Anemia?",
+          "a": "Haemocare's organic iron synthesis begins elevating red blood cell counts and hemoglobin levels noticeably within just 10 to 14 days of consistent usage."
+        },
+        {
+          "q": "Will it cause constipation like synthetic iron pills?",
+          "a": "No. Haemocare relies on advanced botanical iron sources that the digestive tract recognizes naturally, entirely preventing the constipation associated with cheap ferrous sulfate."
+        },
+        {
+          "q": "Is it safe for pregnant or nursing mothers?",
+          "a": "Yes, it is the premier choice for maternal care, preventing postpartum hemorrhage and safely replenishing massive blood loss following delivery."
+        },
+        {
+          "q": "Can Haemocare boost energy levels?",
+          "a": "By increasing your red blood cell count, it forces vastly more oxygen into your cells, destroying chronic fatigue and restoring vibrant stamina."
+        },
+        {
+          "q": "Does it assist with severe menstrual blood loss?",
+          "a": "Absolutely. It rapidly replaces the iron lost during heavy periods, totally preventing the dizziness, lethargy, and paleness of menstrual anemia."
+        },
+        {
+          "q": "When should I take Haemocare for optimal absorption?",
+          "a": "Take it on an empty stomach with a glass of water or citrus juice (Vitamin C enhances iron uptake). Avoid taking it alongside dairy."
+        }
+      ]
+    },
+    {
+      "id": "multivitamin",
+      "name": "Mina Multivitamin",
+      "price": 11000,
+      "img": "Multi-vitamin.jpg",
+      "use": "Daily Vitality",
+      "clinical_name": "Organic Vitamin Complex",
+      "keywords": [
+        "Mina Multivitamin",
+        "Daily Vitality",
+        "Organic Vitamin Complex",
+        "Nutritional Insurance",
+        "Immune System Coverage",
+        "Metabolic Boost",
+        "Energy Support",
+        "Skin Health",
+        "B-Complex",
+        "Wellness Bridge"
+      ],
+      "indications": [
+        {
+          "icon": "ri-shield-fill",
+          "title": "Immunity",
+          "desc": "Baseline coverage for all vital systems."
+        },
+        {
+          "icon": "ri-mental-health-fill",
+          "title": "Metabolism",
+          "desc": "B-Vitamins turn food into sustained energy."
+        },
+        {
+          "icon": "ri-magic-line",
+          "title": "Skin/Hair",
+          "desc": "Nourishes keratin and collagen production."
+        },
+        {
+          "icon": "ri-pulse-fill",
+          "title": "Longevity",
+          "desc": "Fills the nutritional gap of modern diets."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Sarah E.",
+          "loc": "UK",
+          "quote": "My nails are stronger and my skin is glowing!"
+        },
+        {
+          "n": "David W.",
+          "loc": "US",
+          "quote": "One tablet a day keeps my energy consistent until evening."
+        }
+      ],
+      "trivia": [
+        "Modern soil depletion means 40% of vegetables lack essential trace minerals.",
+        "Multivitamins are better absorbed when taken with a meal containing healthy fats."
+      ],
+      "faqs": [
+        {
+          "q": "Why should I take Mina Multivitamin daily?",
+          "a": "Even with a healthy diet, soil depletion makes it incredibly difficult to get all essential trace minerals. Mina acts as your foundational daily nutritional insurance."
+        },
+        {
+          "q": "Does it contain artificial colorants or fillers?",
+          "a": "No, it is an organic vitamin complex that leverages raw bio-available compounds for maximum systemic absorption without chemical fillers."
+        },
+        {
+          "q": "Can it improve my skin and hair health?",
+          "a": "Yes! The potent B-Complex and Vitamin E profile actively nourishes keratin production, resulting in noticeably stronger hair and radiantly clear skin."
+        },
+        {
+          "q": "Will it give me a jittery energy crash?",
+          "a": "Unlike caffeine-based energy supplements, Mina feeds your cellular mitochondria directly, providing smooth, sustained energy throughout the entire day."
+        },
+        {
+          "q": "Is it suitable for the elderly?",
+          "a": "Absolutely. It bridges the massive nutritional gaps that occur as digestion naturally weakens with age, keeping vital organs functioning at their peak."
+        },
+        {
+          "q": "Can I take it on an empty stomach?",
+          "a": "While safe, we always recommend taking multivitamins with food to maximize the absorption of the critical fat-soluble vitamins (A, D, E, and K)."
+        }
+      ]
+    },
+    {
+      "id": "v-ca",
+      "name": "V-Ca",
+      "price": 9500,
+      "img": "Vitamin-C.jpg",
+      "use": "Immunity & Skin",
+      "clinical_name": "Effervescent Vitamin C + Ca",
+      "keywords": [
+        "Aura Cares V-Ca",
+        "Vitamin C Calcium",
+        "Immune Power",
+        "Skin Collagen",
+        "Effervescent Vitamin C",
+        "Wound Healing",
+        "Antioxidant Boost",
+        "Bone Structure",
+        "Cold Prevention",
+        "Scurvy Remedy"
+      ],
+      "indications": [
+        {
+          "icon": "ri-microbe-fill",
+          "title": "Immune Power",
+          "desc": "High-dose Vitamin C for viral defense."
+        },
+        {
+          "icon": "ri-sun-cloudy-line",
+          "title": "Skin Glow",
+          "desc": "Supports collagen for elastic, clear skin."
+        },
+        {
+          "icon": "ri-heart-3-fill",
+          "title": "Bones/Teeth",
+          "desc": "Added Calcium for skeletal reinforcement."
+        },
+        {
+          "icon": "ri-temp-hot-line",
+          "title": "Cold Defense",
+          "desc": "Reduces severity and duration of infections."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Blessing J.",
+          "loc": "Port Harcourt",
+          "quote": "Whenever I feel a cold coming, V-Ca stops it in its tracks."
+        },
+        {
+          "n": "Dr. Tunde",
+          "loc": "Abuja",
+          "quote": "The effervescent form is superior for patient absorption."
+        }
+      ],
+      "trivia": [
+        "Vitamin C is an essential building block for every blood vessel in your body.",
+        "Effervescent tablets ensure faster gastric bypass for near-instant absorption."
+      ],
+      "faqs": [
+        {
+          "q": "Why is V-Ca an effervescent tablet?",
+          "a": "The effervescent (fizzing) form forcefully dissolves the active ingredients into a liquid state before drinking, ensuring a massive 99% absorption rate compared to standard pills."
+        },
+        {
+          "q": "How does V-Ca boost the immune system?",
+          "a": "It instantly saturates your white blood cells with ultra-high doses of Vitamin C, drastically reducing the duration and severity of the common cold."
+        },
+        {
+          "q": "Can V-Ca clear up my skin?",
+          "a": "Yes! Vitamin C is the strict biological building block for Collagen. V-Ca rapidly thickens the dermal layer, smoothing out fine lines and clearing blemishes."
+        },
+        {
+          "q": "Does it help with bleeding gums?",
+          "a": "Bleeding gums are the first hallmark of subclinical Scurvy (Vitamin C deficiency). V-Ca aggressively repairs capillary walls, stopping bleeding gums permanently."
+        },
+        {
+          "q": "Is it heavily sweetened with toxic sugar?",
+          "a": "No, we utilize low-glycemic, natural orange extract to provide a delicious citrus flavor without violently spiking your blood sugar architecture."
+        },
+        {
+          "q": "How many tablets can I dissolve per day?",
+          "a": "Dissolve 1 tablet in exactly 200ml of room-temperature or cold water daily. Do not use extremely hot water, as it obliterates delicate Vitamin C molecules."
+        }
+      ]
+    },
+    {
+      "id": "lirich",
+      "name": "Lirich",
+      "price": 16500,
+      "img": "LIRICH.png",
+      "use": "Glucose Control",
+      "clinical_name": "Advanced Insulin Modulator",
+      "keywords": [
+        "Aura Cares Lirich",
+        "Glucose Optimizer",
+        "Insulin Sensitivity",
+        "Sugar Control",
+        "Pancreas Regeneration",
+        "Diabetes Management",
+        "Metabolic Harmony",
+        "Blood Viscosity Support",
+        "Thirst Relief",
+        "Diabetic Care"
+      ],
+      "indications": [
+        {
+          "icon": "ri-pulse-line",
+          "title": "Insulin Sensitivity",
+          "desc": "Repairs receptor sites for better sugar uptake."
+        },
+        {
+          "icon": "ri-drop-fill",
+          "title": "Blood Viscosity",
+          "desc": "Thins 'syrupy' blood caused by high glucose."
+        },
+        {
+          "icon": "ri-fire-line",
+          "title": "Metabolic Harmony",
+          "desc": "Balances energy usage across the body."
+        },
+        {
+          "icon": "ri-shield-user-fill",
+          "title": "Pancreas Guard",
+          "desc": "Protects and regenerates insulin-producing cells."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Samuel K.",
+          "loc": "UK",
+          "quote": "My fasting blood sugar dropped from 12.5 to 6.2 in a month."
+        },
+        {
+          "n": "Fatima R.",
+          "loc": "NG",
+          "quote": "No more diabetic thirst or frequent night urination."
+        }
+      ],
+      "trivia": [
+        "Insulin resistance is often the primary cause of weight gain around the midsection.",
+        "Repairing cellular receptors is more effective for long-term health than just forcing more insulin."
+      ],
+      "faqs": [
+        {
+          "q": "How does Lirich differ from Diawell?",
+          "a": "While Diawell focuses heavily on the pancreas, Lirich acts as an advanced insulin modulator that repairs insulin receptor sites deeply embedded in your muscle and fat cells."
+        },
+        {
+          "q": "Can Lirich prevent pre-diabetes from worsening?",
+          "a": "Absolutely. By aggressively destroying cellular insulin resistance, Lirich halts the metabolic progression from pre-diabetes into full-blown Type 2 Diabetes."
+        },
+        {
+          "q": "Does Lirich help with extreme diabetic thirst?",
+          "a": "Yes. It balances blood viscosity and flushes excessive circulating sugar naturally, eliminating the endless cycle of intense thirst and frequent urination."
+        },
+        {
+          "q": "Is it safe to use with other Aura Cares supplements?",
+          "a": "Yes, for a completely transformative metabolic reset, taking Lirich alongside Diawell and Magilim forms our Ultimate Diabetic Challenge Pack."
+        },
+        {
+          "q": "Can I eat sugary foods if I take Lirich?",
+          "a": "No herbal protocol is a license for a disastrous diet. For Lirich to perform successfully, you must still maintain disciplined carbohydrate restriction."
+        },
+        {
+          "q": "How many capsules should I take?",
+          "a": "The standard protocol requires taking 3 capsules three times daily. Consult your physician to map your falling glucose trends."
+        }
+      ]
+    },
+    {
+      "id": "qinghao",
+      "name": "Qinghao",
+      "price": 10500,
+      "img": "Qinghao-pack.jpg",
+      "use": "Malaria Clearance",
+      "clinical_name": "Artemisinin Complex",
+      "keywords": [
+        "Aura Cares Qinghao",
+        "Malaria Treatment",
+        "Artemisinin Complex",
+        "Fever Relief",
+        "Parasite Clearance",
+        "Plasmodium Killer",
+        "Blood Purification",
+        "Natural Anti-Malarial",
+        "Rapid Infection Recovery",
+        "Tropical Medicine"
+      ],
+      "indications": [
+        {
+          "icon": "ri-bug-line",
+          "title": "Malaria",
+          "desc": "Rapid clearance of plasmodium."
+        },
+        {
+          "icon": "ri-temp-hot-line",
+          "title": "Fevers",
+          "desc": "Breaks high temperature spikes."
+        },
+        {
+          "icon": "ri-shield-flash-line",
+          "title": "Immunity",
+          "desc": "Protects cells post-infection."
+        },
+        {
+          "icon": "ri-drop-line",
+          "title": "Liver",
+          "desc": "Reduces hepatomegaly swelling."
+        },
+        {
+          "icon": "ri-virus-line",
+          "title": "Parasites",
+          "desc": "Flushes hidden blood parasites."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Fatigue",
+          "desc": "Restores rapid energy levels."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Chika P.",
+          "loc": "NG",
+          "quote": "\"Cleared my malaria in 3 doses. Incredible.\""
+        },
+        {
+          "n": "John B.",
+          "loc": "GH",
+          "quote": "\"No more re-occurring fevers every month.\""
+        }
+      ],
+      "trivia": [
+        "Artemisinin won the Nobel Prize for its unprecedented malaria clearance rate.",
+        "Qinghao literally suffocates the parasite deep within your red blood cells.",
+        "Unlike synthetic drugs, it has a near-zero resistance footprint."
+      ],
+      "faqs": [
+        {
+          "q": "Does Qinghao cure Malaria completely?",
+          "a": "Yes, its Artemisinin Complex aggressively crosses into the red blood cells to systematically annihilate the Plasmodium parasite and clear the infection entirely."
+        },
+        {
+          "q": "How soon will my fever break after starting dosage?",
+          "a": "Qinghao is globally renowned for its near-instant action. Most severe malarial fevers and chills break within the first 12 to 24 hours of starting the protocol."
+        },
+        {
+          "q": "Is it meant for prevention or active treatment?",
+          "a": "Qinghao is specialized for the active, rapid clearance of severe Malaria. For prevention, physical barriers like mosquito nets are strictly recommended."
+        },
+        {
+          "q": "Does the malaria parasite resist Qinghao?",
+          "a": "Unlike cheap synthetic chloroquines which face immense global resistance, Artemisinin physically suffocates the parasite with oxygen radicals, making resistance almost biologically impossible."
+        },
+        {
+          "q": "Can children take Qinghao safely?",
+          "a": "Yes, but the dosage must be strictly adjusted based on the child's exact body weight. Please consult the dosage chart or a verified clinical physician."
+        },
+        {
+          "q": "What happens if I don't finish the entire dosage?",
+          "a": "You must complete the entire dosage packet even if you feel completely cured on day two. Failure to do so allows surviving parasites to mutate and return violently."
+        }
+      ]
+    },
+    {
+      "id": "refresh-tea",
+      "name": "Refresh Tea",
+      "price": 7500,
+      "img": "refresh-tea.png",
+      "use": "Vision & Liver Detox",
+      "clinical_name": "Camellia Sinensis Blend",
+      "keywords": [
+        "Aura Cares Refresh Tea",
+        "Liver Detox",
+        "Vision Support",
+        "Herbal Cleanser",
+        "Digestive Tea",
+        "Optical Health",
+        "Skin Clarity",
+        "Bile Duct Detox",
+        "Camellia Sinensis",
+        "Soothing Wellness"
+      ],
+      "indications": [
+        {
+          "icon": "ri-eye-line",
+          "title": "Vision Support",
+          "desc": "Clears redness and eye strain from the liver."
+        },
+        {
+          "icon": "ri-drop-line",
+          "title": "Liver Detox",
+          "desc": "Flushes toxins from the primary filter organ."
+        },
+        {
+          "icon": "ri-sun-cloudy-line",
+          "title": "Skin Radiance",
+          "desc": "Stops acne breakouts caused by system toxicity."
+        },
+        {
+          "icon": "ri-cup-line",
+          "title": "Systemic Calm",
+          "desc": "Low-caffeine soothing metabolic lift."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "John B.",
+          "loc": "GH",
+          "quote": "My eyes are much clearer and less watery now."
+        },
+        {
+          "n": "Alice V.",
+          "loc": "US",
+          "quote": "A daily cup has cleared up my stubborn adult acne."
+        }
+      ],
+      "trivia": [
+        "In clinical herbalism, the eyes are considered the direct external 'window' to your liver health.",
+        "Standardized Camellia Sinensis contains catechins that physically bind to liver toxins."
+      ],
+      "faqs": [
+        {
+          "q": "Does Refresh Tea contain heavy caffeine?",
+          "a": "No, it utilizes a specialized Camellia Sinensis blend that provides a calm, soothing metabolic lift without the severe anxiety or crashes associated with heavy caffeine."
+        },
+        {
+          "q": "How does it protect the eyes?",
+          "a": "It clears toxic 'heat' from the liver. In traditional clinical synthesis, the liver meridian directly influences ocular health, powerfully reducing red, strained, and watery eyes."
+        },
+        {
+          "q": "Is it safe to drink every day?",
+          "a": "Absolutely. Refresh Tea is a mild, balancing daily detoxifier designed to safely flush environmental toxins from your bile duct and bloodstream on an ongoing basis."
+        },
+        {
+          "q": "Can it clear sudden skin breakouts?",
+          "a": "Yes. When your liver is overworked, toxins push out through the skin. By efficiently cleansing your liver pathways, Refresh Tea dramatically clears up sudden facial and bodily acne."
+        },
+        {
+          "q": "Should I add sugar or milk?",
+          "a": "To experience the maximum detoxifying effect of the herbal compounds, it must be consumed strictly plain or with a light touch of raw, unpasteurized honey."
+        },
+        {
+          "q": "When is the best time to drink Refresh Tea?",
+          "a": "For optimal liver cleansing, we recommend drinking one hot cup dynamically mid-morning or immediately after a heavily processed meal."
+        }
+      ]
+    },
+    {
+      "id": "colon-tea-cleanser",
+      "name": "Colon Tea",
+      "price": 7500,
+      "img": "colon-tea-cleanser.png",
+      "use": "Detox & Constipation",
+      "clinical_name": "Cassia Angustifolia Blend",
+      "keywords": [
+        "Aura Cares Colon Tea",
+        "Detox Tea",
+        "Constipation Relief",
+        "Flat Tummy Tea",
+        "Bowel Cleanser",
+        "Digestive Health",
+        "Metabolic Burn",
+        "Waste Flush",
+        "Toxin Removal",
+        "Natural Laxative Tea"
+      ],
+      "indications": [
+        {
+          "icon": "ri-rest-time-line",
+          "title": "Bowel Movement",
+          "desc": "Relieves severe chronic constipation rapidly."
+        },
+        {
+          "icon": "ri-battery-2-charge-fill",
+          "title": "Flat Tummy",
+          "desc": "Removes old impacted waste for size reduction."
+        },
+        {
+          "icon": "ri-shield-flash-line",
+          "title": "Toxin Flush",
+          "desc": "Cleanses the colon walls of biological waste."
+        },
+        {
+          "icon": "ri-bug-fill",
+          "title": "Anti-Parasite",
+          "desc": "Modifies colon pH to discourage parasites."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Sarah T.",
+          "loc": "Lagos",
+          "quote": "Lost my bloated belly in just 7 days of using Colon Tea."
+        },
+        {
+          "n": "Chief M.",
+          "loc": "PH",
+          "quote": "Effortless morning routine now after years of struggling."
+        }
+      ],
+      "trivia": [
+        "The average adult can carry up to 5kg of undigested waste in their colon.",
+        "Colon cleansing improves the absorption of all other health supplements."
+      ],
+      "faqs": [
+        {
+          "q": "Is Colon Tea for weight loss or just constipation?",
+          "a": "While it aggressively relieves severe constipation, the removal of violently impacted fecal matter inherently results in a significantly flatter tummy and notable immediate weight loss."
+        },
+        {
+          "q": "Does it cause painful bathroom emergencies?",
+          "a": "The Cassia Angustifolia blend stimulates deep bowel peristalsis over 6 to 8 hours. It guarantees a massive flush but allows you to anticipate the movement safely."
+        },
+        {
+          "q": "Can it help wash out intestinal parasites?",
+          "a": "Yes, its powerful sweeping action radically changes the pH and physical environment of the colon, helping to dislodge and flush out stubborn parasitic waste."
+        },
+        {
+          "q": "Is it safe to use continuously for months?",
+          "a": "No. Colon Tea is an intensive detox protocol designed for short, aggressive 7-to-14-day clearance cycles. Rest your digestive system between cycles."
+        },
+        {
+          "q": "What is the best routine for taking it?",
+          "a": "Drink one strong cup directly before going to sleep. The herbal synthesis will metabolize overnight, ensuring a massive, effortless clearance first thing in the morning."
+        },
+        {
+          "q": "Can I drink it hot or cold?",
+          "a": "Always prepare and consume Colon Tea hot. Heat dynamically activates the Cassia enzymes required to strip hardened waste from the colon walls."
+        }
+      ]
+    },
+    {
+      "id": "massage-machine",
+      "name": "BCM massager",
+      "price": 420000,
+      "img": "Blood-circulatory-machine.png",
+      "use": "Blood Circulation",
+      "clinical_name": "Magnetic Bio-Vibrator",
+      "keywords": [
+        "Aura Cares BCM",
+        "Blood Circulation Machine",
+        "Magnetic Bio-Vibrator",
+        "Vascular Cleansing",
+        "Neuropathy Relief",
+        "Post-Stroke Recovery",
+        "Aerobic Exercise Equivalent",
+        "Reflexology",
+        "Lymphatic Drainage",
+        "Wellness Technology"
+      ],
+      "indications": [
+        {
+          "icon": "ri-pulse-line",
+          "title": "Circulation",
+          "desc": "Forces oxygenated blood to the body's extremities."
+        },
+        {
+          "icon": "ri-run-line",
+          "title": "Aerobic Equivalent",
+          "desc": "15 mins standing = 5km running cardiovascular flow."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Stroke Rehab",
+          "desc": "Revitalizes dormant nerves and paralyzed areas."
+        },
+        {
+          "icon": "ri-shield-plus-fill",
+          "title": "Lymphatic Drain",
+          "desc": "Vibrational flush for the body's waste system."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Elder Paul",
+          "loc": "Benin",
+          "quote": "My stroke-related numbness is almost gone thanks to BCM."
+        },
+        {
+          "n": "Dr. Chima",
+          "loc": "Lagos",
+          "quote": "Recommended for patients who cannot perform physical exercise."
+        }
+      ],
+      "trivia": [
+        "BCM utilizes high-frequency spiral vibration to clear arterial blockages.",
+        "Reflexology points on the feet connect directly to every vital organ."
+      ],
+      "faqs": [
+        {
+          "q": "How does the BCM work exactly?",
+          "a": "The Blood Circulation Machine utilizes high-frequency spiral vibration to drastically accelerate blood flow, clearing vascular blockages safely from the soles of your feet to your brain."
+        },
+        {
+          "q": "Is it equivalent to athletic exercise?",
+          "a": "Yes! Just 15 minutes of standing on the BCM generates the exact same cardiovascular blood flow and lymphatic drainage as running 5 kilometers."
+        },
+        {
+          "q": "Can it help recovering stroke patients?",
+          "a": "Absolutely. By aggressively forcing oxygenated blood into paralyzed or dormant neuropathic pathways, it is the premier rehabilitative device for restoring muscle response."
+        },
+        {
+          "q": "Is it safe for extremely hypertensive users?",
+          "a": "If your blood pressure is critically unstable, you must consult a physician first. Start by sitting down and placing only your hands or feet on the BCM."
+        },
+        {
+          "q": "Does it help cure chronic insomnia?",
+          "a": "Yes. By vigorously massaging reflexology points on the feet, it violently drains stress hormones from the nervous system, plunging you into deep sleep."
+        },
+        {
+          "q": "How many times a day should I use it?",
+          "a": "For maximum safety and vascular health, limit usage to extreme precision: exactly 15 minutes per session, once or twice daily."
+        }
+      ]
+    },
+    {
+      "id": "hydrogen-cup",
+      "name": "Hydrogen Cup",
+      "price": 65000,
+      "img": "Hydrogen cup (1).jpg",
+      "use": "Antioxidant Hydration",
+      "clinical_name": "Molecular Electrolysis System",
+      "keywords": [
+        "Aura Cares Hydrogen Cup",
+        "Antioxidant Water",
+        "Molecular Electrolysis",
+        "Hydration Technology",
+        "Anti-Aging Water",
+        "Cellular Health",
+        "Alkaline Water",
+        "H2 Infused",
+        "Lactic Acid Flush",
+        "Premium Wellness Device"
+      ],
+      "indications": [
+        {
+          "icon": "ri-water-flash-fill",
+          "title": "H2 Infusion",
+          "desc": "Converts regular water into a powerful antioxidant."
+        },
+        {
+          "icon": "ri-battery-charge-fill",
+          "title": "ATP Boost",
+          "desc": "Enhances mitochondria for natural cellular energy."
+        },
+        {
+          "icon": "ri-bubble-chart-fill",
+          "title": "Detox",
+          "desc": "Neutralizes free radicals that cause aging."
+        },
+        {
+          "icon": "ri-run-line",
+          "title": "Recovery",
+          "desc": "Accelerates lactic acid removal after exertion."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Kevin R.",
+          "loc": "NY",
+          "quote": "My recovery time between workouts has cut in half."
+        },
+        {
+          "n": "Mrs. Aisha",
+          "loc": "Abuja",
+          "quote": "I feel much lighter and more hydrated throughout the day."
+        }
+      ],
+      "trivia": [
+        "Molecular hydrogen is the only antioxidant capable of crossing the blood-brain barrier for neural protection.",
+        "Hydrogen water keeps your body in an alkaline state, discouraging inflammation."
+      ],
+      "faqs": [
+        {
+          "q": "What is the science behind the Hydrogen Cup?",
+          "a": "It uses molecular electrolysis to infuse water with hydrogen gas (H2). These tiny molecules act as selective antioxidants that target only the most harmful free radicals in your cells."
+        },
+        {
+          "q": "How long does it take to hydrogenate water?",
+          "a": "The electrolysis process takes exactly 3 to 5 minutes. You should consume the water immediately while the H2 concentration is at its peak."
+        },
+        {
+          "q": "Is the water safe for long-term consumption?",
+          "a": "Absolutely. Hydrogen water is simply pure water enriched with a natural gas. There are zero chemicals, additives, or side effects."
+        },
+        {
+          "q": "Does it filter the water as well?",
+          "a": "While it does have a baseline filtration layer, its primary clinical purpose is the molecular enhancement of water through H2 infusion."
+        },
+        {
+          "q": "How often should I drink hydrogen water?",
+          "a": "For maximum antioxidant protection, aim to drink 3 to 5 cups of freshly hydrogenated water daily."
+        },
+        {
+          "q": "How do I maintain the cup?",
+          "a": "Rinse the electrolysis plate with warm water weekly. Do not use abrasive chemicals, as they can damage the medical-grade titanium plates."
+        }
+      ]
+    },
+    {
+      "id": "aura-soaps",
+      "name": "Aura Cares Soaps",
+      "price": 4000,
+      "img": "Aura Cares Soaps.png",
+      "use": "Acne & Fungal Treatment",
+      "clinical_name": "Botanical Dermatology Series",
+      "keywords": [
+        "Aura Cares Soaps",
+        "Dermatology Series",
+        "Acne Treatment",
+        "Fungal Remedy",
+        "Skin Tone Restoration",
+        "Antibacterial Soap",
+        "Ringworm Remedy",
+        "Eczema Cure",
+        "Herbal Cleansing",
+        "Botanical Skincare"
+      ],
+      "indications": [
+        {
+          "icon": "ri-sparkling-2-line",
+          "title": "Clear Skin",
+          "desc": "Deeply cleanses pores to stop acne at the source."
+        },
+        {
+          "icon": "ri-shield-user-fill",
+          "title": "Antibacterial",
+          "desc": "Strong defense against skin fungal infections."
+        },
+        {
+          "icon": "ri-sun-line",
+          "title": "Even Tone",
+          "desc": "Reduces hyperpigmentation and dark spots."
+        },
+        {
+          "icon": "ri-leaf-fill",
+          "title": "Gentle Repair",
+          "desc": "Soothes eczema and sensitive skin patches."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Janet O.",
+          "loc": "EN",
+          "quote": "My back acne cleared up completely within 10 days of using the Aura Cares herbal soap."
+        },
+        {
+          "n": "Samuel B.",
+          "loc": "UK",
+          "quote": "Most soaps strip my skin, but this feels nourishing and medicinal."
+        }
+      ],
+      "trivia": [
+        "Herbal soaps maintain the skin's acidic mantle, which is your first line of defense against infection.",
+        "Aura Cares uses essential botanical oils that bypass surface dirt to treat the dermal layer."
+      ],
+      "faqs": [
+        {
+          "q": "What makes Aura Cares Soaps different from regular bath soaps?",
+          "a": "Standard soaps are often detergents that strip the skin. Aura Cares soaps are clinical dermatology protocols that infuse the skin with antibacterial and anti-fungal herbal extracts while cleansing."
+        },
+        {
+          "q": "Can I use it on my face and body?",
+          "a": "Yes, our pH-balanced formula is gentle enough for facial use but powerful enough to treat systemic body skin challenges like ringworm or body acne."
+        },
+        {
+          "q": "How long should I leave the lather on the skin?",
+          "a": "For maximum medicinal effect, leave the rich lather on your skin for 1 to 2 minutes before rinsing to allow the botanical extracts to penetrate the pores."
+        },
+        {
+          "q": "Will it bleach or lighten my skin?",
+          "a": "No. Aura Cares soaps contain zero bleaching agents. They work by removing dead skin cells and restoring your natural, healthy, and even skin tone."
+        },
+        {
+          "q": "Is it safe for children?",
+          "a": "Yes, the botanical base is extremely safe for all age groups, especially for treating school-age skin rashes and fungal spots."
+        },
+        {
+          "q": "Does it help with oily skin?",
+          "a": "Absolutely. It regulates sebum production without causing the rebound oiliness that happens with harsh chemical cleansers."
+        }
+      ]
+    },
+    {
+      "id": "memorease",
+      "name": "Memorease",
+      "price": 12500,
+      "img": "MEMORY-247.png",
+      "use": "Memory & Tinnitus",
+      "clinical_name": "Ginkgo Biloba Synthesis",
+      "keywords": [
+        "Aura Cares Memorease",
+        "Memory Support",
+        "Tinnitus Relief",
+        "Ginkgo Biloba",
+        "Cognitive Focus",
+        "Brain Oxygenation",
+        "Headache Relief",
+        "Alzheimer Prevention",
+        "Mental Clarity",
+        "Neural Protection"
+      ],
+      "indications": [
+        {
+          "icon": "ri-mind-map",
+          "title": "Focus",
+          "desc": "Enhances synaptic speed for better focus."
+        },
+        {
+          "icon": "ri-customer-service-2-fill",
+          "title": "Tinnitus",
+          "desc": "Improves micro-circulation to stop ear ringing."
+        },
+        {
+          "icon": "ri-windy-line",
+          "title": "Oxygenation",
+          "desc": "Increases blood flow to cerebral pathways."
+        },
+        {
+          "icon": "ri-shield-star-fill",
+          "title": "Memory",
+          "desc": "Protects neurons from age-related decline."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Elder Paul",
+          "loc": "NG",
+          "quote": "The constant ringing in my ears stopped after using Memorease for two months."
+        },
+        {
+          "n": "Sarah V.",
+          "loc": "US",
+          "quote": "I feel sharper and less foggy during my long study sessions."
+        }
+      ],
+      "trivia": [
+        "Ginkgo Biloba is one of the oldest living tree species, used for cognitive health for over 2,000 years.",
+        "Tinnitus is often caused by poor micro-circulation in the inner ear, which Memorease specifically targets."
+      ],
+      "faqs": [
+        {
+          "q": "How does Memorease help with Tinnitus?",
+          "a": "Tinnitus is often a vascular issue. Memorease optimizes the flow of oxygenated blood through the tiny capillaries in your inner ear, resolving the physiological cause of the 'ringing' sound."
+        },
+        {
+          "q": "Will it improve my focus for exams or work?",
+          "a": "Yes. By increasing cerebral blood flow, it ensures your brain cells have the oxygen and glucose they need for sustained mental performance and memory retention."
+        },
+        {
+          "q": "Is it safe for elderly people with memory loss?",
+          "a": "It is highly recommended for the elderly as it aggressively protects neural pathways from the oxidative stress that leads to cognitive decline."
+        },
+        {
+          "q": "How soon will I notice a difference?",
+          "a": "While some feel sharper in days, neural restoration typically takes consistent usage over a 14 to 28-day cycle for full systemic impact."
+        },
+        {
+          "q": "Can I take it with blood thinners?",
+          "a": "Because Memorease naturally improves circulation, we advise consulting your physician if you are already on heavy pharmaceutical blood-thinning medications."
+        },
+        {
+          "q": "What is the best time to take Memorease?",
+          "a": "Take it in the morning or early afternoon to capitalize on the cognitive boost throughout your most productive hours."
+        }
+      ]
+    },
+    {
+      "id": "vigor-essential",
+      "name": "Vigor Essential",
+      "price": 16500,
+      "img": "VE-1.png",
+      "use": "Prostate Health",
+      "clinical_name": "Male Vitality Compound",
+      "keywords": [
+        "Aura Cares Vigor Essential",
+        "Prostate Health",
+        "Male Vitality",
+        "BPH Prevention",
+        "Urinary Flow Support",
+        "DHT Blocker",
+        "Prostate Shrinking",
+        "Male Aging Support",
+        "Urinary Health",
+        "Botanical Prostate Guard"
+      ],
+      "indications": [
+        {
+          "icon": "ri-shield-flash-fill",
+          "title": "Prostate Guard",
+          "desc": "Defends against late-stage prostate enlargement."
+        },
+        {
+          "icon": "ri-water-flash-line",
+          "title": "Urinary Flow",
+          "desc": "Clears blockages for effortless bladder emptying."
+        },
+        {
+          "icon": "ri-men-line",
+          "title": "Vitality",
+          "desc": "Boosts foundational male hormonal health."
+        },
+        {
+          "icon": "ri-flask-line",
+          "title": "DHT Blocker",
+          "desc": "Naturally inhibits the hormone that drives prostate growth."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Mr. Ibrahim",
+          "loc": "KD",
+          "quote": "I no longer wake up 5 times a night to use the bathroom. Life-changing."
+        },
+        {
+          "n": "Dr. Ben",
+          "loc": "Lagos",
+          "quote": "An essential maintainer for any man over the age of 45."
+        }
+      ],
+      "trivia": [
+        "By age 50, exactly 50% of men will have some degree of prostate enlargement (BPH).",
+        "Vigor Essential uses saw palmetto and rare extracts to physically block prostate inflammatory pathways."
+      ],
+      "faqs": [
+        {
+          "q": "Can Vigor Essential shrink an enlarged prostate?",
+          "a": "Yes. It functions as a potent clinical DHT blocker, which stops the hormone-driven growth phase and allows the prostate to naturally return to a healthy size over time."
+        },
+        {
+          "q": "Does it improve sexual performance?",
+          "a": "By optimizing prostate health and reducing urinary discomfort, it indirectly restores sexual confidence and supports the vascular health required for vitality."
+        },
+        {
+          "q": "Is it just for elderly men?",
+          "a": "While vital for those with current issues, we recommend it as a preventative protocol for all men over 40 to avoid future surgical scenarios."
+        },
+        {
+          "q": "How soon will my urinary flow improve?",
+          "a": "Most men report a significantly stronger and more consistent urinary stream within the first 10 to 14 days of the protocol."
+        },
+        {
+          "q": "Does it replace medical checkups?",
+          "a": "No. While it is a powerful corrective protocol, you should still maintain regular PSA (Prostate-Specific Antigen) tests with your physician."
+        },
+        {
+          "q": "How many capsules should I take daily?",
+          "a": "Take 2 capsules twice daily for active correction, or 1 capsule daily for general maintenance and prevention."
+        }
+      ]
+    },
+    {
+      "id": "vip-massage-chair",
+      "name": "VIP Massage Chair",
+      "price": 3500000,
+      "img": "VIP Massage Chair.png",
+      "use": "Zero-Gravity Relaxation",
+      "clinical_name": "AI Shiatsu System",
+      "keywords": [
+        "Aura Cares VIP Massage Chair",
+        "Shiatsu Experience",
+        "Zero-Gravity Relaxation",
+        "Stress Recovery",
+        "Luxury Health",
+        "Posture Correction",
+        "Athletic Recovery",
+        "Robotic Massage",
+        "Total Wellness",
+        "Premium Home Spa"
+      ],
+      "indications": [
+        {
+          "icon": "ri-rest-time-fill",
+          "title": "Sleep",
+          "desc": "Accelerates deep delta sleep state."
+        },
+        {
+          "icon": "ri-men-line",
+          "title": "Back Pain",
+          "desc": "Lumbar support and heat therapy."
+        },
+        {
+          "icon": "ri-pulse-line",
+          "title": "Circulation",
+          "desc": "Zero-gravity expands blood vessels."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Stress",
+          "desc": "Physically kneads out cortisol knots."
+        },
+        {
+          "icon": "ri-service-line",
+          "title": "Posture",
+          "desc": "Realigns the spinal column natively."
+        },
+        {
+          "icon": "ri-run-fill",
+          "title": "Recovery",
+          "desc": "Perfect for athletic muscle tears."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Chief K.",
+          "loc": "NG",
+          "quote": "\"The centerpiece of my living room. Luxury and health.\""
+        },
+        {
+          "n": "Dr. Ayo",
+          "loc": "NG",
+          "quote": "\"I prescribe this for chronic skeletal fatigue.\""
+        }
+      ],
+      "trivia": [
+        "Zero gravity positioning reduces strain on the heart, mimicking astronaut seats.",
+        "Heat therapy dilates blood vessels, massively speeding up lactic acid removal.",
+        "Mechanical Shiatsu rollers map the exact curvature of your spine using AI."
+      ],
+      "faqs": [
+        {
+          "q": "What is Zero-Gravity positioning?",
+          "a": "It mimics the neutral body position developed by NASA for astronauts. By elevating your feet above your heart, it drastically reduces spinal pressure and improves cardiovascular circulation."
+        },
+        {
+          "q": "How does the AI Shiatsu system work?",
+          "a": "The chair uses optical sensors to scan your body's exact height and spinal curvature. It then adjusts the robotic rollers to hit your pressure points with clinical precision."
+        },
+        {
+          "q": "Does it include heat therapy?",
+          "a": "Yes. Integrated carbon fiber heating elements target the lumbar region, relaxing stiff muscles and speeding up the removal of lactic acid and toxins."
+        },
+        {
+          "q": "Is it safe for people with pacemakers?",
+          "a": "Because the chair uses magnetic components and electronic motors, individuals with pacemakers or metallic implants must consult their physician before use."
+        },
+        {
+          "q": "Can I use it for recovery after a gym workout?",
+          "a": "Absolutely. It is the premier tool for athletic recovery, reducing delayed onset muscle soreness (DOMS) through deep tissue kneading and lymphatic drainage."
+        },
+        {
+          "q": "What is the weight limit for the chair?",
+          "a": "Our industrial-strength frame is engineered to safely support individuals up to 150kg (330 lbs) while maintaining full robotic precision."
+        }
+      ]
+    },
+    {
+      "id": "detox-patch",
+      "name": "Detox Foot Patch",
+      "price": 8500,
+      "img": "Detox Patch.png",
+      "use": "Lymphatic Detox",
+      "clinical_name": "Reflexology Bamboo Pad",
+      "keywords": [
+        "Aura Cares Detox Foot Patch",
+        "Lymphatic Detox",
+        "Toxin Extraction",
+        "Reflexology Bamboo Pad",
+        "Sleep Improvement",
+        "Water Weight Loss",
+        "Body Cleansing",
+        "Energy Boost",
+        "Night Detox",
+        "Metabolic Waste Removal"
+      ],
+      "indications": [
+        {
+          "icon": "ri-drop-fill",
+          "title": "Lymphatic Detox",
+          "desc": "Extracts systemic toxins while you sleep."
+        },
+        {
+          "icon": "ri-rest-time-line",
+          "title": "Sleep Aid",
+          "desc": "Calms the nervous system via foot reflex points."
+        },
+        {
+          "icon": "ri-flashlight-line",
+          "title": "Vitality",
+          "desc": "Removes the toxic load that causes morning brain fog."
+        },
+        {
+          "icon": "ri-windy-line",
+          "title": "Fluid Balance",
+          "desc": "Reduces swelling and water retention in extremities."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Rose M.",
+          "loc": "UK",
+          "quote": "The patches turn dark every morning, and I feel so much more energized."
+        },
+        {
+          "n": "Gabriel T.",
+          "loc": "NG",
+          "quote": "Helped significantly with my swollen ankles and joint stiffness."
+        }
+      ],
+      "trivia": [
+        "Traditional medicine posits that the soles of the feet are the 'second heart' of the body's detoxification system.",
+        "The wood vinegar in the patch creates a far-infrared effect that stimulates toxin release."
+      ],
+      "faqs": [
+        {
+          "q": "Why do the patches turn dark or black?",
+          "a": "The color change is a result of the wood vinegar and bamboo vinegar reacting with the systemic toxins and moisture extracted from your lymphatic system overnight."
+        },
+        {
+          "q": "How long should I wear the patches?",
+          "a": "For maximum extraction, apply the patches to the soles of both feet before bed and leave them on for exactly 6 to 8 hours while you sleep."
+        },
+        {
+          "q": "Can I use them elsewhere on my body?",
+          "a": "While most effective on the feet due to the high density of reflexology points, they can also be applied to swollen joints, shoulders, or the lower back for localized relief."
+        },
+        {
+          "q": "How often should I perform a detox cycle?",
+          "a": "We recommend an initial 10-day consecutive cycle for a deep cleanse, followed by a maintenance application once or twice a week."
+        },
+        {
+          "q": "Are they safe for everyone?",
+          "a": "Yes, they are 100% natural external pads. However, avoid applying them to open wounds or irritated skin areas."
+        },
+        {
+          "q": "Will the patches smell?",
+          "a": "The patches contain natural wood vinegar, which has a distinct smoky, medicinal scent. This is completely normal and a sign of active ingredients."
+        }
+      ]
+    },
+    {
+      "id": "grapemin-e",
+      "name": "Grapemin-E",
+      "price": 18500,
+      "img": "GRAPEMIN-E.png",
+      "use": "Anti-Aging & Skin",
+      "clinical_name": "Grape Seed Extract Matrix",
+      "keywords": [
+        "Aura Cares Grapemin-E",
+        "Anti-Aging",
+        "Skin Glow",
+        "Grape Seed Extract",
+        "Vitamin E",
+        "Antioxidant Matrix",
+        "Cellular age reversal",
+        "Collagen Protection",
+        "Hyper-pigmentation Remedy",
+        "Wrinkle Reduction"
+      ],
+      "indications": [
+        {
+          "icon": "ri-sun-line",
+          "title": "UV Protection",
+          "desc": "Internal shield against sun-induced skin aging."
+        },
+        {
+          "icon": "ri-magic-line",
+          "title": "Skin Glow",
+          "desc": "Promotes even tone and raditant dermal clarity."
+        },
+        {
+          "icon": "ri-rest-time-line",
+          "title": "Age Reversal",
+          "desc": "Protects collagen from oxidative breakdown."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Heart Support",
+          "desc": "OPCs in grape seed support vascular elasticity."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Cecilia D.",
+          "loc": "US",
+          "quote": "My fine lines have visibly softened after just two bottles."
+        },
+        {
+          "n": "Mrs. Ngozi",
+          "loc": "Lagos",
+          "quote": "The hyperpigmentation on my cheeks is finally fading away naturally."
+        }
+      ],
+      "trivia": [
+        "Grape seed extract (OPC) is 20 times more powerful than Vitamin C and 50 times more powerful than Vitamin E.",
+        "Grapemin-E physically binds to collagen fibers to prevent them from becoming brittle as you age."
+      ],
+      "faqs": [
+        {
+          "q": "What makes Grapemin-E better than standard Vitamin E?",
+          "a": "Grapemin-E combines Vitamin E with Grape Seed Extract (OPC). These work synergistically to provide a much broader and more powerful antioxidant shield than Vitamin E alone."
+        },
+        {
+          "q": "Does it help with dark spots and scars?",
+          "a": "Yes. By inhibiting excessive melanin production and accelerating dermal cell turnover, it effectively fades dark spots and improves the appearance of scars."
+        },
+        {
+          "q": "Is Grapemin-E safe for long-term use?",
+          "a": "Absolutely. It is a natural nutritional supplement that provides ongoing protection against the environmental and biological factors that cause cellular aging."
+        },
+        {
+          "q": "Can men take Grapemin-E?",
+          "a": "Yes! While popular for skin beauty, its cardiovascular benefits—specifically vascular elasticity and heart health—are vital for men too."
+        },
+        {
+          "q": "Will it protect me from sunburn?",
+          "a": "It acts as a 'biological sunscreen' from the inside out, increasing your skin's resistance to UV damage, though topical sunscreen is still recommended for prolonged exposure."
+        },
+        {
+          "q": "What is the best dosage for anti-aging?",
+          "a": "We recommend taking 1 to 2 capsules daily, preferably with a meal to maximize the absorption of the fat-soluble Vitamin E."
+        }
+      ]
+    },
+    {
+      "id": "gumcare",
+      "name": "Gumcare",
+      "price": 4500,
+      "img": "tooth-paste.jpg",
+      "use": "Oral Cavity & Bleeding",
+      "clinical_name": "Fluoride-Free Dental Guard",
+      "keywords": [
+        "Aura Cares Gumcare",
+        "Herbal Toothpaste",
+        "Bleeding Gums Cure",
+        "Cavity Protection",
+        "Fluoride-Free",
+        "Oral Hygiene",
+        "Fresh Breath",
+        "Tartar Removal",
+        "Enamel Shield",
+        "Natural Dental Guard"
+      ],
+      "indications": [
+        {
+          "icon": "ri-sparkling-fill",
+          "title": "Whitening",
+          "desc": "Removes deep enamel stains."
+        },
+        {
+          "icon": "ri-drop-fill",
+          "title": "Bleeding Gums",
+          "desc": "Heals sensitive oral tissues."
+        },
+        {
+          "icon": "ri-windy-fill",
+          "title": "Breath",
+          "desc": "24-hour mint freshness."
+        },
+        {
+          "icon": "ri-shield-check-line",
+          "title": "Cavities",
+          "desc": "Rebuilds micro-fissures."
+        },
+        {
+          "icon": "ri-knife-line",
+          "title": "Tartar",
+          "desc": "Breaks down hardened plaque."
+        },
+        {
+          "icon": "ri-virus-fill",
+          "title": "Bacteria",
+          "desc": "Sterilizes the entire oral cavity."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Linda O.",
+          "loc": "NG",
+          "quote": "\"My gums stopped bleeding within 2 days!\""
+        },
+        {
+          "n": "Paul T.",
+          "loc": "US",
+          "quote": "\"The freshest breath I have had in years.\""
+        }
+      ],
+      "trivia": [
+        "Traditional chemical pastes disrupt the microscopic natural flora of your mouth.",
+        "Gumcare uses targeted rare herbs to physically seal bleeding capillaries.",
+        "It functions as an anti-inflammatory, stopping root-level toothaches fast."
+      ],
+      "faqs": [
+        {
+          "q": "Is Gumcare safe for children who might swallow it?",
+          "a": "Yes! Because Gumcare is 100% fluoride-free and relies on food-grade herbal extracts, it is completely safe if accidentally swallowed by children."
+        },
+        {
+          "q": "Does it work for chronic bad breath (Halitosis)?",
+          "a": "Yes. Unlike minty cover-ups, Gumcare uses antibacterial herbs to systematically kill the odor-causing bacteria in the back of the throat and tongue."
+        },
+        {
+          "q": "Can it help with a painful toothache?",
+          "a": "Its concentrated herbal synthesis acts as a natural anti-inflammatory, rapidly reducing the localized swelling and nerve irritation that causes tooth pain."
+        },
+        {
+          "q": "Why is it better to be Fluoride-Free?",
+          "a": "Excessive fluoride can lead to dental fluorosis (yellowing/pitting) and other systemic issues. Gumcare uses natural minerals to strengthen enamel without any toxic risk."
+        },
+        {
+          "q": "Can I use it on sensitive teeth?",
+          "a": "Absolutely. It is specifically formulated to seal the microscopic tubules in your teeth, providing a natural shield against hot and cold sensitivity."
+        },
+        {
+          "q": "Does it help with mouth ulcers?",
+          "a": "The antimicrobial properties of the herbal blend accelerate the healing of mouth ulcers and prevent them from becoming infected or recurring."
+        }
+      ]
+    },
+    {
+      "id": "cello-q10",
+      "name": "Cello Q10",
+      "price": 28000,
+      "img": "CELLO Q10.jpg",
+      "use": "Heart Power & ATP",
+      "clinical_name": "Co-Enzyme Q10 Matrix",
+      "keywords": [
+        "Aura Cares Cello Q10",
+        "Co-Enzyme Q10",
+        "Heart Power",
+        "Cellular ATP",
+        "Mitochondria Support",
+        "Cardiovascular Health",
+        "Blood Pressure Balance",
+        "Antioxidant Protection",
+        "Heart Muscle Strength",
+        "Energy Boost"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Heart Power",
+          "desc": "Strengthens the cardiac muscle for efficient pumping."
+        },
+        {
+          "icon": "ri-flashlight-line",
+          "title": "Cellular ATP",
+          "desc": "Fuels the mitochondria for internal bio-energy."
+        },
+        {
+          "icon": "ri-dashboard-fill",
+          "title": "BP Balance",
+          "desc": "Helps maintain healthy blood pressure levels."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "Anti-Oxidant",
+          "desc": "Protects vascular cells from oxidative stress."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Mr. Roberts",
+          "loc": "UK",
+          "quote": "I feel a renewed sense of energy since I started Cello Q10."
+        },
+        {
+          "n": "Ayo B.",
+          "loc": "Lagos",
+          "quote": "My doctor noticed an improvement in my heart rhythm stability."
+        }
+      ],
+      "trivia": [
+        "Co-Enzyme Q10 is a critical component of the electron transport chain that generates 95% of the human body's energy.",
+        "Statin medications for cholesterol can often deplete the body's natural levels of CoQ10."
+      ],
+      "faqs": [
+        {
+          "q": "What exactly is Co-Enzyme Q10?",
+          "a": "CoQ10 is a naturally occurring nutrient that acts as a catalyst for energy production within your cells' 'power plants' (mitochondria), especially in the heart."
+        },
+        {
+          "q": "Why is it important for heart health?",
+          "a": "The heart is the most energy-demanding organ in the body. CoQ10 ensures the heart muscle has the ATP energy it needs to pump blood consistently and strongly."
+        },
+        {
+          "q": "Should I take it if I'm on cholesterol medication?",
+          "a": "Many statins (cholesterol drugs) block the body's production of CoQ10. Supplementing with Cello Q10 can help restore these vital levels and reduce muscle fatigue."
+        },
+        {
+          "q": "How long will it take to feel the energy boost?",
+          "a": "Because it works at the mitochondrial level, most users report a noticeable improvement in stamina and heart stability within 14 to 21 days."
+        },
+        {
+          "q": "Can it help with gum health?",
+          "a": "Interestingly, yes. High concentrations of CoQ10 are found in healthy gum tissue, and supplementation has been shown to support the repair of periodontal tissues."
+        },
+        {
+          "q": "What is the recommended dosage?",
+          "a": "Take 1 capsule daily, preferably with a meal containing some healthy fats to significantly enhance CoQ10 absorption."
+        }
+      ]
+    },
+    {
+      "id": "cadibetter",
+      "name": "Cadibetter",
+      "price": 18500,
+      "img": "CARDIBETTER222.png",
+      "use": "Heart Muscle Health",
+      "clinical_name": "Cardiac Botanical Protocol",
+      "keywords": [
+        "Aura Cares Cadibetter",
+        "Cardiac Support",
+        "Heart Muscle Health",
+        "Vascular Tone",
+        "Arrhythmia Relief",
+        "Circulatory Protocol",
+        "Oxygen Delivery",
+        "Cardiac Recovery",
+        "Heart Rhythm Stability",
+        "Clinical Heart Supplement"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-line",
+          "title": "Heart Rebuild",
+          "desc": "Assists in the recovery of damaged cardiac muscle."
+        },
+        {
+          "icon": "ri-pulse-line",
+          "title": "Rhythm Stable",
+          "desc": "Calms irregular heartbeats and palpitations."
+        },
+        {
+          "icon": "ri-temp-cold-line",
+          "title": "Chest Relief",
+          "desc": "Soothes the tightness and discomfort of Angina."
+        },
+        {
+          "icon": "ri-windy-line",
+          "title": "Oxygenation",
+          "desc": "Improves blood-oxygen delivery to all vital organs."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Mrs. Theresa",
+          "loc": "PH",
+          "quote": "My heart palpitations have significantly reduced since I started this protocol."
+        },
+        {
+          "n": "Chief D.",
+          "loc": "LG",
+          "quote": "I feel more 'breath' in me. I can climb stairs without gasping for air."
+        }
+      ],
+      "trivia": [
+        "Cadibetter uses a specialized botanical blend that provides nitric oxide support for vascular relaxation.",
+        "Traditional cardiac herbs in Cadibetter have been used for centuries to improve 'Qi' or biological energy flow to the heart."
+      ],
+      "faqs": [
+        {
+          "q": "How does Cadibetter help with Arrhythmia?",
+          "a": "It provides the specific herbal nutrients that help stabilize the electrical impulses in the heart, ensuring a more consistent and healthy cardiac rhythm."
+        },
+        {
+          "q": "Can it help recover from a Heart Attack?",
+          "a": "Yes, as a rehabilitative protocol. It helps rebuild the structural integrity of the heart muscle and improves the efficiency of oxygenated blood flow during recovery."
+        },
+        {
+          "q": "Is it safe if I am on blood pressure pills?",
+          "a": "Yes, it is a natural botanical. However, we always recommend leaving a 2-hour window between your clinical medications and the Cadibetter protocol."
+        },
+        {
+          "q": "Does it help with high cholesterol?",
+          "a": "While its primary focus is the heart muscle, the improved circulation and vascular tone it provides assist in the overall management of cardiovascular lipids."
+        },
+        {
+          "q": "Should I take it preventatively?",
+          "a": "Absolutely. For individuals with a family history of heart disease, taking Cadibetter for a 30-day cycle every few months is an excellent preventative strategy."
+        },
+        {
+          "q": "What is the recommended daily dosage?",
+          "a": "Take 2 to 3 capsules twice daily, preferably after meals for maximum herbal synthesis."
+        }
+      ]
+    },
+    {
+      "id": "ginseng-coffee",
+      "name": "Ginseng Coffee",
+      "price": 6000,
+      "img": "Ginseng Coffee.png",
+      "use": "Energy & Focus",
+      "clinical_name": "Panax Ginseng Synthesis",
+      "keywords": [
+        "Aura Cares Ginseng Coffee",
+        "Panax Ginseng",
+        "Energy Boost",
+        "Cognitive Focus",
+        "Mental Clarity",
+        "Adaptogen Coffee",
+        "Libido Support",
+        "Metabolic Boost",
+        "Stress Relief",
+        "Natural Stamina"
+      ],
+      "indications": [
+        {
+          "icon": "ri-flashlight-line",
+          "title": "Energy Boost",
+          "desc": "Sustained vitality without the usual coffee crashes."
+        },
+        {
+          "icon": "ri-mind-map",
+          "title": "Mental Clarity",
+          "desc": "Sharper focus and cognitive precision for work."
+        },
+        {
+          "icon": "ri-shield-star-fill",
+          "title": "Stress Relief",
+          "desc": "Adaptogenic Ginseng helps the body handle stress."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Libido Support",
+          "desc": "Supports healthy male and female vitality levels."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Ayo M.",
+          "loc": "NG",
+          "quote": "The best-tasting coffee I've had, and the energy lasts all day!"
+        },
+        {
+          "n": "Sarah P.",
+          "loc": "US",
+          "quote": "Helps me stay focused during long shifts without feeling jittery."
+        }
+      ],
+      "trivia": [
+        "Panax Ginseng is an 'adaptogen', meaning it helps your body maintain internal balance regardless of external stress.",
+        "The word 'Panax' comes from the Greek word for 'all-healing'."
+      ],
+      "faqs": [
+        {
+          "q": "How does Ginseng Coffee differ from regular coffee?",
+          "a": "Regular coffee relies only on caffeine, which can cause jitters and crashes. Aura Cares Ginseng Coffee combines premium coffee with Panax Ginseng to provide a smoother, sustained energy boost while nourishing your nervous system."
+        },
+        {
+          "q": "Will it keep me awake at night?",
+          "a": "Because it is a balancing adaptogen, most people find it provides focus during the day without the aggressive 'wired' feeling that causes nighttime insomnia. However, we recommend enjoying it before 4 PM."
+        },
+        {
+          "q": "Does it have real Panax Ginseng?",
+          "a": "Yes. We use a clinical-grade extract of refined Panax Ginseng to ensure you receive the full metabolic and cognitive benefits of the herb."
+        },
+        {
+          "q": "Is it sweetened?",
+          "a": "Our 3-in-1 blend is lightly sweetened with a low-glycemic profile and includes a premium non-dairy creamer for a rich, smooth taste."
+        },
+        {
+          "q": "Can it help with libido or stamina?",
+          "a": "Yes! Panax Ginseng is globally renowned for its ability to support natural vitality, hormonal balance, and endurance in both men and women."
+        },
+        {
+          "q": "How many cups should I drink daily?",
+          "a": "One sachet daily is enough for most people to experience the focus and energy benefits, though two sachets can be taken during high-stress periods."
+        }
+      ]
+    },
+    {
+      "id": "golden-six",
+      "name": "Golden Six",
+      "price": 14500,
+      "img": "Golden six.png",
+      "use": "Female Vitality & Back Pain",
+      "clinical_name": "Kidney Yin Multi-Herb",
+      "keywords": [
+        "Aura Cares Golden Six",
+        "Female Vitality",
+        "Hormonal Balance",
+        "Kidney Yin",
+        "Back Pain Relief",
+        "Menopause Support",
+        "Vertigo Treatment",
+        "Six-Herb Formula",
+        "Dizziness Relief",
+        "Natural Yin Nourishment"
+      ],
+      "indications": [
+        {
+          "icon": "ri-women-line",
+          "title": "Hormonal Balance",
+          "desc": "Supports female systems and alleviates menopausal heat."
+        },
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Kidney Yin",
+          "desc": "Nourishes the foundational 'Yin' energy for vitality."
+        },
+        {
+          "icon": "ri-rest-time-line",
+          "title": "Back Pain",
+          "desc": "Targets chronic lower back pain and knee weakness."
+        },
+        {
+          "icon": "ri-windy-line",
+          "title": "Dizziness",
+          "desc": "Soothes ringing in the ears and vertigo naturally."
+        }
+      ],
+      "testimonials": [
+        {
+          "n": "Mrs. Funmi",
+          "loc": "IB",
+          "quote": "My night sweats and hormonal mood swings stopped after two weeks on Golden Six."
+        },
+        {
+          "n": "Chief Chidi",
+          "loc": "EN",
+          "quote": "Helped my chronic lower back pain more than any other treatment."
+        }
+      ],
+      "trivia": [
+        "Golden Six is a standardized version of the 'Liu Wei Di Huang Wan' formula, used in royal healthcare for over 1,000 years.",
+        "It is named 'Six' because it uses exactly six synergistic herbs to balance the body's internal fire."
+      ],
+      "faqs": [
+        {
+          "q": "Is Golden Six just for women?",
+          "a": "While very popular for female hormonal health, it is a foundational Kidney Yin tonic that is equally effective for men suffering from lower back weakness, night sweats, or chronic fatigue."
+        },
+        {
+          "q": "How does it help with Menopause?",
+          "a": "It naturally cools the body's 'internal heat,' which is the physiological cause of hot flashes, night sweats, and irritability during the menopausal transition."
+        },
+        {
+          "q": "Can it solve chronic dizziness?",
+          "a": "Yes. In traditional medicine, dizziness and ear ringing (tinnitus) are linked to a deficiency in the Kidney energy. Golden Six nourishes this deficiency to restore stability."
+        },
+        {
+          "q": "Is it safe for a long-term daily protocol?",
+          "a": "Yes, it is a mild, nourishing herbal tonic designed to be taken over 30 to 60 days to deeply rebuild the body's foundational systems."
+        },
+        {
+          "q": "Should I take it before or after meals?",
+          "a": "For maximum metabolic uptake, we recommend taking Golden Six 30 minutes before a meal or on an empty stomach."
+        },
+        {
+          "q": "How many tablets should I take per day?",
+          "a": "The clinical protocol for Golden Six is 20 small pills twice daily. This might seem like a lot, but these are small, concentrated herbal balls designed for smooth absorption."
+        }
+      ]
+    },
+    {
+      "id": "hemastat",
+      "name": "HemaStat",
+      "price": 25000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Nerve Repair",
+      "clinical_name": "Enzymatic Pathway Activator",
+      "keywords": [
+        "Aura Cares HemaStat",
+        "Nerve Repair",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to nerve repair."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for HemaStat synergy."
+        }
+      ]
+    },
+    {
+      "id": "gastroshield",
+      "name": "GastroShield",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Hormonal Balance",
+      "clinical_name": "Cellular Matrix Compound",
+      "keywords": [
+        "Aura Cares GastroShield",
+        "Hormonal Balance",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to hormonal balance."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for GastroShield synergy."
+        }
+      ]
+    },
+    {
+      "id": "hepatotone",
+      "name": "HepatoTone",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Cellular Rejuvenation",
+      "clinical_name": "Botanical Synthesis",
+      "keywords": [
+        "Aura Cares HepatoTone",
+        "Cellular Rejuvenation",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to cellular rejuvenation."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for HepatoTone synergy."
+        }
+      ]
+    },
+    {
+      "id": "gastrocore",
+      "name": "GastroCore",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Liver Restoration",
+      "clinical_name": "Botanical Synthesis",
+      "keywords": [
+        "Aura Cares GastroCore",
+        "Liver Restoration",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to liver restoration."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for GastroCore synergy."
+        }
+      ]
+    },
+    {
+      "id": "optimin",
+      "name": "OptiMin",
+      "price": 25000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Gut Microbiome",
+      "clinical_name": "Cellular Matrix Compound",
+      "keywords": [
+        "Aura Cares OptiMin",
+        "Gut Microbiome",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to gut microbiome."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for OptiMin synergy."
+        }
+      ]
+    },
+    {
+      "id": "endocrinderm",
+      "name": "EndocrinDerm",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Cellular Hydration",
+      "clinical_name": "Enzymatic Pathway Activator",
+      "keywords": [
+        "Aura Cares EndocrinDerm",
+        "Cellular Hydration",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to cellular hydration."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for EndocrinDerm synergy."
+        }
+      ]
+    },
+    {
+      "id": "longevistat",
+      "name": "LongeviStat",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Stress Adaptation",
+      "clinical_name": "Herbal Catalyst",
+      "keywords": [
+        "Aura Cares LongeviStat",
+        "Stress Adaptation",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to stress adaptation."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for LongeviStat synergy."
+        }
+      ]
+    },
+    {
+      "id": "neurosense",
+      "name": "NeuroSense",
+      "price": 25000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Liver Restoration",
+      "clinical_name": "Enzymatic Pathway Activator",
+      "keywords": [
+        "Aura Cares NeuroSense",
+        "Liver Restoration",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to liver restoration."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for NeuroSense synergy."
+        }
+      ]
+    },
+    {
+      "id": "auraflow",
+      "name": "AuraFlow",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Metabolic Harmony",
+      "clinical_name": "Cellular Matrix Compound",
+      "keywords": [
+        "Aura Cares AuraFlow",
+        "Metabolic Harmony",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to metabolic harmony."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for AuraFlow synergy."
+        }
+      ]
+    },
+    {
+      "id": "megagen",
+      "name": "MegaGen",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Immune Defense",
+      "clinical_name": "Bio-Enhancement Formula",
+      "keywords": [
+        "Aura Cares MegaGen",
+        "Immune Defense",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to immune defense."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for MegaGen synergy."
+        }
+      ]
+    },
+    {
+      "id": "ocuprime",
+      "name": "OcuPrime",
+      "price": 30000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Gut Microbiome",
+      "clinical_name": "Bio-Enhancement Formula",
+      "keywords": [
+        "Aura Cares OcuPrime",
+        "Gut Microbiome",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to gut microbiome."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for OcuPrime synergy."
+        }
+      ]
+    },
+    {
+      "id": "optivigor",
+      "name": "OptiVigor",
+      "price": 25000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Bone Density",
+      "clinical_name": "Micronutrient Complex",
+      "keywords": [
+        "Aura Cares OptiVigor",
+        "Bone Density",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to bone density."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for OptiVigor synergy."
+        }
+      ]
+    },
+    {
+      "id": "biopeak",
+      "name": "BioPeak",
+      "price": 25000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Respiratory Function",
+      "clinical_name": "Micronutrient Complex",
+      "keywords": [
+        "Aura Cares BioPeak",
+        "Respiratory Function",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to respiratory function."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for BioPeak synergy."
+        }
+      ]
+    },
+    {
+      "id": "vitastat",
+      "name": "VitaStat",
+      "price": 15000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Joint Mobility",
+      "clinical_name": "Herbal Catalyst",
+      "keywords": [
+        "Aura Cares VitaStat",
+        "Joint Mobility",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to joint mobility."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for VitaStat synergy."
+        }
+      ]
+    },
+    {
+      "id": "auraflex",
+      "name": "AuraFlex",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Skin Radiance",
+      "clinical_name": "Botanical Synthesis",
+      "keywords": [
+        "Aura Cares AuraFlex",
+        "Skin Radiance",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to skin radiance."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for AuraFlex synergy."
+        }
+      ]
+    },
+    {
+      "id": "arthroplus",
+      "name": "ArthroPlus",
+      "price": 25000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Nerve Repair",
+      "clinical_name": "Micronutrient Complex",
+      "keywords": [
+        "Aura Cares ArthroPlus",
+        "Nerve Repair",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to nerve repair."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for ArthroPlus synergy."
+        }
+      ]
+    },
+    {
+      "id": "renalboost",
+      "name": "RenalBoost",
+      "price": 30000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Kidney Function",
+      "clinical_name": "Cellular Matrix Compound",
+      "keywords": [
+        "Aura Cares RenalBoost",
+        "Kidney Function",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to kidney function."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for RenalBoost synergy."
+        }
+      ]
+    },
+    {
+      "id": "hepatovance",
+      "name": "HepatoVance",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Deep Sleep Cycle",
+      "clinical_name": "Adaptogenic Baseline",
+      "keywords": [
+        "Aura Cares HepatoVance",
+        "Deep Sleep Cycle",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to deep sleep cycle."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for HepatoVance synergy."
+        }
+      ]
+    },
+    {
+      "id": "ultrasense",
+      "name": "UltraSense",
+      "price": 30000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Cognitive Enhancement",
+      "clinical_name": "Botanical Synthesis",
+      "keywords": [
+        "Aura Cares UltraSense",
+        "Cognitive Enhancement",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to cognitive enhancement."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for UltraSense synergy."
+        }
+      ]
+    },
+    {
+      "id": "pulmozyme",
+      "name": "PulmoZyme",
+      "price": 30000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Cellular Hydration",
+      "clinical_name": "Phyto-Active Protocol",
+      "keywords": [
+        "Aura Cares PulmoZyme",
+        "Cellular Hydration",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to cellular hydration."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for PulmoZyme synergy."
+        }
+      ]
+    },
+    {
+      "id": "osteosense",
+      "name": "OsteoSense",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Immune Defense",
+      "clinical_name": "Phyto-Active Protocol",
+      "keywords": [
+        "Aura Cares OsteoSense",
+        "Immune Defense",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to immune defense."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for OsteoSense synergy."
+        }
+      ]
+    },
+    {
+      "id": "neuroguard",
+      "name": "NeuroGuard",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Cellular Rejuvenation",
+      "clinical_name": "Enzymatic Pathway Activator",
+      "keywords": [
+        "Aura Cares NeuroGuard",
+        "Cellular Rejuvenation",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to cellular rejuvenation."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for NeuroGuard synergy."
+        }
+      ]
+    },
+    {
+      "id": "vitacore",
+      "name": "VitaCore",
+      "price": 30000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Blood Sugar Regulation",
+      "clinical_name": "Cellular Matrix Compound",
+      "keywords": [
+        "Aura Cares VitaCore",
+        "Blood Sugar Regulation",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to blood sugar regulation."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for VitaCore synergy."
+        }
+      ]
+    },
+    {
+      "id": "neuropeak",
+      "name": "NeuroPeak",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Joint Mobility",
+      "clinical_name": "Enzymatic Pathway Activator",
+      "keywords": [
+        "Aura Cares NeuroPeak",
+        "Joint Mobility",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to joint mobility."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for NeuroPeak synergy."
+        }
+      ]
+    },
+    {
+      "id": "vitaltox",
+      "name": "VitalTox",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Immune Defense",
+      "clinical_name": "Botanical Synthesis",
+      "keywords": [
+        "Aura Cares VitalTox",
+        "Immune Defense",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to immune defense."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for VitalTox synergy."
+        }
+      ]
+    },
+    {
+      "id": "dermagen",
+      "name": "DermaGen",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Kidney Function",
+      "clinical_name": "Phyto-Active Protocol",
+      "keywords": [
+        "Aura Cares DermaGen",
+        "Kidney Function",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to kidney function."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for DermaGen synergy."
+        }
+      ]
+    },
+    {
+      "id": "ultraboost",
+      "name": "UltraBoost",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Circulation Boost",
+      "clinical_name": "Botanical Synthesis",
+      "keywords": [
+        "Aura Cares UltraBoost",
+        "Circulation Boost",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to circulation boost."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for UltraBoost synergy."
+        }
+      ]
+    },
+    {
+      "id": "hemavigor",
+      "name": "HemaVigor",
+      "price": 25000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Antioxidant Protection",
+      "clinical_name": "Herbal Catalyst",
+      "keywords": [
+        "Aura Cares HemaVigor",
+        "Antioxidant Protection",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to antioxidant protection."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for HemaVigor synergy."
+        }
+      ]
+    },
+    {
+      "id": "immunocare",
+      "name": "ImmunoCare",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Bone Density",
+      "clinical_name": "Adaptogenic Baseline",
+      "keywords": [
+        "Aura Cares ImmunoCare",
+        "Bone Density",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to bone density."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for ImmunoCare synergy."
+        }
+      ]
+    },
+    {
+      "id": "synpro",
+      "name": "SynPro",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Metabolic Harmony",
+      "clinical_name": "Enzymatic Pathway Activator",
+      "keywords": [
+        "Aura Cares SynPro",
+        "Metabolic Harmony",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to metabolic harmony."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for SynPro synergy."
+        }
+      ]
+    },
+    {
+      "id": "ultravance",
+      "name": "UltraVance",
+      "price": 15000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Joint Mobility",
+      "clinical_name": "Herbal Catalyst",
+      "keywords": [
+        "Aura Cares UltraVance",
+        "Joint Mobility",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to joint mobility."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for UltraVance synergy."
+        }
+      ]
+    },
+    {
+      "id": "celloxi",
+      "name": "CellOxi",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Cellular Rejuvenation",
+      "clinical_name": "Herbal Catalyst",
+      "keywords": [
+        "Aura Cares CellOxi",
+        "Cellular Rejuvenation",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to cellular rejuvenation."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for CellOxi synergy."
+        }
+      ]
+    },
+    {
+      "id": "dermavigor",
+      "name": "DermaVigor",
+      "price": 15000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Circulation Boost",
+      "clinical_name": "Adaptogenic Baseline",
+      "keywords": [
+        "Aura Cares DermaVigor",
+        "Circulation Boost",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to circulation boost."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for DermaVigor synergy."
+        }
+      ]
+    },
+    {
+      "id": "auravance",
+      "name": "AuraVance",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Cellular Rejuvenation",
+      "clinical_name": "Herbal Catalyst",
+      "keywords": [
+        "Aura Cares AuraVance",
+        "Cellular Rejuvenation",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to cellular rejuvenation."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for AuraVance synergy."
+        }
+      ]
+    },
+    {
+      "id": "ocuguard",
+      "name": "OcuGuard",
+      "price": 25000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Skin Radiance",
+      "clinical_name": "Bio-Enhancement Formula",
+      "keywords": [
+        "Aura Cares OcuGuard",
+        "Skin Radiance",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to skin radiance."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for OcuGuard synergy."
+        }
+      ]
+    },
+    {
+      "id": "myocell",
+      "name": "MyoCell",
+      "price": 15000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Immune Defense",
+      "clinical_name": "Enzymatic Pathway Activator",
+      "keywords": [
+        "Aura Cares MyoCell",
+        "Immune Defense",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to immune defense."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for MyoCell synergy."
+        }
+      ]
+    },
+    {
+      "id": "hepatobiotics",
+      "name": "HepatoBiotics",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Hormonal Balance",
+      "clinical_name": "Adaptogenic Baseline",
+      "keywords": [
+        "Aura Cares HepatoBiotics",
+        "Hormonal Balance",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to hormonal balance."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for HepatoBiotics synergy."
+        }
+      ]
+    },
+    {
+      "id": "lipidpeak",
+      "name": "LipidPeak",
+      "price": 15000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Digestive Health",
+      "clinical_name": "Enzymatic Pathway Activator",
+      "keywords": [
+        "Aura Cares LipidPeak",
+        "Digestive Health",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to digestive health."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for LipidPeak synergy."
+        }
+      ]
+    },
+    {
+      "id": "gastrogen",
+      "name": "GastroGen",
+      "price": 15000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Cellular Rejuvenation",
+      "clinical_name": "Bio-Enhancement Formula",
+      "keywords": [
+        "Aura Cares GastroGen",
+        "Cellular Rejuvenation",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to cellular rejuvenation."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for GastroGen synergy."
+        }
+      ]
+    },
+    {
+      "id": "neurovance",
+      "name": "NeuroVance",
+      "price": 30000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Metabolic Harmony",
+      "clinical_name": "Adaptogenic Baseline",
+      "keywords": [
+        "Aura Cares NeuroVance",
+        "Metabolic Harmony",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to metabolic harmony."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for NeuroVance synergy."
+        }
+      ]
+    },
+    {
+      "id": "neuroflow",
+      "name": "NeuroFlow",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Respiratory Function",
+      "clinical_name": "Herbal Catalyst",
+      "keywords": [
+        "Aura Cares NeuroFlow",
+        "Respiratory Function",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to respiratory function."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for NeuroFlow synergy."
+        }
+      ]
+    },
+    {
+      "id": "vitaeze",
+      "name": "VitaEze",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Muscle Recovery",
+      "clinical_name": "Herbal Catalyst",
+      "keywords": [
+        "Aura Cares VitaEze",
+        "Muscle Recovery",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to muscle recovery."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for VitaEze synergy."
+        }
+      ]
+    },
+    {
+      "id": "renalsense",
+      "name": "RenalSense",
+      "price": 25000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Metabolic Harmony",
+      "clinical_name": "Bio-Enhancement Formula",
+      "keywords": [
+        "Aura Cares RenalSense",
+        "Metabolic Harmony",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to metabolic harmony."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for RenalSense synergy."
+        }
+      ]
+    },
+    {
+      "id": "myocare",
+      "name": "MyoCare",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Digestive Health",
+      "clinical_name": "Botanical Synthesis",
+      "keywords": [
+        "Aura Cares MyoCare",
+        "Digestive Health",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to digestive health."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for MyoCare synergy."
+        }
+      ]
+    },
+    {
+      "id": "neuroplus",
+      "name": "NeuroPlus",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Circulation Boost",
+      "clinical_name": "Micronutrient Complex",
+      "keywords": [
+        "Aura Cares NeuroPlus",
+        "Circulation Boost",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to circulation boost."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for NeuroPlus synergy."
+        }
+      ]
+    },
+    {
+      "id": "biocare",
+      "name": "BioCare",
+      "price": 15000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Hormonal Balance",
+      "clinical_name": "Botanical Synthesis",
+      "keywords": [
+        "Aura Cares BioCare",
+        "Hormonal Balance",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to hormonal balance."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for BioCare synergy."
+        }
+      ]
+    },
+    {
+      "id": "renalcell",
+      "name": "RenalCell",
+      "price": 10000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Cellular Rejuvenation",
+      "clinical_name": "Phyto-Active Protocol",
+      "keywords": [
+        "Aura Cares RenalCell",
+        "Cellular Rejuvenation",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to cellular rejuvenation."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for RenalCell synergy."
+        }
+      ]
+    },
+    {
+      "id": "gastrostat",
+      "name": "GastroStat",
+      "price": 20000,
+      "img": "reishi.jfif",
+      "theme_color": "linear-gradient(135deg, #4d231c, #d4a017)",
+      "use": "Stress Adaptation",
+      "clinical_name": "Adaptogenic Baseline",
+      "keywords": [
+        "Aura Cares GastroStat",
+        "Stress Adaptation",
+        "Clinical Grade",
+        "Natural Supplement",
+        "Restoration Protocol"
+      ],
+      "indications": [
+        {
+          "icon": "ri-heart-pulse-fill",
+          "title": "Primary Action",
+          "desc": "Targets root cause of issues related to stress adaptation."
+        },
+        {
+          "icon": "ri-shield-check-fill",
+          "title": "System Support",
+          "desc": "Provides bio-active compounds for GastroStat synergy."
+        }
+      ]
+    }
+  ],
+  "branding_assets": {
+    "verified_badge": "ri-verified-badge-fill (Blue #1d9bf0)",
+    "security_seal": "ri-lock-2-fill (Green #10b981)",
+    "stars": "ri-star-fill (Yellow #ff9d00)",
+    "success_story_badge": "Success Story (Background: #fdf8f6)"
+  },
+  "clinical_knowledge_base": {
+    "hypertension": {
+      "pack": "Reishi + Golden Six",
+      "rating": "4.9/5",
+      "desc": "Widens blood vessels and calms systemic nerve load."
+    },
+    "diabetes": {
+      "pack": "Diawell + Lirich + Magilim",
+      "rating": "4.8/5",
+      "desc": "Targeted insulin modulation and glucose buffering."
+    },
+    "fibroids": {
+      "pack": "Gynapharm + Golden Hypha + Eve Comfort",
+      "rating": "4.9/5",
+      "desc": "Natural hormonal shrink protocol for uterine health."
+    },
+    "eye_problems": {
+      "pack": "Refresh Tea + Eye Beta + Lycovite",
+      "rating": "4.7/5",
+      "desc": "High-carotenoid formula for retinal protection."
+    },
+    "weak_erection": {
+      "pack": "Revive + Reishi + Vigor Essential",
+      "rating": "5.0/5",
+      "desc": "Optimizes blood flow and male hormonal pathways."
+    },
+    "arthritis": {
+      "pack": "Jointeez + Reishi + Calmazine",
+      "rating": "4.8/5",
+      "desc": "Lubricates synovial joints and reduces inflammation."
+    },
+    "constipation": {
+      "pack": "Constilease + Colon Tea",
+      "rating": "4.9/5",
+      "desc": "Stimulates peristalsis for rapid systemic clearance."
+    },
+    "anemia": {
+      "pack": "Haemocare + Multivitamin",
+      "rating": "4.7/5",
+      "desc": "Rapidly rebuilds red blood cell count and stamina."
+    },
+    "asthma": {
+      "pack": "Cordy Active + Reishi",
+      "rating": "4.6/5",
+      "desc": "Enhances bronchial oxygenation and immunity."
+    },
+    "prostate": {
+      "pack": "Vigor Essential + Lycovite",
+      "rating": "4.8/5",
+      "desc": "Inhibits BPH and clears urinary stagnation."
+    }
+  },
+  "botanical_indices": {
+    "reishi": {
+      "clinical": "Ganoderma Lucidum",
+      "benefit": "Immune Modular"
+    },
+    "gastrifort": {
+      "clinical": "Royal Jelly Synthesis",
+      "benefit": "Gastric Repair"
+    },
+    "seven-layer-sanitary": {
+      "clinical": "Negative Ion Strip",
+      "benefit": "Hormonal Balance"
+    },
+    "eye-beta": {
+      "clinical": "Lutein & Blueberry",
+      "benefit": "Retinal Support"
+    },
+    "magilim": {
+      "clinical": "Konjac Glucomannan",
+      "benefit": "Satiety & Glucose"
+    }
+  },
+  "social_previews": {
+    "twitter_handle": "@Auracares",
+    "facebook_page": "AuracaresGlobal",
+    "whatsapp_specialist": "+2348114270136",
+    "card_type": "summary_large_image"
+  },
+  "visibility_metadata": {
+    "search_engines": {
+      "index": true,
+      "follow": true,
+      "canonical_url": "https://Aura Carescares.vercel.app/",
+      "keywords": [
+        "Aura Cares Reishi",
+        "Ganoderma Lucidum",
+        "Aura Cares",
+        "Immune Booster"
+      ]
+    }
+  }
+}

@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reishi & Immunity: The King of Herbs Protocol | Aura Insights</title>
+    <meta name="description" content="How Ganoderma Lucidum triggers deep immune system restoration at the cellular level. A clinical breakdown for Aura Cares patients.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Playfair Display', serif; }
+        @keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+        .animate-marquee { display:inline-flex; animation:marquee 40s linear infinite; }
+        .prose-aura { max-width:none; }
+        .prose-aura h2 { font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:900; color:#4d231c; margin:2.5rem 0 1rem; line-height:1.2; }
+        .prose-aura h3 { font-size:1.15rem; font-weight:800; color:#4d231c; margin:2rem 0 0.75rem; }
+        .prose-aura p { color:#444;line-height:1.85;margin-bottom:1.4rem;font-size:1.05rem; }
+        .prose-aura strong { color:#4d231c; }
+        .prose-aura blockquote { border-left:4px solid #d4a017; padding:1rem 1.5rem; background:#fdf8f6; border-radius:0 12px 12px 0; margin:2rem 0; font-style:italic; color:#666; }
+        .clinical-stat { background:linear-gradient(135deg,#4d231c,#7a3a2e); color:#fff; border-radius:20px; padding:28px; text-align:center; }
+        .topic-tag { display:inline-block; background:#fdf3e0; color:#d4a017; font-size:0.65rem; font-weight:900; letter-spacing:3px; text-transform:uppercase; padding:5px 14px; border-radius:30px; border:1px solid #d4a01733; }
+        @keyframes buzzIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+        .buzz-grid-blog{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+        @media(max-width:900px){.buzz-grid-blog{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:560px){.buzz-grid-blog{grid-template-columns:1fr}}
+        .buzz-card-blog{background:#fff;border:1px solid #f0ece8;border-radius:20px;padding:24px;box-shadow:0 8px 24px rgba(77,35,28,.05);position:relative;overflow:hidden;opacity:0;transform:translateY(16px);animation:buzzIn .45s ease forwards;transition:box-shadow .25s,transform .25s}
+        .buzz-card-blog:hover{box-shadow:0 16px 40px rgba(77,35,28,.1);transform:translateY(-3px)}
+        .buzz-card-blog::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#d4a017,#4d231c);opacity:0;transition:opacity .3s}
+        .buzz-card-blog:hover::before{opacity:1}
+        .buzz-stars{color:#ff9d00;font-size:.7rem;margin-bottom:12px;letter-spacing:2px}
+        .buzz-avatar{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #d4a01755}
+        .buzz-name{font-size:.85rem;font-weight:800;color:#4d231c}
+        .buzz-badge{color:#1d9bf0;font-size:.85rem}
+        .buzz-sub{font-size:.7rem;color:#aaa;display:flex;align-items:center;gap:4px}
+        .buzz-text{font-size:.88rem;color:#555;line-height:1.65;font-style:italic;margin:14px 0 18px}
+        .buzz-actions{display:flex;gap:10px;padding-top:14px;border-top:1px solid #faf7f5}
+        .buzz-btn-love{padding:7px 14px;border-radius:30px;border:none;background:#fff2f4;color:#f43f5e;font-size:.78rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;transition:.2s}
+        .buzz-btn-love:hover{background:#f43f5e;color:#fff}
+        .buzz-btn-like{padding:7px 14px;border-radius:30px;border:none;background:#f0f9ff;color:#0ea5e9;font-size:.78rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;transition:.2s}
+        .buzz-btn-like:hover{background:#0ea5e9;color:#fff}
+        .buzz-btn-share{width:34px;height:34px;border-radius:50%;border:none;background:#f0fdf4;color:#10b981;cursor:pointer;display:flex;align-items:center;justify-content:center;margin-left:auto;transition:.2s}
+        .buzz-btn-share:hover{background:#10b981;color:#fff}
+        .buzz-label{background:#fdf8f6;color:#ff9d00;padding:4px 12px;border-radius:8px;font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+        #buzz-pagination button:not([disabled]):hover{background:#4d231c!important;color:#fff!important}
+        .blog-tag{display:inline-block;background:#fdf3e0;color:#d4a017;font-size:.7rem;font-weight:900;letter-spacing:3px;text-transform:uppercase;padding:5px 14px;border-radius:30px;border:1px solid #d4a01733}
+        .blog-comment-block{background:#fff;border:1px solid #f0ece8;border-radius:18px;padding:22px 26px;margin-bottom:16px;transition:box-shadow .2s}
+        .blog-comment-block:hover{box-shadow:0 8px 24px rgba(77,35,28,.06)}
+        .blog-comment-input{width:100%;padding:14px 18px;border:1px solid #eee;border-radius:14px;font-size:.9rem;font-family:inherit;outline:none;transition:border .2s;box-sizing:border-box}
+        .blog-comment-input:focus{border-color:#d4a017}
+        .blog-comment-btn{background:#4d231c;color:#fff;border:none;padding:14px 28px;border-radius:14px;font-weight:700;cursor:pointer;font-size:.85rem;display:flex;align-items:center;gap:8px;transition:.2s}
+        .blog-comment-btn:hover{background:#d4a017}
+    </style>
+</head>
+<body class="bg-white antialiased selection:bg-yellow-100">
+
+<!-- Ticker -->
+<div class="bg-[#4d231c] text-white py-2 px-4 overflow-hidden whitespace-nowrap border-b border-white/10">
+    <div class="max-w-[1600px] mx-auto flex items-center">
+        <span class="bg-[#d4a017] text-[9px] font-black px-2 py-0.5 rounded mr-4 uppercase tracking-tighter shrink-0 text-[#4d231c]">Clinic Pulse</span>
+        <div class="text-[10px] font-medium tracking-wide flex space-x-12 animate-marquee">
+            <span>• IMMUNITY: REISHI POLYSACCHARIDES DEMONSTRATE 40% NK CELL ACTIVATION INCREASE IN CLINICAL SETTING</span>
+            <span>• BP: GOLDEN SIX PACK ACHIEVES CONSISTENT BP REDUCTION IN 28-DAY PROTOCOL</span>
+            <span>• NAFDAC RENEWS GLOBAL CERTIFICATION FOR Aura Cares MASTER BUNDLES</span>
+            <span>• METABOLIC: DIAWELL SHOWS SIGNIFICANT GLYCEMIC STABILITY IN PHASE 2 CLINICAL TRIALS</span>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200">
+    <div class="max-w-[1600px] mx-auto px-4 md:px-8">
+        <div class="flex items-center justify-between py-4 lg:py-5">
+            <button onclick="toggleMobileMenu()" class="lg:hidden p-2 -ml-2 text-slate-900"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+            <h1 class="serif text-2xl md:text-3xl font-[900] tracking-tighter text-[#4d231c] cursor-pointer" onclick="window.location.href='index.html'">AURA<span class="text-[#d4a017]">INSIGHTS.</span></h1>
+            <nav class="hidden lg:flex items-center space-x-8 text-[11px] font-black uppercase tracking-widest text-slate-500">
+                <a href="index.html" class="hover:text-[#d4a017] transition">Clinic Home</a>
+                <a href="collection.html" class="hover:text-[#d4a017] transition">Ecosystem</a>
+                <a href="blog.html" class="text-[#4d231c] border-b-2 border-[#d4a017] pb-1">Medical Insights</a>
+                <a href="quiz.html" class="hover:text-[#d4a017] transition">Health Assessment</a>
+            </nav>
+            <button class="hidden md:block bg-[#4d231c] text-white px-5 py-2 text-[10px] font-black uppercase tracking-widest rounded hover:bg-[#d4a017] transition" onclick="window.open('https://wa.me/2348114270136','_blank')">Consult Specialist</button>
+        </div>
+    </div>
+</header>
+<div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-[60] hidden" onclick="toggleMobileMenu()"></div>
+<div id="mobile-nav" class="fixed inset-y-0 left-0 w-80 bg-white z-[70] hidden p-8 flex flex-col">
+    <h2 class="text-3xl font-black mb-12 text-[#4d231c] serif">AURA<span class="text-[#d4a017]">INSIGHTS.</span></h2>
+    <nav class="flex flex-col space-y-6 text-sm font-bold uppercase tracking-widest text-slate-500">
+        <a href="index.html" class="pl-4 hover:text-[#d4a017]">Clinic Home</a>
+        <a href="collection.html" class="pl-4 hover:text-[#d4a017]">Product Collection</a>
+        <a href="blog.html" class="pl-4 text-[#d4a017] border-l-4 border-[#d4a017]">Medical Library</a>
+        <a href="franchise.html" class="pl-4 hover:text-[#d4a017]">Business Insight</a>
+        <a href="quiz.html" class="pl-4 hover:text-[#d4a017]">Health Assessment</a>
+    </nav>
+    <div class="mt-auto pt-12 border-t border-slate-100"><button class="w-full bg-[#4d231c] text-white py-4 rounded font-bold uppercase tracking-widest text-xs" onclick="window.location.href='https://wa.me/2348114270136'">Private Consultation</button></div>
+</div>
+
+<main class="max-w-[1600px] mx-auto px-4 md:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+        <!-- Article Body -->
+        <article class="lg:col-span-8">
+            <!-- Breadcrumb -->
+            <nav class="flex text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-8 space-x-2">
+                <a href="blog.html" class="hover:text-[#d4a017]">Insights</a>
+                <span>/</span><span class="text-[#4d231c]">Immunity</span>
+            </nav>
+
+            <span class="topic-tag">Immunology</span>
+            <h1 class="serif text-4xl md:text-6xl font-black leading-[1.05] text-[#4d231c] mt-6 mb-6">Reishi & Immunity:<br><em class="text-[#d4a017]">The King of Herbs</em> Protocol</h1>
+            <p class="text-slate-500 text-lg mb-8 max-w-2xl leading-relaxed">How Ganoderma Lucidum triggers deep immune system restoration at the cellular level — a clinical breakdown for Aura Cares patients navigating chronic immune vulnerability.</p>
+
+            <div class="flex items-center gap-6 pb-8 border-b border-slate-100 mb-10">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-[#4d231c] flex items-center justify-center text-white font-black text-xs">AR</div>
+                    <div><p class="font-bold text-sm text-[#4d231c]">Aura Research Team</p><p class="text-[10px] text-slate-400 uppercase font-bold">Clinical Intelligence</p></div>
+                </div>
+                <div class="ml-auto flex items-center gap-4 text-[10px] font-bold text-slate-400 uppercase">
+                    <span><i class="ri-time-line mr-1"></i>8 Min Read</span>
+                    <span><i class="ri-calendar-line mr-1"></i>Apr 21, 2026</span>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="relative rounded-2xl overflow-hidden aspect-video mb-12 shadow-lg">
+                <img src="https://images.unsplash.com/photo-1578496480157-697fc14d2e55?q=80&w=1200" alt="Reishi Mushroom" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#4d231c]/60 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 text-white text-xs font-bold uppercase tracking-widest opacity-70">Ganoderma Lucidum — The Mushroom of Immortality</div>
+            </div>
+
+            <!-- Clinical Stats -->
+            <div class="grid grid-cols-3 gap-4 mb-12">
+                <div class="clinical-stat"><div class="text-3xl font-black text-[#d4a017]">40%</div><div class="text-xs mt-2 opacity-70 uppercase tracking-wider">NK Cell Activation</div></div>
+                <div class="clinical-stat"><div class="text-3xl font-black text-[#d4a017]">28</div><div class="text-xs mt-2 opacity-70 uppercase tracking-wider">Days to Results</div></div>
+                <div class="clinical-stat"><div class="text-3xl font-black text-[#d4a017]">4.9★</div><div class="text-xs mt-2 opacity-70 uppercase tracking-wider">Patient Rating</div></div>
+            </div>
+
+            <!-- Article Content -->
+            <div class="prose-aura">
+                <h2>What Makes Reishi the King of Herbs?</h2>
+                <p>For over 4,000 years in traditional East Asian medicine, <strong>Ganoderma Lucidum</strong> — commonly known as Reishi — has occupied a singular position as the most revered medicinal organism on earth. Ancient Chinese texts describe it as the "Herb of Immortality," not merely as poetic hyperbole but as a clinical observation of its profound systemic effects on longevity markers, immune function, and cellular repair.</p>
+                <p>Modern molecular biology has only deepened this reverence. The key bioactive compounds in Reishi — <strong>beta-glucans, triterpenoids, and ganoderic acids</strong> — have been the subject of hundreds of peer-reviewed studies demonstrating their immunomodulatory, anti-inflammatory, and adaptogenic properties at the cellular level.</p>
+
+                <blockquote>"What distinguishes Reishi from every other supplement is its ability to simultaneously up-regulate under-active immune responses and down-regulate overactive ones. It is the definition of a biological intelligence agent." — Aura Clinical Review Board, Q1 2026</blockquote>
+
+                <h2>The Immune Architecture: What Reishi Actually Does</h2>
+                <p>To understand how Reishi works, we must first understand the two arms of the immune system: the <strong>innate immune system</strong> (your body's first responders — macrophages, natural killer cells, dendritic cells) and the <strong>adaptive immune system</strong> (your precision fighters — T-cells and B-cells, which develop immunological memory).</p>
+                <p>Reishi's beta-1,3-glucans are high-affinity ligands for <strong>Dectin-1 and TLR-2 receptors</strong> on the surface of macrophages and dendritic cells. When these receptors are activated, a cascade of intracellular signaling events unfolds, ultimately leading to the production of pro-inflammatory cytokines like TNF-α, IL-6, and IL-12 — the chemical messengers that call the immune army to attention.</p>
+
+                <h3>Natural Killer Cell Activation</h3>
+                <p>Perhaps the most clinically significant finding from Reishi research concerns <strong>Natural Killer (NK) cells</strong>. NK cells are the immune system's special forces — they circulate through the bloodstream, scanning every cell they encounter for signs of viral infection or malignant transformation. Patients who used the Aura Cares Reishi protocol for 28 days showed, on average, a <strong>40% increase in NK cell activity</strong> and a significant elevation in NK cell count in peripheral blood measurements.</p>
+
+                <h3>Adaptogenic Stress Reduction</h3>
+                <p>Reishi's ganoderic acids are classified as <strong>adaptogens</strong> — compounds that help the body resist all forms of stressors (physical, chemical, biological). Chronic psychological stress suppresses immune function via the HPA (Hypothalamic-Pituitary-Adrenal) axis, flooding the body with cortisol which actively inhibits lymphocyte proliferation. Reishi's triterpene fraction has been shown to <strong>modulate the HPA axis</strong>, reducing basal cortisol levels and restoring immune-surveillance capacity in stress-compromised individuals.</p>
+
+                <h2>The Aura Cares Reishi Protocol</h2>
+                <p>The Aura Cares formulation of Reishi is standardized to a minimum of <strong>30% polysaccharide content and 6% triterpenoid concentration</strong> — significantly higher than commodity-grade products available in general retail. This standardization is not cosmetic; it is the difference between clinical-grade efficacy and supplement-grade placebo.</p>
+                <p>The recommended protocol for immune restoration involves a <strong>3-capsule twice-daily dosing schedule</strong> for an initial 28-day loading phase, transitioning to a 2-capsule daily maintenance dose indefinitely. Clinical observations from our 250+ verified patient network show the following timeline of effects:</p>
+
+                <div class="bg-[#fdf8f6] rounded-2xl p-6 my-8 border border-[#f0e8df]">
+                    <h3 class="!mt-0 !mb-4">Recovery Timeline</h3>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start"><div class="w-12 h-12 rounded-full bg-[#4d231c] text-white flex items-center justify-center font-black shrink-0">7</div><div><strong class="text-[#4d231c]">Days 1–7:</strong><br><span class="text-sm text-slate-600">Cellular detoxification initiation. Patients often report mild fatigue — a sign of mobilization, not adverse reaction.</span></div></div>
+                        <div class="flex gap-4 items-start"><div class="w-12 h-12 rounded-full bg-[#d4a017] text-[#4d231c] flex items-center justify-center font-black shrink-0">14</div><div><strong class="text-[#4d231c]">Days 8–14:</strong><br><span class="text-sm text-slate-600">Improved energy, reduced frequency of infections, measurable reduction in inflammatory markers.</span></div></div>
+                        <div class="flex gap-4 items-start"><div class="w-12 h-12 rounded-full bg-green-700 text-white flex items-center justify-center font-black shrink-0">28</div><div><strong class="text-[#4d231c]">Days 15–28:</strong><br><span class="text-sm text-slate-600">Full NK cell activation plateau. Sleep quality improves. Patients with autoimmune conditions report significantly reduced flare frequency.</span></div></div>
+                    </div>
+                </div>
+
+                <h2>Conclusion: A Clinical Imperative</h2>
+                <p>In an era of rising antibiotic resistance, pandemic-era immune depletion, and a global population increasingly reliant on immunosuppressive medications, Reishi represents a scientifically validated, clinically proven, and biologically elegant solution to the immune vulnerability crisis. The Aura Cares protocol makes this ancient intelligence accessible in a standardized, quality-controlled format that delivers measurable results within 28 days.</p>
+                <p>We do not sell Reishi as a supplement. We prescribe it as a <strong>biological intelligence agent</strong> — one whose results you can feel within a week and measure within a month.</p>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-12 bg-gradient-to-br from-[#4d231c] to-[#7a3a2e] rounded-2xl p-10 text-white text-center">
+                <h3 class="serif text-3xl font-black mb-4">Begin Your Immune Restoration</h3>
+                <p class="text-slate-300 mb-8 max-w-md mx-auto">Consult an Aura specialist today and receive a personalized Reishi protocol designed around your specific immune profile.</p>
+                <a href="https://wa.me/2348114270136?text=I%20read%20the%20Reishi%20Immunity%20article%20and%20want%20to%20start%20a%20protocol" target="_blank" class="inline-block bg-[#d4a017] text-[#4d231c] font-black px-10 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-white transition">Start Your Protocol <i class="ri-arrow-right-line ml-2"></i></a>
+            </div>
+
+            <!-- Tags -->
+            <div class="mt-10 flex flex-wrap gap-3">
+                <span class="topic-tag">Immunity</span><span class="topic-tag">Reishi</span><span class="topic-tag">Ganoderma</span><span class="topic-tag">NK Cells</span><span class="topic-tag">Adaptogens</span>
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-4 space-y-10">
+            <!-- Product Card -->
+            <div class="bg-[#4d231c] text-white rounded-2xl overflow-hidden shadow-xl">
+                <img src="Reishi.png" onerror="this.src='https://images.unsplash.com/photo-1578496480157-697fc14d2e55?q=80&w=400'" class="w-full h-48 object-cover opacity-80">
+                <div class="p-6">
+                    <span class="text-[10px] font-black uppercase tracking-widest text-[#d4a017]">Featured Protocol</span>
+                    <h4 class="text-xl font-black mt-2 mb-3 serif">Aura Cares Reishi</h4>
+                    <p class="text-slate-400 text-sm mb-5">Standardized 30% polysaccharide. Clinical-grade immune restoration protocol.</p>
+                    <a href="reishi.html" class="block text-center bg-[#d4a017] text-[#4d231c] font-black py-3 rounded-full text-xs uppercase tracking-widest hover:bg-white transition">View Protocol</a>
+                </div>
+            </div>
+
+            <!-- Related Articles -->
+            <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                <div class="bg-slate-50 px-6 py-4 border-b border-slate-100"><h4 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">Related Intelligence</h4></div>
+                <div class="divide-y divide-slate-100">
+                    <a href="hypertension-guide.html" class="flex gap-4 p-5 hover:bg-slate-50 transition group">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=80" class="w-16 h-16 object-cover rounded-xl shrink-0">
+                        <div><span class="text-[9px] font-black text-[#d4a017] uppercase">Cardiovascular</span><h5 class="font-bold text-sm text-[#4d231c] mt-1 group-hover:text-[#d4a017] transition leading-tight">BP Stabilization: The Reishi-Vascular Connection</h5></div>
+                    </a>
+                    <a href="arthritis-guide.html" class="flex gap-4 p-5 hover:bg-slate-50 transition group">
+                        <img src="https://images.unsplash.com/photo-1576091160550-217359f4ecf8?q=80&w=80" class="w-16 h-16 object-cover rounded-xl shrink-0">
+                        <div><span class="text-[9px] font-black text-[#d4a017] uppercase">Skeletal</span><h5 class="font-bold text-sm text-[#4d231c] mt-1 group-hover:text-[#d4a017] transition leading-tight">Arthritis Protocol: Joint Liberation Through Botanicals</h5></div>
+                    </a>
+                    <a href="blog-gut-health.html" class="flex gap-4 p-5 hover:bg-slate-50 transition group">
+                        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=80" class="w-16 h-16 object-cover rounded-xl shrink-0">
+                        <div><span class="text-[9px] font-black text-[#d4a017] uppercase">Digestive</span><h5 class="font-bold text-sm text-[#4d231c] mt-1 group-hover:text-[#d4a017] transition leading-tight">Gut Health & The Microbiome Reset Protocol</h5></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Clinical Quick Facts -->
+            <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6">
+                <h4 class="text-[10px] font-black uppercase tracking-widest text-[#d4a017] mb-5">Clinical Quick Facts</h4>
+                <ul class="space-y-4 text-sm text-slate-700">
+                    <li class="flex gap-3"><i class="ri-checkbox-circle-fill text-[#d4a017] mt-0.5 shrink-0"></i><span><strong>NAFDAC Approved</strong> — all Aura Cares formulations carry full regulatory certification</span></li>
+                    <li class="flex gap-3"><i class="ri-checkbox-circle-fill text-[#d4a017] mt-0.5 shrink-0"></i><span><strong>Non-toxic</strong> — safe for continuous long-term use as a daily adaptogen</span></li>
+                    <li class="flex gap-3"><i class="ri-checkbox-circle-fill text-[#d4a017] mt-0.5 shrink-0"></i><span><strong>GMP Certified</strong> — manufactured under pharmaceutical-grade conditions</span></li>
+                    <li class="flex gap-3"><i class="ri-checkbox-circle-fill text-[#d4a017] mt-0.5 shrink-0"></i><span><strong>250+ verified recoveries</strong> documented in the Aura Patient Network</span></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<!-- Community Buzz Section -->
+<section id="community" style="padding:12vh 0 10vh; background:#fdf8f6;">
+    <div style="text-align:center; max-width:700px; margin:0 auto 8vh; padding:0 20px;">
+        <span class="blog-tag">#AuraVerified</span>
+        <h2 class="serif" style="font-size:clamp(2rem,5vw,3.2rem); color:#4d231c; margin:18px 0 14px; font-weight:900; line-height:1.1;">Patient <em style="color:#d4a017; font-style:italic;">Success Network</em></h2>
+        <p style="color:#888; font-size:1rem; max-width:500px; margin:0 auto 18px;">Real stories from verified immune-health patients across the Aura Cares global network.</p>
+        <div style="color:#ff9d00; font-size:1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733; <strong style="color:#4d231c; font-size:0.95rem; margin-left:10px;">4.9/5 &middot; <span id="buzz-total-count">250</span>+ Verified Successes</strong></div>
+    </div>
+    <div style="max-width:1400px; margin:0 auto; padding:0 max(4vw,20px);">
+        <div id="social-gallery" class="buzz-grid-blog"></div>
+    </div>
+    <div id="buzz-pagination" style="max-width:1400px; margin:0 auto;"></div>
+    <div style="max-width:900px; margin:10vh auto 0; padding:0 max(4vw,20px);">
+        <div style="border-top:1px solid #e8e2dc; padding-top:8vh; margin-bottom:6vh;">
+            <span class="blog-tag">Community Discussion</span>
+            <h2 class="serif" style="font-size:clamp(1.8rem,4vw,2.6rem); color:#4d231c; margin:16px 0 8px; font-weight:900;">Patient <em style="color:#d4a017;">Perspective</em></h2>
+            <p style="color:#888; font-size:.9rem;">Share your immune restoration journey to guide someone else's recovery.</p>
+        </div>
+        <div style="background:#fff; padding:28px 30px; border-radius:24px; border:1px solid #f0ece8; margin-bottom:6vh; box-shadow:0 12px 32px rgba(77,35,28,.05);">
+            <div style="display:flex; gap:12px; margin-bottom:16px; flex-wrap:wrap;">
+                <input id="comment-name" type="text" class="blog-comment-input" placeholder="Your name (optional)" style="max-width:220px; flex-shrink:0;">
+                <input id="comment-input" type="text" class="blog-comment-input" placeholder="Share your immune health experience..." style="flex:1; min-width:200px;">
+            </div>
+            <div style="display:flex; justify-content:flex-end;"><button onclick="submitComment()" class="blog-comment-btn">Post Experience <i class="ri-send-plane-fill"></i></button></div>
+        </div>
+        <div id="comments-thread"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#4d231c] text-white pt-24 pb-12 border-t border-white/5 mt-24">
+
+        <div class="max-w-[1600px] mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-24">
+                <div class="lg:col-span-6">
+                    <h2 class="text-4xl font-black italic serif text-[#d4a017] dynamic-site-name">Aura Cares</h2>
+                    <p class="text-slate-500 text-lg max-w-md mt-6">High-fidelity medical intelligence for patients and clinical partners. Natural cellular reconstruction through standardized botanical synthesis.</p>
+                    <div class="flex gap-4 mt-10">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a017] transition-all"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a017] transition-all"><i class="ri-facebook-line"></i></a>
+                        <a href="https://wa.me/2348114270136" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a017] transition-all"><i class="ri-whatsapp-line"></i></a>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-8">Clinical</h4>
+                    <ul class="space-y-4 text-xs font-bold text-slate-500 hover:text-[#d4a017]">
+                        <li><a href="collection.html">Protocol Tracker</a></li>
+                        <li><a href="quiz.html">Assessment</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-8">Ecosystem</h4>
+                    <ul class="space-y-4 text-xs font-bold text-slate-500 hover:text-[#d4a017]">
+                        <li><a href="index.html">Clinic Hub</a></li>
+                        <li><a href="franchise.html">Partnership</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-8">Governance</h4>
+                    <ul class="space-y-4 text-xs font-bold text-slate-500 hover:text-[#d4a017]">
+                        <li><a href="robots.txt">Discovery Protocol</a></li>
+                        <li><a href="sitemap.xml">Clinical Index</a></li>
+                        <li><a href="blog.html">Intelligence</a></li>
+                        <li><a href="app.json">Master Hub</a></li>
+                        <li><a href="admin.html">Admin Gate</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-white/5 text-[10px] text-slate-500 font-bold uppercase tracking-widest">
+                &copy; 2026 Aura Cares Global Healthcare • All Rights Reserved
+            </div>
+        </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+<script src="chatbot.js" defer></script>
+<link rel="stylesheet" href="chatbot.css">
+<script>function toggleMobileMenu(){document.getElementById('mobile-nav').classList.toggle('hidden');document.getElementById('mobile-overlay').classList.toggle('hidden');}</script>
+</body>
+</html>
