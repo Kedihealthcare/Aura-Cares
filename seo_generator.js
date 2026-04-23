@@ -18,9 +18,13 @@ function generateSeoMetaTags(pageData) {
         'msTileColor': '<meta name="msapplication-TileColor" content="#4d231c">',
         
         // ======= OPEN GRAPH (Social Media & AI Models) ======= 
+        'ogSiteName': `<meta property="og:site_name" content="Aura Cares Global">`,
         'ogTitle': `<meta property="og:title" content="${pageData.ogTitle || pageData.title}">`,
         'ogDescription': `<meta property="og:description" content="${pageData.ogDescription || pageData.description}">`,
-        'ogImage': `<meta property="og:image" content="${pageData.ogImage}">`,
+        'ogImage': `<meta property="og:image" itemprop="image" content="${pageData.ogImage}">`,
+        'ogImageSecure': `<meta property="og:image:secure_url" content="${pageData.ogImage}">`,
+        'ogImageWidth': `<meta property="og:image:width" content="1200">`,
+        'ogImageHeight': `<meta property="og:image:height" content="630">`,
         'ogImageAlt': `<meta property="og:image:alt" content="${pageData.imageAlt || pageData.title}">`,
         'ogUrl': `<meta property="og:url" content="${pageData.canonicalUrl}">`,
         'ogType': `<meta property="og:type" content="${pageData.ogType || 'website'}">`,
