@@ -1,4 +1,22 @@
-﻿const WHATSAPP_NUM = "2348114270136";
+// ======= FIREBASE CONFIGURATION =======
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+
+const firebaseConfig = {
+    apiKey: "[GCP_API_KEY]",
+    authDomain: "kedi-pharmacy.firebaseapp.com",
+    projectId: "kedi-pharmacy",
+    storageBucket: "kedi-pharmacy.firebasestorage.app",
+    messagingSenderId: "113444919872",
+    appId: "1:113444919872:web:ac71879c9694e8450ddda5",
+    measurementId: "G-ZKBEC3EM8X"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+const WHATSAPP_NUM = "2348114270136";
+
 
 function addToCart(prod) {
     const msg = `Hello, I am interested in procuring the Aura Cares ${prod} protocol. Please guide me on the clinical application and dosage.`;
@@ -9,15 +27,15 @@ function addToCart(prod) {
 function initBranding() {
     const siteName = localStorage.getItem('aura_site_name') || 'Aura Cares';
     const seoTags = localStorage.getItem('aura_seo_tags') || 'healthcare, clinical protocols, herbal medicine, Aura Cares';
-    
+
     // Update Document Title
     if (document.title.includes('Aura Cares')) {
         document.title = document.title.replace('Aura Cares', siteName);
     }
-    
+
     // Update Dynamic Branded Elements
     document.querySelectorAll('.dynamic-site-name').forEach(el => el.innerText = siteName);
-    
+
     // Inject SEO Meta Tags
     let metaTags = document.querySelector('meta[name="keywords"]');
     if (metaTags) {
@@ -77,12 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
         tl.to("#fanta", { top: "150vh", left: "20vw", width: "35vw", rotation: 360 }, "sync")
-          .to("#product-bg-1", { top: "140vh", left: "5vw", opacity: 0.8 }, "sync")
-          .to("#product-bg-2", { top: "160vh", right: "5vw", opacity: 0.8 }, "sync")
-          .to("#orange-cut", { top: "140vh", left: "10vw", rotation: 180 }, "sync")
-          .to("#orange", { top: "160vh", right: "5vw", rotation: -90 }, "sync")
-          .to("#leaf", { top: "110vh", left: "80vw", rotation: 45 }, "sync")
-          .to("#leaf2", { top: "190vh", left: "5vw", rotation: -45 }, "sync");
+            .to("#product-bg-1", { top: "140vh", left: "5vw", opacity: 0.8 }, "sync")
+            .to("#product-bg-2", { top: "160vh", right: "5vw", opacity: 0.8 }, "sync")
+            .to("#orange-cut", { top: "140vh", left: "10vw", rotation: 180 }, "sync")
+            .to("#orange", { top: "160vh", right: "5vw", rotation: -90 }, "sync")
+            .to("#leaf", { top: "110vh", left: "80vw", rotation: 45 }, "sync")
+            .to("#leaf2", { top: "190vh", left: "5vw", rotation: -45 }, "sync");
 
         // ─── DESKTOP ONLY: Exit timeline ─────────────────────────────────
         let tl2 = gsap.timeline({
@@ -144,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
-    
+
     initBranding();
 });
 
@@ -182,7 +200,7 @@ const STORIES = [
     "Highly recommended for anyone looking for authentic, science-backed natural solutions."
 ];
 
-for(let i=0; i<250; i++) {
+for (let i = 0; i < 250; i++) {
     const p = products_list[i % products_list.length];
     const name = NAMES[i % NAMES.length];
     const loc = LOCS[i % LOCS.length];
@@ -205,9 +223,11 @@ let COMMENTS_DATA = JSON.parse(localStorage.getItem('aura_comments') || '[]');
 if (COMMENTS_DATA.length === 0) {
     COMMENTS_DATA = [
         { id: 1, name: "Dr. Adebayo", text: "This protocol is clinically sound. We've seen remarkable results in patient adherence.", likes: 12, replies: [], date: "2h ago" },
-        { id: 2, name: "Sarah J.", text: "Does this work for chronic cases? I've been struggling for years.", likes: 5, replies: [
-            { id: 101, name: "Admin_Aura", text: "Yes Sarah, our protocols are designed for systemic restoration. Please use the consultant bubble for a private assessment.", likes: 8, date: "1h ago" }
-        ], date: "1h ago" }
+        {
+            id: 2, name: "Sarah J.", text: "Does this work for chronic cases? I've been struggling for years.", likes: 5, replies: [
+                { id: 101, name: "Admin_Aura", text: "Yes Sarah, our protocols are designed for systemic restoration. Please use the consultant bubble for a private assessment.", likes: 8, date: "1h ago" }
+            ], date: "1h ago"
+        }
     ];
     localStorage.setItem('aura_comments', JSON.stringify(COMMENTS_DATA));
 }
@@ -219,7 +239,7 @@ function submitComment() {
 
     const isAdmin = sessionStorage.getItem('admin_session') === 'true';
     const adminAlias = localStorage.getItem('aura_admin_alias') || 'Admin Moderator';
-    
+
     const newComment = {
         id: Date.now(),
         name: isAdmin ? adminAlias : (nameInput.value.trim() || "Anonymous Patient"),
@@ -295,9 +315,9 @@ function initCommentsSection() {
             </div>
             <div class="replies" style="margin-left:30px; margin-top:15px; padding-left:15px; border-left:2px solid #fdf8f6;">
                 ${c.replies.map(r => {
-                    const isAdminBySession = r.name.toLowerCase().includes('admin');
-                    const adminBadgeHtml = isAdminBySession ? `<span style="background:#4d231c; color:#d4a017; font-size:0.6rem; padding:2px 6px; border-radius:4px; font-weight:900; letter-spacing:1px; margin-left:6px;">MODERATOR</span>` : '';
-                    return `
+        const isAdminBySession = r.name.toLowerCase().includes('admin');
+        const adminBadgeHtml = isAdminBySession ? `<span style="background:#4d231c; color:#d4a017; font-size:0.6rem; padding:2px 6px; border-radius:4px; font-weight:900; letter-spacing:1px; margin-left:6px;">MODERATOR</span>` : '';
+        return `
                     <div style="margin-bottom:12px;">
                         <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
                             <strong style="font-size:0.8rem; color:#4d231c; display:flex; align-items:center;">${r.name}${adminBadgeHtml}</strong>
@@ -306,7 +326,7 @@ function initCommentsSection() {
                         <p style="font-size:0.8rem; color:#666; font-style: ${isAdminBySession ? 'normal' : 'italic'}">${r.text}</p>
                         <button onclick="likeComment(${r.id})" style="background:none; border:none; color:#ff9d00; font-size:0.75rem; cursor:pointer;"><i class="ri-thumb-up-line"></i> ${r.likes}</button>
                     </div>`;
-                }).join('')}
+    }).join('')}
             </div>
         </div>
     `).join('');
@@ -315,7 +335,7 @@ function initCommentsSection() {
 function getPageKeyword() {
     const name = window.location.pathname.split('/').pop().toLowerCase().replace('.html', '');
     if (!name || name === 'index') return 'reishi';
-    
+
     // Clinical Guide Mappings to Primary Products
     const guides = {
         'liver-guide': 'lirich',
@@ -329,7 +349,7 @@ function getPageKeyword() {
         'fertility-guide': 'gynapharm', // Usually fertility uses Gynapharm/Revive
         'piles-guide': 'constilease'
     };
-    
+
     return guides[name] || name;
 }
 
@@ -408,15 +428,15 @@ function initCommunityBuzz() {
                     Showing <strong style="color:#4d231c;">${s}–${e}</strong> of <strong style="color:#4d231c;">${filtered.length}</strong> verified stories
                 </p>
                 <div style="display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
-                    <button onclick="changeBuzzPage(0)" ${buzzPage===0?'disabled':''} style="padding:8px 14px;border-radius:30px;border:1px solid #eee;background:#fff;color:#4d231c;font-weight:700;font-size:0.8rem;cursor:pointer;opacity:${buzzPage===0?0.35:1};transition:0.2s;"><i class="ri-skip-back-fill"></i></button>
-                    <button onclick="changeBuzzPage(buzzPage-1)" ${buzzPage===0?'disabled':''} style="padding:8px 18px;border-radius:30px;border:1px solid #eee;background:#fff;color:#4d231c;font-weight:700;font-size:0.85rem;cursor:pointer;opacity:${buzzPage===0?0.35:1};transition:0.2s;"><i class="ri-arrow-left-s-line"></i> Prev</button>
+                    <button onclick="changeBuzzPage(0)" ${buzzPage === 0 ? 'disabled' : ''} style="padding:8px 14px;border-radius:30px;border:1px solid #eee;background:#fff;color:#4d231c;font-weight:700;font-size:0.8rem;cursor:pointer;opacity:${buzzPage === 0 ? 0.35 : 1};transition:0.2s;"><i class="ri-skip-back-fill"></i></button>
+                    <button onclick="changeBuzzPage(buzzPage-1)" ${buzzPage === 0 ? 'disabled' : ''} style="padding:8px 18px;border-radius:30px;border:1px solid #eee;background:#fff;color:#4d231c;font-weight:700;font-size:0.85rem;cursor:pointer;opacity:${buzzPage === 0 ? 0.35 : 1};transition:0.2s;"><i class="ri-arrow-left-s-line"></i> Prev</button>
                     <div style="display:flex;gap:6px;align-items:center;">${buildPageNumbers(buzzPage, totalPages)}</div>
-                    <button onclick="changeBuzzPage(buzzPage+1)" ${buzzPage>=totalPages-1?'disabled':''} style="padding:8px 18px;border-radius:30px;border:1px solid #eee;background:#fff;color:#4d231c;font-weight:700;font-size:0.85rem;cursor:pointer;opacity:${buzzPage>=totalPages-1?0.35:1};transition:0.2s;">Next <i class="ri-arrow-right-s-line"></i></button>
-                    <button onclick="changeBuzzPage(${totalPages-1})" ${buzzPage>=totalPages-1?'disabled':''} style="padding:8px 14px;border-radius:30px;border:1px solid #eee;background:#fff;color:#4d231c;font-weight:700;font-size:0.8rem;cursor:pointer;opacity:${buzzPage>=totalPages-1?0.35:1};transition:0.2s;"><i class="ri-skip-forward-fill"></i></button>
+                    <button onclick="changeBuzzPage(buzzPage+1)" ${buzzPage >= totalPages - 1 ? 'disabled' : ''} style="padding:8px 18px;border-radius:30px;border:1px solid #eee;background:#fff;color:#4d231c;font-weight:700;font-size:0.85rem;cursor:pointer;opacity:${buzzPage >= totalPages - 1 ? 0.35 : 1};transition:0.2s;">Next <i class="ri-arrow-right-s-line"></i></button>
+                    <button onclick="changeBuzzPage(${totalPages - 1})" ${buzzPage >= totalPages - 1 ? 'disabled' : ''} style="padding:8px 14px;border-radius:30px;border:1px solid #eee;background:#fff;color:#4d231c;font-weight:700;font-size:0.8rem;cursor:pointer;opacity:${buzzPage >= totalPages - 1 ? 0.35 : 1};transition:0.2s;"><i class="ri-skip-forward-fill"></i></button>
                 </div>
                 <div style="display:flex;justify-content:center;align-items:center;gap:10px;">
                     <span style="font-size:0.8rem;color:#999;">Go to page:</span>
-                    <input type="number" min="1" max="${totalPages}" placeholder="${buzzPage+1}" style="width:58px;padding:7px;border-radius:10px;border:1px solid #eee;text-align:center;font-weight:700;font-size:0.85rem;" onkeydown="if(event.key==='Enter'){var v=parseInt(this.value)-1;if(v>=0&&v<${totalPages})changeBuzzPage(v);}">
+                    <input type="number" min="1" max="${totalPages}" placeholder="${buzzPage + 1}" style="width:58px;padding:7px;border-radius:10px;border:1px solid #eee;text-align:center;font-weight:700;font-size:0.85rem;" onkeydown="if(event.key==='Enter'){var v=parseInt(this.value)-1;if(v>=0&&v<${totalPages})changeBuzzPage(v);}">
                     <span style="font-size:0.8rem;color:#999;">of ${totalPages}</span>
                 </div>
             </div>`;
@@ -426,7 +446,7 @@ function initCommunityBuzz() {
 
 
 function buzzEngage(btn, startVal) {
-    const cur = parseInt(btn.innerText.replace(/\D/g,'')) || startVal;
+    const cur = parseInt(btn.innerText.replace(/\D/g, '')) || startVal;
     const icon = btn.innerHTML.match(/<i[^>]+><\/i>/)?.[0] || '';
     btn.innerHTML = icon + ' ' + (cur + 1);
     btn.style.transform = 'scale(1.25)';
@@ -444,7 +464,7 @@ function buzzShare() {
 
 function changeBuzzPage(page) {
     const kw = getPageKeyword();
-    const total = Math.ceil(TESTI_DATA.filter(t => t.tags.includes(kw)||t.tags.includes('all')).length / BUZZ_PER_PAGE);
+    const total = Math.ceil(TESTI_DATA.filter(t => t.tags.includes(kw) || t.tags.includes('all')).length / BUZZ_PER_PAGE);
     buzzPage = Math.max(0, Math.min(parseInt(page), total - 1));
     initCommunityBuzz();
     const s = document.getElementById('community');
@@ -533,10 +553,10 @@ function initTestimonialSlider() {
     const kw = getPageKeyword();
     // Use up to 20 testimonials for performance, tripled for the infinite loop
     const filtered = TESTI_DATA.filter(t => t.tags.includes(kw) || t.tags.includes("all")).slice(0, 20);
-    
+
     // Triple the data to create a seamless infinite scroll effect
     const tripleData = [...filtered, ...filtered, ...filtered];
-    
+
     track.innerHTML = tripleData.map((t, idx) => `
         <div class="testi-card-premium" style="width:380px; background:#fff; padding:35px; border-radius:28px; flex-shrink:0; box-shadow:0 10px 40px rgba(0,0,0,0.03); border:1px solid rgba(0,0,0,0.05); position:relative; overflow:hidden;">
             <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px;">
@@ -559,44 +579,44 @@ function initTestimonialSlider() {
         </div>`).join('');
 }
 
-let qs = 0; const QSTEPS = [{q:"Main Concern?", o:["Blood Sugar","Blood Pressure","Digestion","Vitality"]},{q:"History?", o:["Recent","Chronic"]}];
-function openQuiz() { document.getElementById('quiz-overlay').style.display='flex'; renderQuiz(); }
-function closeQuiz() { document.getElementById('quiz-overlay').style.display='none'; qs=0; }
+let qs = 0; const QSTEPS = [{ q: "Main Concern?", o: ["Blood Sugar", "Blood Pressure", "Digestion", "Vitality"] }, { q: "History?", o: ["Recent", "Chronic"] }];
+function openQuiz() { document.getElementById('quiz-overlay').style.display = 'flex'; renderQuiz(); }
+function closeQuiz() { document.getElementById('quiz-overlay').style.display = 'none'; qs = 0; }
 function renderQuiz() {
-    const q = QSTEPS[qs]; if(!q) { document.getElementById('quiz-options').innerHTML=`<p>Analysis Complete! Contact a Specialist for your protocol.</p><button class="btn-main" onclick="chatWithConsultant('Quiz Result')">Get Guidance</button>`; return; }
-    document.getElementById('quiz-q').innerText=q.q; document.getElementById('quiz-options').innerHTML=q.o.map(o=>`<div class="quiz-option" onclick="qs++;renderQuiz()">${o}</div>`).join('');
+    const q = QSTEPS[qs]; if (!q) { document.getElementById('quiz-options').innerHTML = `<p>Analysis Complete! Contact a Specialist for your protocol.</p><button class="btn-main" onclick="chatWithConsultant('Quiz Result')">Get Guidance</button>`; return; }
+    document.getElementById('quiz-q').innerText = q.q; document.getElementById('quiz-options').innerHTML = q.o.map(o => `<div class="quiz-option" onclick="qs++;renderQuiz()">${o}</div>`).join('');
 }
 
 window.addEventListener("load", () => {
-    initTestimonialSlider(); 
-    initCommunityBuzz(); 
+    initTestimonialSlider();
+    initCommunityBuzz();
     initCommentsSection();
     initProgressTracker();
     const fact_el = document.getElementById('trivia-display');
-    if(fact_el) fact_el.innerHTML = `<p style="font-weight:600; color:#4d231c;">Natural herbal extracts support multi-system cellular repair.</p>`;
+    if (fact_el) fact_el.innerHTML = `<p style="font-weight:600; color:#4d231c;">Natural herbal extracts support multi-system cellular repair.</p>`;
 });
 
 // ======= FAQ STRUCTURED DATA (MERGED) =======
 const faqStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Kedi Reishi and how does it work?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Kedi Reishi is a premium Ganoderma Lucidum supplement. It acts as a global biological reset." }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Kedi Reishi NAFDAC approved?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes, Kedi Reishi is officially registered and approved by NAFDAC in Nigeria." }
-    },
-    {
-        "@type": "Question",
-        "name": "What can I use for High Blood Pressure?",
-        "acceptedAnswer": { "@type": "Answer", "text": "For hypertension, we recommend Kedi Reishi combined with Golden Six." }
-    }
-  ]
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is Kedi Reishi and how does it work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Kedi Reishi is a premium Ganoderma Lucidum supplement. It acts as a global biological reset." }
+        },
+        {
+            "@type": "Question",
+            "name": "Is Kedi Reishi NAFDAC approved?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, Kedi Reishi is officially registered and approved by NAFDAC in Nigeria." }
+        },
+        {
+            "@type": "Question",
+            "name": "What can I use for High Blood Pressure?",
+            "acceptedAnswer": { "@type": "Answer", "text": "For hypertension, we recommend Kedi Reishi combined with Golden Six." }
+        }
+    ]
 };
 const scriptTag = document.createElement('script');
 scriptTag.type = 'application/ld+json';
@@ -609,10 +629,10 @@ document.head.appendChild(scriptTag);
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header, nav');
     const promo = document.querySelector('.top-promo-bar');
-    if(header) {
+    if (header) {
         const isScrolled = window.scrollY > 50;
         header.classList.toggle('scrolled', isScrolled);
-        
+
         // Handle transparency vs solid state
         if (isScrolled) {
             header.style.background = "rgba(77, 35, 28, 0.95)";
@@ -624,7 +644,7 @@ window.addEventListener('scroll', () => {
             header.style.borderBottom = "1px solid rgba(255, 255, 255, 0.1)";
         }
     }
-    
+
     // Smooth promo bar transition
     if (promo) {
         promo.style.opacity = window.scrollY > 100 ? '0.8' : '1';
@@ -635,7 +655,7 @@ window.addEventListener('scroll', () => {
 // ======= MOBILE HAMBURGER MENU (Global Handler) =======
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('nav i.ri-menu-fill');
-    const cntrNav  = document.querySelector('.cntr-nav');
+    const cntrNav = document.querySelector('.cntr-nav');
     if (!menuIcon || !cntrNav) return;
 
     // Toggle on hamburger icon click
