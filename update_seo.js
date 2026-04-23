@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const { generateSeoMetaTags } = require('./seo_generator');
 
@@ -71,9 +71,13 @@ files.forEach(file => {
     metaHtml += `    ${meta.canonical}\n`;
     metaHtml += `    ${meta.robots}\n`;
     metaHtml += `    \n    <!-- Open Graph -->\n`;
+    metaHtml += `    ${meta.ogSiteName}\n`;
     metaHtml += `    ${meta.ogTitle}\n`;
     metaHtml += `    ${meta.ogDescription}\n`;
     metaHtml += `    ${meta.ogImage}\n`;
+    metaHtml += `    ${meta.ogImageSecure}\n`;
+    metaHtml += `    ${meta.ogImageWidth}\n`;
+    metaHtml += `    ${meta.ogImageHeight}\n`;
     metaHtml += `    ${meta.ogImageAlt}\n`;
     metaHtml += `    ${meta.ogUrl}\n`;
     metaHtml += `    ${meta.ogType}\n`;
