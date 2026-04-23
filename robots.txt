@@ -1,4 +1,4 @@
-﻿# ======= GLOBAL ROBOTS CONFIGURATION (Aura Cares ECOSYSTEM) =======
+# ======= GLOBAL ROBOTS CONFIGURATION (Aura Cares ECOSYSTEM) =======
 # Extreme Multi-Regional Search Engine & AI Intelligence Optimization
 
 # ======= GLOBAL DEFAULTS =======
