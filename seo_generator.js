@@ -1,4 +1,4 @@
-﻿// ======= SEO/AEO/DEO META TAGS & STRUCTURED DATA GENERATOR ======= 
+// ======= SEO/AEO/DEO META TAGS & STRUCTURED DATA GENERATOR ======= 
 // This utility generates all necessary meta tags for SEO, AEO (AI Engine Optimization), and DEO (Data Engine)
 
 function generateSeoMetaTags(pageData) {
@@ -155,6 +155,12 @@ function generateOrganizationSchema() {
         "name": "Aura Cares Global",
         "url": "https://auracares.vercel.app",
         "logo": "https://auracares.vercel.app/favicon.png",
+        "image": [
+            "https://instagram.flos3-1.fna.fbcdn.net/v/t51.82787-19/671736926_17902724529419798_3424773438433236831_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby42OTcuYzIifQ&_nc_ht=instagram.flos3-1.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2gFMrt2yFYZZcB5GZ3a9MR0BNrt9A3FeSz3eWLSIUNGkijH5EHooOmsLiWQcJzYL0L0&_nc_ohc=b-Oh03eIKa4Q7kNvwErLApF&_nc_gid=3TvCcebznh10_JrleMiEUQ&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Af0Rs_iRk3Cv6xXFoFRTmEH6ilrmoGugRuhhXoS1k38owQ&oe=69EF0C21&_nc_sid=7a9f4b",
+            "https://scontent.flos3-1.fna.fbcdn.net/v/t39.30808-1/679565633_122203545728788287_7448019525489621091_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=102&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeHAkn9aRhuJwPyQ6iMjHu5zC5ADpYg6Ri0LkAOliDpGLexSTicfMEww6Q5l8QbiQTbrqYT9zK6acEO2JxZIau44&_nc_ohc=a7_4KvI5GNAQ7kNvwENqMcM&_nc_oc=Adp8tLwaWKMMX1SrGOOfCIdgaegy2jpbyXtGSjHvD6facF81eoZeo2ICOmLkSGYA2EQ&_nc_zt=24&_nc_ht=scontent.flos3-1.fna&_nc_gid=Q-lMqfKPJo_2nPLafp4ing&_nc_ss=7b2a8&oh=00_Af0ozJoxH3BTmC2WSw1JF7nV7TIkime166dZMLyhKO1Cig&oe=69EF0ECE",
+            "https://i.pinimg.com/280x280_RS/d9/95/ef/d995ef35464c864c1e268489c1a25f06.jpg",
+            "https://yt3.googleusercontent.com/PZWmmkJPqxEGeCGpqESy_EIr6oYpGbxnnvil5vETV-Bzs0AHDbXiqDNhAFlOPxJhNaY9ysDvoA=s160-c-k-c0x00ffffff-no-rj"
+        ],
         "description": "Premium clinical botanical protocols for total body wellness. 50,000+ trusted users globally.",
         "foundingDate": "2020",
         "foundingLocation": "Nigeria",
@@ -166,13 +172,19 @@ function generateOrganizationSchema() {
         },
         "socialMediaProfiles": [
             "https://www.instagram.com/auuracares",
-            "https://www.facebook.com/auuracares",
+            "https://web.facebook.com/AuraCares4u/",
+            "https://www.instagram.com/auracares4u/",
+            "https://www.pinterest.com/AuraCares4U/?actingBusinessId=1015984134595813771",
+            "https://www.youtube.com/@AuraCares1",
             "https://wa.me/2348114270136"
         ],
         "areaServed": "Global",
         "sameAs": [
             "https://www.instagram.com/auuracares",
-            "https://www.facebook.com/auuracares"
+            "https://web.facebook.com/AuraCares4u/",
+            "https://www.instagram.com/auracares4u/",
+            "https://www.pinterest.com/AuraCares4U/?actingBusinessId=1015984134595813771",
+            "https://www.youtube.com/@AuraCares1"
         ]
     };
     
