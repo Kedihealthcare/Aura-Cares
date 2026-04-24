@@ -177,6 +177,8 @@ User-agent: facebookexternalhit
 Allow: /
 User-agent: Facebot
 Allow: /
+User-agent: facebookcatalog
+Allow: /
 User-agent: Twitterbot
 Allow: /
 User-agent: Slackbot
@@ -190,6 +192,16 @@ Allow: /
 User-agent: TelegramBot
 Allow: /
 User-agent: PinterestBot
+Allow: /
+User-agent: Pinterest
+Allow: /
+User-agent: SkypeUriPreview
+Allow: /
+User-agent: Viber
+Allow: /
+User-agent: Yahoo Link Preview
+Allow: /
+User-agent: Applebot
 Allow: /
 
 # ======= ARCHIVE & RESEARCH =======
