@@ -28,8 +28,18 @@ files.forEach(file => {
     let pageUrl = 'https://auracares.vercel.app/' + file;
     if(file === 'index.html') pageUrl = 'https://auracares.vercel.app/';
 
-    // Get keywords from app.json if available, else use generic
-    let keywords = productInCatalog && productInCatalog.keywords ? productInCatalog.keywords : [shortName, 'Aura cares', 'Natural Supplement', 'Wellness'];
+    // Get keywords from app.json if available, else use specific overrides for core pages
+    let keywords = productInCatalog && productInCatalog.keywords ? productInCatalog.keywords : [shortName, 'Aura Cares', 'Natural Supplement', 'Wellness'];
+    
+    if (file === 'fibroids-guide.html') {
+        keywords = ['Fibroid Dissolution', 'Uterine Restoration', 'Non-Surgical Fibroid Treatment Nigeria', 'Hormonal Balance', 'Aura Cares Reproductive Intelligence'];
+    } else if (file === 'franchise.html') {
+        keywords = ['Wellness Franchise', 'Aura Cares Partnership', 'Health Practitioner Program', 'Clinic Opportunity Nigeria', 'Global Wellness Business'];
+    } else if (file === 'collection.html') {
+        keywords = ['Botanical Directory', 'Standardized Protocols', 'Aura Cares Catalog', 'Clinical Supplement Taxonomy', 'Natural Medicine Index'];
+    } else if (file === 'blog.html') {
+        keywords = ['Clinical Intelligence', 'Health Articles', 'Aura Cares Research', 'Medical Botanical Blog', 'Wellness Insights'];
+    }
     
     // 2. Extract existing vital links and scripts (CSS, JS, manifest)
     let assets = [];
@@ -75,6 +85,11 @@ files.forEach(file => {
     metaHtml += `    ${meta.keywords}\n`;
     metaHtml += `    ${meta.canonical}\n`;
     metaHtml += `    ${meta.robots}\n`;
+    metaHtml += `    \n    <!-- Geo-Targeting -->\n`;
+    metaHtml += `    ${meta.geoRegion}\n`;
+    metaHtml += `    ${meta.geoPlacename}\n`;
+    metaHtml += `    ${meta.geoPosition}\n`;
+    metaHtml += `    ${meta.icbm}\n`;
     metaHtml += `    \n    <!-- Open Graph -->\n`;
     metaHtml += `    ${meta.ogSiteName}\n`;
     metaHtml += `    ${meta.ogTitle}\n`;
