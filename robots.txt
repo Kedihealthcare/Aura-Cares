@@ -173,6 +173,10 @@ Allow: /
 # ======= SOCIAL MEDIA CRAWLERS =======
 User-agent: FacebookBot
 Allow: /
+User-agent: facebookexternalhit
+Allow: /
+User-agent: Facebot
+Allow: /
 User-agent: Twitterbot
 Allow: /
 User-agent: Slackbot
