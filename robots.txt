@@ -2,10 +2,6 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
-Disallow: /_vercel/
-Disallow: /api/
 
 # ======= CORE SEARCH ENGINES =======
 User-agent: Googlebot
@@ -42,6 +38,9 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: Facebot
+Allow: /
+
 User-agent: Twitterbot
 Allow: /
 
@@ -72,7 +71,7 @@ Allow: /*.jpg$
 Allow: /*.jpeg$
 Allow: /*.gif$
 Allow: /*.webp$
-Allow: /images/
+Allow: /images
 
 # ======= SITEMAP & HOST =======
 Sitemap: https://auracares.vercel.app/sitemap.xml
