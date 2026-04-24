@@ -17,6 +17,12 @@ function generateSeoMetaTags(pageData) {
         'themeColor': '<meta name="theme-color" content="#4d231c">',
         'msTileColor': '<meta name="msapplication-TileColor" content="#4d231c">',
         
+        // ======= GEO TARGETING (Nigeria & Global) ======= 
+        'geoRegion': '<meta name="geo.region" content="NG-OG">',
+        'geoPlacename': '<meta name="geo.placename" content="Sango Ota">',
+        'geoPosition': '<meta name="geo.position" content="6.7077;3.2351">',
+        'icbm': '<meta name="ICBM" content="6.7077, 3.2351">',
+        
         // ======= OPEN GRAPH (Social Media & AI Models) ======= 
         'ogSiteName': `<meta property="og:site_name" content="Aura Cares Global">`,
         'ogTitle': `<meta property="og:title" content="${pageData.ogTitle || pageData.title}">`,
